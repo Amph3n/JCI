@@ -26,6 +26,7 @@ img {
   max-width: 100%;
   height: auto; }
 
+
 .mInformation {
   width: 1500px;
   height: 600px;
@@ -37,4 +38,6 @@ img {
 .mInformation:hover {
   background-color: gold; }
 
+=======
+>>>>>>> origin/Nillerbrunch
 /*# sourceMappingURL=styles.css.map */
