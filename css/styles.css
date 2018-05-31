@@ -26,4 +26,18 @@ img {
   max-width: 100%;
   height: auto; }
 
+
+.mInformation {
+  width: 1500px;
+  height: 600px;
+  box-shadow: 8px 8px 8px grey;
+  background-color: darkgreen;
+  margin-left: 200px;
+  margin-top: 200px; }
+
+.mInformation:hover {
+  background-color: gold; }
+
+=======
+>>>>>>> origin/Nillerbrunch
 /*# sourceMappingURL=styles.css.map */
