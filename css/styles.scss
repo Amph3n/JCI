@@ -36,6 +36,17 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+.mInformation{
+  width: 1500px;
+  height: 600px;
+  box-shadow: 8px 8px 8px grey;
+  background-color: darkgreen;
+}
+
+.mInformation:hover{
+  background-color: gold;
+}
+
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
