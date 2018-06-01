@@ -26,4 +26,18 @@ img {
   max-width: 100%;
   height: auto; }
 
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr; }
+
+header {
+  grid-row: 1; }
+
+main {
+  grid-row: 2; }
+
+footer {
+  grid-row: 3; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -38,6 +38,23 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+}
+
+header {
+  grid-row: 1;
+}
+
+main {
+ grid-row: 2;
+}
+
+footer {
+  grid-row: 3;
+}
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
