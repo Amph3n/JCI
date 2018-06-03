@@ -71,6 +71,12 @@ main {
 footer {
   grid-row: 3; }
 
+.eMain {
+  display: block;
+  width: 100%;
+  background-color: #0A6466;
+  color: white; }
+
 @media screen and (min-width: 1200px) {
   .h_logo {
     display: none; }
