@@ -71,11 +71,18 @@ main {
 footer {
   grid-row: 3; }
 
-.eMain {
+.eContent {
   display: block;
   width: 100%;
   background-color: #0A6466;
   color: white; }
+
+.ePopular {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; }
+  .ePopular .eFlex {
+    width: 45%; }
 
 @media screen and (min-width: 1200px) {
   .h_logo {
