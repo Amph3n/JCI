@@ -116,6 +116,12 @@ footer {
   text-align: right;
 }
 
+.eTempBtn{
+  width: 20%;
+  height: 15px;
+  margin: 1% auto;
+}
+
 .eEventsList{
   display: flex;
   flex-direction: column;
@@ -135,7 +141,13 @@ footer {
     }
 
     .eEventText{
+      display: flex;
+      flex-direction: column;
       width: 59%;
+    }
+
+    .eEventBreadText{
+      height: 58%;
     }
   }
 }

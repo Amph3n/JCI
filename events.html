@@ -76,7 +76,7 @@
         </nav>
     </header>
 
-    <main class="eMain">
+    <main>
         <div class="eContent">
             <div>
                 <h1>Events</h1>
@@ -109,87 +109,86 @@
             </div>
 
             <div>
-                <div></div>
-
-                <div></div>
-
-                <div></div>
+                <button class="eTempBtn eMon3"></button>
             </div>
 
             <div class="eEventsList">
-                <div class="eFlex">
+                <div class="eFlex eMar">
                     <div class="eFlexImg">
                         <img src="img/donkey.jpg">
                     </div>
 
                     <div class="eEventText">
                         <h3>Event xx</h3>
-                        <p>Æsel</p>
+                        <p class="eEventBreadText">marts</p>
                         <p class="ePrice">3kr</p>
                     </div>
                 </div>
 
-                <div class="eFlex">
+                <div class="eFlex eApr">
                     <div class="eFlexImg">
                         <img src="img/donkey.jpg">
                     </div>
 
                     <div class="eEventText">
                         <h3>Event xx</h3>
-                        <p>Æsel</p>
+                        <p class="eEventBreadText">april</p>
                         <p class="ePrice">3kr</p>
                     </div>
                 </div>
 
-                <div class="eFlex">
+                <div class="eFlex eMay">
                     <div class="eFlexImg">
                         <img src="img/donkey.jpg">
                     </div>
 
                     <div class="eEventText">
                         <h3>Event xx</h3>
-                        <p>Æsel</p>
+                        <p class="eEventBreadText">maj</p>
                         <p class="ePrice">3kr</p>
                     </div>
                 </div>
 
-                <div class="eFlex">
+                <div class="eFlex eJun">
                     <div class="eFlexImg">
                         <img src="img/donkey.jpg">
                     </div>
 
                     <div class="eEventText">
                         <h3>Event xx</h3>
-                        <p>Æsel</p>
+                        <p class="eEventBreadText">juni</p>
                         <p class="ePrice">3kr</p>
                     </div>
                 </div>
 
-                <div class="eFlex">
+                <div class="eFlex eJul">
                     <div class="eFlexImg">
                         <img src="img/donkey.jpg">
                     </div>
 
                     <div class="eEventText">
                         <h3>Event xx</h3>
-                        <p>Æsel</p>
+                        <p class="eEventBreadText">juli</p>
                         <p class="ePrice">3kr</p>
                     </div>
                 </div>
 
-                <div class="eFlex">
+                <div class="eFlex eAug">
                     <div class="eFlexImg">
                         <img src="img/donkey.jpg">
                     </div>
 
                     <div class="eEventText">
                         <h3>Event xx</h3>
-                        <p>Æsel</p>
+                        <p class="eEventBreadText">august</p>
                         <p class="ePrice">3kr</p>
                     </div>
                 </div>
 
-                <div> liste menu ting</div>
+                <ul>
+                    <li>&#8249;</li>
+                    <li>&#8250;</li>
+                </ul>
             </div>
         </div>
     </main>
@@ -227,6 +226,19 @@
                 navOpen = 0;
             }
         });
+
+        var eMonth = 0;
+        $(".eMon3").click(function () {
+            if (eMonth == 3) {
+                $(".eJan, .eFeb, .eMar, .eApr, .eMay, .eJun, .eJul, .eAug, .eSep, .eOct, .eNov, .eDec").css( "display", "flex");
+                eMonth = 0;
+            }
+            else {
+                $(".eJan, .eFeb, .eApr, .eMay, .eJun, .eJul, .eAug, .eSep, .eOct, .eNov, .eDec").css( "display", "none");
+                eMonth = 3;
+            }
+        });
+
 
     });
 </script>

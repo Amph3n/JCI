@@ -91,6 +91,11 @@ footer {
 .ePrice {
   text-align: right; }
 
+.eTempBtn {
+  width: 20%;
+  height: 15px;
+  margin: 1% auto; }
+
 .eEventsList {
   display: flex;
   flex-direction: column;
@@ -106,7 +111,11 @@ footer {
     .eEventsList .eFlex .eFlexImg {
       width: 39%; }
     .eEventsList .eFlex .eEventText {
+      display: flex;
+      flex-direction: column;
       width: 59%; }
+    .eEventsList .eFlex .eEventBreadText {
+      height: 58%; }
 
 @media screen and (min-width: 1200px) {
   .h_logo {
