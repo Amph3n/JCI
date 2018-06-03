@@ -84,6 +84,30 @@ footer {
   .ePopular .eFlex {
     width: 45%; }
 
+.ePopularText {
+  width: 90%;
+  margin: 0 auto; }
+
+.ePrice {
+  text-align: right; }
+
+.eEventsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%; }
+  .eEventsList .eFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    max-height: 90px;
+    margin: 1% auto; }
+    .eEventsList .eFlex .eFlexImg {
+      width: 39%; }
+    .eEventsList .eFlex .eEventText {
+      width: 59%; }
+
 @media screen and (min-width: 1200px) {
   .h_logo {
     display: none; }

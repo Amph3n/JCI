@@ -107,6 +107,41 @@ footer {
   }
 }
 
+.ePopularText{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.ePrice{
+  text-align: right;
+}
+
+.eEventsList{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+
+  .eFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    max-height: 90px;
+    margin: 1% auto;
+
+    .eFlexImg{
+      width: 39%;
+    }
+
+    .eEventText{
+      width: 59%;
+    }
+  }
+}
+
+
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 }
