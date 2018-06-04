@@ -71,6 +71,61 @@ main {
 footer {
   grid-row: 3; }
 
+.eContent {
+  display: block;
+  width: 100%;
+  background-color: #0A6466;
+  color: white; }
+
+.ePopular {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; }
+  .ePopular .eFlex {
+    width: 45%; }
+
+.ePopularText {
+  width: 90%;
+  margin: 0 auto; }
+
+.ePrice {
+  text-align: right; }
+
+.eTempBtn {
+  width: 20%;
+  height: 15px;
+  margin: 1% auto; }
+
+.eEventsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%; }
+  .eEventsList .eFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    max-height: 90px;
+    margin: 1% auto; }
+    .eEventsList .eFlex .eFlexImg {
+      width: 39%; }
+    .eEventsList .eFlex .eEventText {
+      display: flex;
+      flex-direction: column;
+      width: 59%; }
+    .eEventsList .eFlex .eEventBreadText {
+      height: 58%; }
+
+.eEventNav {
+  font-size: 24px;
+  margin: 0 auto; }
+  .eEventNav li {
+    display: inline;
+    width: 10%; }
+  .eEventNav .eArrow {
+    font-size: 36px; }
+
 @media screen and (min-width: 1200px) {
   .h_logo {
     display: none; }

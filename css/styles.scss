@@ -89,6 +89,84 @@ footer {
   grid-row: 3;
 }
 
+.eContent{
+  display: block;
+  width: 100%;
+  background-color: #0A6466;
+  color: white;
+}
+
+
+.ePopular{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+  .eFlex{
+    width: 45%;
+  }
+}
+
+.ePopularText{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.ePrice{
+  text-align: right;
+}
+
+.eTempBtn{
+  width: 20%;
+  height: 15px;
+  margin: 1% auto;
+}
+
+.eEventsList{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+
+  .eFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    max-height: 90px;
+    margin: 1% auto;
+
+    .eFlexImg{
+      width: 39%;
+    }
+
+    .eEventText{
+      display: flex;
+      flex-direction: column;
+      width: 59%;
+    }
+
+    .eEventBreadText{
+      height: 58%;
+    }
+  }
+}
+
+.eEventNav{
+  font-size: 24px;
+  margin: 0 auto;
+
+  li{
+    display: inline;
+    width: 10%;
+  }
+
+  .eArrow{
+    font-size: 36px;
+  }
+}
+
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 }
