@@ -152,6 +152,19 @@ footer {
   }
 }
 
+.eEventNav{
+  font-size: 24px;
+  margin: 0 auto;
+
+  li{
+    display: inline;
+    width: 10%;
+  }
+
+  .eArrow{
+    font-size: 36px;
+  }
+}
 
 
 @media screen and (min-width: 768px) {
