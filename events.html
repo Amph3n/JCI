@@ -19,6 +19,7 @@
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/simplePagination.css" rel="stylesheet" type="text/css">
     <!-- Tillader brug af Font Awesome ikoner -->
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
     <!-- Googlefonts -->
@@ -109,89 +110,464 @@
             </div>
 
             <div>
-                <button class="eTempBtn eMon3"></button>
+                <button class="eTempBtn eMar"></button>
             </div>
 
+            <!-- Her starter liste over events.
+            Ude i den virkelige verden ville vi sætte disse op i PHP -->
+
             <div class="eEventsList">
-                <div class="eFlex eMar">
+                <div class="eFlex ePaginate eMon1 eLocal">
                     <div class="eFlexImg">
                         <img src="img/donkey.jpg">
                     </div>
 
                     <div class="eEventText">
-                        <h3>Event xx</h3>
-                        <p class="eEventBreadText">marts</p>
-                        <p class="ePrice">3kr</p>
+                        <h3>Afdelingsmøde: 10/1-18</h3>
+                        <p class="eEventBreadText">
+                            Afdelingsmøde og teambuilding for JCI Slagelse
+                        </p>
+                        <p class="ePrice"></p>
                     </div>
                 </div>
 
-                <div class="eFlex eApr">
+                <div class="eFlex ePaginate eMon1 eNational">
                     <div class="eFlexImg">
                         <img src="img/donkey.jpg">
                     </div>
 
                     <div class="eEventText">
-                        <h3>Event xx</h3>
-                        <p class="eEventBreadText">april</p>
-                        <p class="ePrice">3kr</p>
+                        <h3>Generalforsamling i regionen: 23/1-18</h3>
+                        <p class="eEventBreadText">
+                            skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
                     </div>
                 </div>
 
-                <div class="eFlex eMay">
+                <div class="eFlex ePaginate eMon2 eLocal">
                     <div class="eFlexImg">
                         <img src="img/donkey.jpg">
                     </div>
 
                     <div class="eEventText">
-                        <h3>Event xx</h3>
-                        <p class="eEventBreadText">maj</p>
-                        <p class="ePrice">3kr</p>
+                        <h3>Generalforsamling i Slagelse: 2/2-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
                     </div>
                 </div>
 
-                <div class="eFlex eJun">
+                <div class="eFlex ePaginate eMon2 eNational">
                     <div class="eFlexImg">
                         <img src="img/donkey.jpg">
                     </div>
 
                     <div class="eEventText">
-                        <h3>Event xx</h3>
-                        <p class="eEventBreadText">juni</p>
-                        <p class="ePrice">3kr</p>
+                        <h3>Indledende runde SSDB: 3/2-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
                     </div>
                 </div>
 
-                <div class="eFlex eJul">
+                <div class="eFlex ePaginate eMon2 eLocal">
                     <div class="eFlexImg">
                         <img src="img/donkey.jpg">
                     </div>
 
                     <div class="eEventText">
-                        <h3>Event xx</h3>
-                        <p class="eEventBreadText">juli</p>
-                        <p class="ePrice">3kr</p>
+                        <h3>Afdelingsmøde: 7/2-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
                     </div>
                 </div>
 
-                <div class="eFlex eAug">
+                <div class="eFlex ePaginate eMon2 eNational">
                     <div class="eFlexImg">
                         <img src="img/donkey.jpg">
                     </div>
 
                     <div class="eEventText">
-                        <h3>Event xx</h3>
-                        <p class="eEventBreadText">august</p>
-                        <p class="ePrice">3kr</p>
+                        <h3>Frist for Awards: 26/2-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
                     </div>
                 </div>
 
-                <ul class="eEventNav">
-                    <li class="eArrow">&#8249;</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li class="eArrow">&#8250;</li>
-                </ul>
+                <div class="eFlex ePaginate eMon3 eNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>DLP Training I: 3/3-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon3 eLocal">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Afdelingsmøde: 8/3-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon3 eNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Mellem runde SSDB: 10/3-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon4 eNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>FK 2018 / København: 6/4-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon4 eLocal">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Afdelingsmøde: 11/4-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon5 eNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>DLP Training II: 5/5-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon5 eLocal">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Afdelingsmøde: 9/5-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon5 eInterNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Conference Africe / Benin: 9/5-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon5 eInterNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Conference Asia Pacific / Japan: 24/5-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon5 eNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Bestyrelsesuddannelse: 26/5-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon6 eInterNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Europakonference / Letland: 6/6-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon6 eInterNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Conference of the Americas / USA: 6/6-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon6 eLocal">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Afdelingsmøde: 13/6-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon8 eLocal">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Afdelingsmøde / DGM: 8/8-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon8 eLocal">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Sommerfest: ?/8-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon8 eLocal">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Valgforsamling: ?/8-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon8 eNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Bestyrelsesuddannelse: 25/8-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon8 eNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>DLP Training III: 25/8-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon9 eLocal">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Afdelingsmøde: 12/9-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon9 eNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Valgforsamling & DGM Region: 18/9-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon10 eNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>NK 2018 / Kolding: 5/10-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon10 eLocal">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Afdelingsmøde / åbent arrangement: 10/10-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon10 eInterNational">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Verdenskongres / Indien: 30/10-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon11 eLocal">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Awardsaften: 9/11-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon11 eLocal">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Afdelingsmøde SSDB: 14/11-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <div class="eFlex ePaginate eMon12 eLocal">
+                    <div class="eFlexImg">
+                        <img src="img/donkey.jpg">
+                    </div>
+
+                    <div class="eEventText">
+                        <h3>Afdelingsmøde / hygge: 12/12-18</h3>
+                        <p class="eEventBreadText">
+                            Skriv om event her
+                        </p>
+                        <p class="ePrice"></p>
+                    </div>
+                </div>
+
+                <!-- Her slutter listen over events -->
+
+                <div id="eEventNav"></div>
             </div>
         </div>
     </main>
@@ -202,6 +578,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.simplePagination.js"></script>
 <script type="text/javascript">
     $(document).ready(function (e) {
 
@@ -230,15 +607,22 @@
             }
         });
 
-        var eMonth = 0;
-        $(".eMon3").click(function () {
-            if (eMonth == 3) {
-                $(".eJan, .eFeb, .eMar, .eApr, .eMay, .eJun, .eJul, .eAug, .eSep, .eOct, .eNov, .eDec").css( "display", "flex");
-                eMonth = 0;
-            }
-            else {
-                $(".eJan, .eFeb, .eApr, .eMay, .eJun, .eJul, .eAug, .eSep, .eOct, .eNov, .eDec").css( "display", "none");
-                eMonth = 3;
+        var ePageParts = $(".ePaginate");
+        var ePumPages = ePageParts.length;
+        var ePerPage = 6;
+
+        ePageParts.slice(ePerPage).hide();
+        $("#eEventNav").pagination({
+            items: ePumPages,
+            itemsOnPage: ePerPage,
+            cssStyle: "light-theme",
+
+            onPageClick: function(ePageNum){
+                var start = ePerPage * (ePageNum - 1);
+                var end = start + ePerPage;
+
+                ePageParts.hide()
+                    .slice(start, end).show();
             }
         });
 

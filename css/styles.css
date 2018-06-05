@@ -71,6 +71,7 @@ main {
 footer {
   grid-row: 3; }
 
+/* Start Kristian ----------------------------------------------------*/
 .eContent {
   display: block;
   width: 100%;
@@ -126,6 +127,7 @@ footer {
   .eEventNav .eArrow {
     font-size: 36px; }
 
+/* -- Slut Kristian ------------------------------------------------------ */
 @media screen and (min-width: 1200px) {
   header {
     height: 100px; }
