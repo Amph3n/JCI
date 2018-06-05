@@ -128,6 +128,65 @@ footer {
     font-size: 36px; }
 
 /* -- Slut Kristian ------------------------------------------------------ */
+
+/* -- Nillerbrunch start ------------------------------------------------- */
+.mHeader {
+  text-align: center; }
+
+.mStartImg {
+  position: relative;
+  width: 100vw;
+  height: 200px;
+  background-image: url("../img/mStartImg.jpg");
+  background-size: cover; }
+
+.mCTA {
+  position: absolute;
+  top: 70%;
+  left: 25%; }
+
+.mInfoText {
+  margin: 5%; }
+
+.mBackground {
+  background-color: #0A6466;
+  width: 100vw; }
+
+.mFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.mInfoPicBox {
+  margin: 5%; }
+
+.mNews {
+  margin: 5%; }
+
+/* -- Nillerbrunch slut --------------------------------- */
+
+@media screen and (min-width: 768px) {
+  
+/* -- Nillerbrunch start -------------------------------- */
+  .mStartImg {
+    height: 400px; }
+
+/* -- Nillerbrunch skut -------------------------------- */
+
+
+}
+@media screen and (min-width: 992px) {
+  
+/* Nillerbrunch start ------------------------------------ */
+  .mFlex {
+    flex-direction: row; } 
+/* Nillerbrunch slut ------------------------------------- */
+
+}
+
+
+
 @media screen and (min-width: 1200px) {
   header {
     height: 100px; }

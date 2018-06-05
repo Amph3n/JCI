@@ -170,12 +170,82 @@ footer {
 }
   /* -- Slut Kristian ------------------------------------------------------ */
 
+
+//Nillerbrunch start ---------------------------------------------------
+
+.mHeader{
+  text-align: center;
+}
+
+.mStartImg{
+  position: relative;
+  width: 100vw;
+  height: 200px;
+  background-image: url("../img/mStartImg.jpg");
+
+  background-size: cover;
+}
+
+.mCTA{
+  position: absolute;
+  top: 70%;
+  left: 25%;
+}
+
+.mInfoText{
+  margin: 5%;
+}
+
+.mBackground{
+  background-color: #0A6466;
+  width: 100vw;
+}
+
+.mFlex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.mInfoPicBox{
+  margin: 5%;
+}
+
+.mInfoPic{
+
+}
+
+.mInfoPicText{
+
+}
+
+.mNews{
+  margin: 5%;
+}
+
+
+
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
+  // Nillerbrunch --------------------------------------------
+
+  .mStartImg{
+    height: 400px;
+  }
 }
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+
+  // Nillerbrunch
+
+  .mFlex{
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1200px) {
