@@ -154,9 +154,12 @@ footer {
 .mFlex {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   max-width: 100%; }
+
+.mInfoPicBox {
+  margin-bottom: 5%; }
 
 .mInfoPic {
   box-shadow: 2px 2px 2px black; }
@@ -165,6 +168,7 @@ footer {
   color: white; }
 
 .mNews {
+  margin-top: 5%;
   color: white; }
 
 .kgrid {
