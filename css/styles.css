@@ -148,7 +148,8 @@ footer {
   padding-top: 2%;
   padding-right: 5%;
   display: inline-block;
-  height: 10px; }
+  height: auto;
+  width: auto; }
 
 @media screen and (min-width: 1200px) {
   header {
