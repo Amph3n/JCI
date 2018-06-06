@@ -10,18 +10,26 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   font-family: Cambria; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
 ul, ol {
   margin: 0;
   padding: 0;
   list-style-position: inside; }
+
+p {
+  margin: 0;
+  padding: 0;
+  font-family: Classico URW; }
 
 li {
   margin: 0; }
 
 p {
   margin: 0;
-  padding: 0;
-  font-family: Classico URW; }
+  padding: 0; }
 
 img {
   display: block;
@@ -40,7 +48,7 @@ header {
   position: relative; }
 
 .fa-bars {
-  color: #781616; }
+  color: #707070; }
 
 .dropdown_btn {
   position: absolute;
@@ -66,6 +74,21 @@ header {
 
 .menu_logo {
   display: none; }
+
+.h_logo img {
+  width: 110px;
+  margin: 0 0 0 10px;
+  padding: 7px 0 0 0; }
+
+.h_menu1 a, .h_menu2 a, .h_menu3 a, .h_menu4 a {
+  color: black;
+  margin: auto;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Classico URW";
+  line-height: 30px;
+  justify-content: center;
+  display: flex; }
 
 main {
   grid-row: 2; }
@@ -252,7 +275,6 @@ footer {
   margin-top: 5%;
   color: white; }
 
-// Sofie start --------------------------------------------------------------------------------
 .kflex1 {
   display: flex;
   height: auto;
@@ -298,34 +320,6 @@ footer {
   text-align: center;
   margin: 10% 0 0 25%; }
 
-
-.kgrid {
-  display: grid;
-  grid-template-rows: repeat(11, 1fr);
-  grid-template-columns: repeat(2, 1fr); }
-
-.koverskrift {
-  grid-row: 1;
-  padding-top: 15%;
-  padding-left: 35px;
-  font-size: 15pt; }
-
-.kbroed {
-  grid-row: 2;
-  padding-top: 10%;
-  padding-left: 35px;
-  display: inline-block; }
-
-.kimage1 {
-  grid-row: 1;
-  padding-top: 2%;
-  padding-right: 5%;
-  display: inline-block;
-  height: 10px; }
-
-// Sofie slut ------------------------------------------------------------------
-
-
 @media screen and (min-width: 768px) {
   .mStartImg {
     height: 400px; } }
@@ -333,7 +327,6 @@ footer {
   .mFlex {
     flex-direction: row; } }
 @media screen and (min-width: 1200px) {
-  
   header {
     height: 100px; }
 
@@ -355,7 +348,8 @@ footer {
 
   .box1, .box2 {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin-top: 7px; }
 
   .box1 {
     grid-column: 1; }
@@ -364,11 +358,12 @@ footer {
     grid-column: 3; }
 
   .menu_logo {
-    display: block;
+    display: flex;
     grid-column: 2;
-    max-width: 25%;
-    top: -25px;
-    position: absolute; }
+    grid-row: 1/2;
+    max-width: 115px;
+    margin: auto;
+    justify-content: center; }
 
   .f_grid {
     grid-template-columns: 1fr 1fr 1fr;
@@ -430,7 +425,6 @@ footer {
     display: flex;
     justify-content: space-around;
     margin: 25px 0 30px 0;
-    padding: 0 510px; } 
-}
+    padding: 0 510px; } }
 
 /*# sourceMappingURL=styles.css.map */

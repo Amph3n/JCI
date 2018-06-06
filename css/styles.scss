@@ -58,6 +58,7 @@ p {
 $primar_color: #0A6466;
 $CTA: #B56C0C;
 $CTA_border: #EF8F0F;
+$gray: #707070;
 
 
 .grid {
@@ -74,7 +75,7 @@ header {
   position: relative; }
 
 .fa-bars {
-  color: #781616; }
+  color: $gray; }
 
 .dropdown_btn {
   position: absolute;
@@ -101,6 +102,28 @@ header {
 
 .menu_logo {
   display: none;
+}
+
+.h_logo {
+  img {
+    width: 110px;
+    margin: 0 0 0 10px;
+    padding: 7px 0 0 0;
+  }
+}
+
+.h_menu1, .h_menu2, .h_menu3, .h_menu4 {
+  a {
+    color: black;
+    margin: auto;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Classico URW";
+    line-height: 30px;
+    justify-content: center;
+    display: flex;
+  }
+  
 }
 
 main {
@@ -498,6 +521,7 @@ footer {
   .box1, .box2 {
     display: flex;
     justify-content: space-around;
+    margin-top: 7px;
   }
 
   .box1 {
@@ -510,11 +534,12 @@ footer {
   }
 
   .menu_logo {
-    display: block;
+    display: flex;
     grid-column: 2;
-    max-width: 25%;
-    top: -25px;
-    position: absolute;
+    grid-row: 1/2;
+    max-width: 115px;
+    margin: auto;
+    justify-content: center;
   }
 
   .f_grid {
