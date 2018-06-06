@@ -339,7 +339,7 @@ footer {
 .mStartImg{
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 300px;
   background-image: url("../img/mStartImg.jpg");
 
   background-size: cover;
@@ -349,19 +349,25 @@ footer {
 .mCTA{
   position: absolute;
   top: 70%;
-  left: 25%;
+  left: 20%;
+  background-color: $CTA;
+  border: 1px solid $CTA_border;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: white;
 
 }
 
 .mInfoText{
-  margin: 5%;
+  margin: 8% 10%;
 
 }
 
 .mBackground{
-  background-color: #0A6466;
+  background-color: $primar_color;
   width: 100%;
-  padding: 5%;
+  padding: 10%;
+
 }
 
 .mFlex{
@@ -374,7 +380,7 @@ footer {
 }
 
 .mInfoPicBox{
- margin-bottom: 5%;
+ margin-bottom: 8%;
 
 }
 
@@ -385,17 +391,52 @@ footer {
 
 .mInfoPicText{
   color: white;
+  margin: 10px 1px;
+  h2{
+    margin-bottom: 3%;
+  }
 
 }
 
 .mNews{
-  margin-top: 5%;
+  margin-top: 10%;
   color: white;
+  h2{
+    margin-bottom: 3%;
+  }
+  button{
+    position: absolute;
+    text-align: center;
+    font-family: cambria;
+    color: white;
+    background-color: $CTA;
+    border-radius: 2px;
+    border: solid 1px $CTA_border;
+    width: 80px;
+    height: 20px;
+    font-size: 16px;
+    padding-top: 0;
+    margin-top: 5%;
+    right: 10%;
+  }
 }
 
 
 .mForm{
-
+input{
+  width: 70%;
+  height: 30px;
+  color: #000000;
+  padding-left: 5px;
+  border: 0;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  font-family: Cambria;
+  margin: 10px 0;
+}
+  label{
+    font-weight: bold;
+  }
 }
 
 // Nillerbrunch slut ------------------------------------------
@@ -501,6 +542,16 @@ footer {
     height: 400px;
   }
 
+  .mCTA{
+    font-size: 1.5em;
+  }
+
+  .mNews{
+    button{
+      right: auto;
+    }
+  }
+
   // Nillerbrunch slut ----------------------------------------------
 
 
@@ -511,6 +562,14 @@ footer {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
 
   // Nillerbrunch start --------------------------------------------------
+
+  .mStartImg{
+    height: 500px;
+  }
+
+  .mCTA{
+    font-size: 1.7em;
+  }
 
   .mFlex{
     flex-direction: row;
