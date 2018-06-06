@@ -126,8 +126,40 @@ footer {
     width: 10%; }
   .eEventNav .eArrow {
     font-size: 36px; }
-
 /* -- Slut Kristian ------------------------------------------------------ */
+
+
+
+/* -- Sofie start -------------------------------------------------------- */
+
+.kgrid {
+  display: grid;
+  grid-template-rows: repeat(11, 1fr);
+  grid-template-columns: repeat(2, 1fr); }
+
+.koverskrift {
+  grid-row: 1;
+  padding-top: 15%;
+  padding-left: 35px;
+  font-size: 15pt; }
+
+.kbroed {
+  grid-row: 2;
+  padding-top: 10%;
+  padding-left: 35px;
+  display: inline-block; }
+
+.kimage1 {
+  grid-row: 1;
+  padding-top: 2%;
+  padding-right: 5%;
+  display: inline-block;
+  height: 10px; }
+
+/* -- Sofie slut --------------------------------------------------------- */
+
+/* -- Nillerbrunch start ------------------------------------------------- */
+
 .mHeader {
   text-align: center; }
 
@@ -169,7 +201,15 @@ footer {
     height: 400px; } }
 @media screen and (min-width: 992px) {
   .mFlex {
+
     flex-direction: row; } }
+
+    flex-direction: row; } 
+/* Nillerbrunch slut ------------------------------------- */
+
+}
+
+
 @media screen and (min-width: 1200px) {
   header {
     height: 100px; }
