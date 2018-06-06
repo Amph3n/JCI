@@ -126,11 +126,46 @@ footer {
     width: 10%; }
   .eEventNav .eArrow {
     font-size: 36px; }
+
 /* -- Slut Kristian ------------------------------------------------------ */
+.mHeader {
+  text-align: center; }
 
+.mStartImg {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/mStartImg.jpg");
+  background-size: cover; }
 
+.mCTA {
+  position: absolute;
+  top: 70%;
+  left: 25%; }
 
-/* -- Sofie start -------------------------------------------------------- */
+.mInfoText {
+  margin: 5%; }
+
+.mBackground {
+  background-color: #0A6466;
+  width: 100%;
+  padding: 5%; }
+
+.mFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%; }
+
+.mInfoPic {
+  box-shadow: 2px 2px 2px black; }
+
+.mInfoPicText {
+  color: white; }
+
+.mNews {
+  color: white; }
 
 .kgrid {
   display: grid;
@@ -156,60 +191,12 @@ footer {
   display: inline-block;
   height: 10px; }
 
-/* -- Sofie slut --------------------------------------------------------- */
-
-/* -- Nillerbrunch start ------------------------------------------------- */
-
-.mHeader {
-  text-align: center; }
-
-.mStartImg {
-  position: relative;
-  width: 100vw;
-  height: 200px;
-  background-image: url("../img/mStartImg.jpg");
-  background-size: cover; }
-
-.mCTA {
-  position: absolute;
-  top: 70%;
-  left: 25%; }
-
-.mInfoText {
-  margin: 5%; }
-
-.mBackground {
-  background-color: #0A6466;
-  width: 100vw; }
-
-.mFlex {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  overflow-x: hidden; }
-
-.mInfoPicBox {
-  margin: 5%;
-  box-shadow: 2px 2px 2px grey; }
-
-.mNews {
-  margin: 5%; }
-
 @media screen and (min-width: 768px) {
   .mStartImg {
     height: 400px; } }
 @media screen and (min-width: 992px) {
   .mFlex {
-
     flex-direction: row; } }
-
-    flex-direction: row; } 
-/* Nillerbrunch slut ------------------------------------- */
-
-}
-
-
 @media screen and (min-width: 1200px) {
   header {
     height: 100px; }

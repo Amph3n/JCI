@@ -7,8 +7,8 @@
 
   body {
     margin: 0; // Ingen kanter i siden af browser
-
   }
+
 
 
 
@@ -177,56 +177,68 @@ footer {
 
 .mHeader{
   text-align: center;
+
 }
 
 .mStartImg{
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 200px;
   background-image: url("../img/mStartImg.jpg");
 
   background-size: cover;
+
 }
 
 .mCTA{
   position: absolute;
   top: 70%;
   left: 25%;
+
 }
 
 .mInfoText{
   margin: 5%;
+
 }
 
 .mBackground{
   background-color: #0A6466;
-  width: 100vw;
+  width: 100%;
+  padding: 5%;
 }
 
 .mFlex{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  overflow-x: hidden;
+  max-width: 100%;
 
 }
 
 .mInfoPicBox{
-  margin: 5%;
-  box-shadow: 2px 2px 2px grey;
+
+
 }
 
 .mInfoPic{
+  box-shadow: 2px 2px 2px black;
 
 }
 
 .mInfoPicText{
+  color: white;
 
 }
 
 .mNews{
-  margin: 5%;
+
+  color: white;
+}
+
+.mForm{
+
 }
 
 
@@ -266,21 +278,32 @@ footer {
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 
-  // Nillerbrunch --------------------------------------------
+  // Nillerbrunch start --------------------------------------------
 
   .mStartImg{
     height: 400px;
   }
+
+  // Nillerbrunch slut ----------------------------------------------
+
+
+
 }
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
 
-  // Nillerbrunch
+  // Nillerbrunch start --------------------------------------------------
 
   .mFlex{
     flex-direction: row;
   }
+
+  // Nillerbrunch slut ----------------------------------------------------
+
+
+
+
 }
 
 @media screen and (min-width: 1200px) {
