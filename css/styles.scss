@@ -211,14 +211,14 @@ footer {
 .mFlex{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   max-width: 100%;
 
 }
 
 .mInfoPicBox{
-
+ margin-bottom: 5%;
 
 }
 
@@ -233,13 +233,15 @@ footer {
 }
 
 .mNews{
-
+  margin-top: 5%;
   color: white;
 }
 
 .mForm{
 
 }
+
+// Nillerbrunch slut ------------------------------------------
 
 
 
