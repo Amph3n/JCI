@@ -129,6 +129,7 @@ footer {
 /* -- Slut Kristian ------------------------------------------------------ */
 
 
+
 /* -- Sofie start -------------------------------------------------------- */
 
 .kgrid {
@@ -158,6 +159,7 @@ footer {
 /* -- Sofie slut --------------------------------------------------------- */
 
 /* -- Nillerbrunch start ------------------------------------------------- */
+
 .mHeader {
   text-align: center; }
 
@@ -184,34 +186,29 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  overflow-x: hidden; }
 
 .mInfoPicBox {
-  margin: 5%; }
+  margin: 5%;
+  box-shadow: 2px 2px 2px grey; }
 
 .mNews {
   margin: 5%; }
 
-/* -- Nillerbrunch slut --------------------------------- */
-
 @media screen and (min-width: 768px) {
-  
-/* -- Nillerbrunch start -------------------------------- */
   .mStartImg {
-    height: 400px; }
-
-/* -- Nillerbrunch skut -------------------------------- */
-
-
-}
+    height: 400px; } }
 @media screen and (min-width: 992px) {
-  
-/* Nillerbrunch start ------------------------------------ */
   .mFlex {
+
+    flex-direction: row; } }
+
     flex-direction: row; } 
 /* Nillerbrunch slut ------------------------------------- */
 
 }
+
 
 @media screen and (min-width: 1200px) {
   header {
