@@ -1,0 +1,225 @@
+<!doctype html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="Free Web tutorials">
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="titel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.domain.dk">
+    <meta property="og:image" content="https://www.domain.dk/img.jpg">
+    <meta property="og:description" content="Beskrivelse">
+    <meta property="og:locale" content="da_DK">
+
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+<div class="grid">
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropdown_btn">
+                    <i class="fa fa-bars fa-3x"></i>
+                </button>
+                <div class="h_content">
+                    <div class="box1">
+                        <div class="h_menu1">
+                            <a href="vine.html">Vores vine</a>
+                        </div>
+
+                        <div class="h_menu2">
+                            <a href="history.html">Vores historie</a>
+                        </div>
+                    </div>
+
+                    <div class="box2">
+                        <div class="h_menu3">
+                            <a href="vinblog.html">Blog</a>
+                        </div>
+
+                        <div class="h_menu4">
+                            <a href="contact.html">Kontakt</a>
+                        </div>
+                    </div>
+
+                    <div class="menu_logo">
+                        <a href="index.html">
+                            <img src="img/Baby%20jesus.png">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="h_logo">
+                <a href="index.html">
+                    <img src="img/Baby%20jesus.png">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="kflex1">
+        <div class="kcon1">
+            <h3 class="koverskrift">
+                VI VIL GERNE
+                HØRE FRA DIG
+            </h3>
+
+            <p class="kbroed">
+                <br>
+                <br>
+                Hos JCI Slagelse
+                kan vi hjælpe dig
+                med at danne et
+                overblik.
+            </p>
+        </div>
+
+        <div class="kimage1">
+            <img src="img/manonphone.png">
+        </div>
+        </div>
+
+        <div class="kflex2">
+
+            <div class="kcon2">
+                <div class="fleximg1"><img src="img/manone.png"></div>
+
+                    <p class="kflextext1">
+                    Ansvarlig for erhvervskontakter
+                    <br>
+                    Lasse Andersen
+                    <br>
+                    bus@jci-slagelse.dk
+                    <br>
+                    29 46 64 17
+                    </p>
+             </div>
+
+            <div class="kcon3">
+                <div class="fleximg1"><img src="img/womanone.png"></div>
+
+                <p class="kflextext2">
+                    Projektansvarlig
+                    <br>
+                    Anna Strøbæk
+                    <br>
+                    pro@jci-slagelse.dk
+                    <br>
+                    27 50 97 55
+                </p>
+            </div>
+
+            <div class="kcon4">
+                <div class="fleximg1"><img src="img/womantwo.png"></div>
+
+                <p class="kflextext3">
+                    Formand
+                    <br>
+                    Caroline Sørensen
+                    <br>
+                    lp@jci-slagelse.dk
+                    <br>
+                    21 26 96 25
+                </p>
+            </div>
+
+            <div class="kcon3">
+                <div class="fleximg1"><img src="img/womanone.png"></div>
+
+                <p class="kflextext2">
+                    Mødeansvarlig
+                    <br>
+                    Kamilla Jongejan
+                    <br>
+                    moek@jci-slagelse.dk
+                    <br>
+                    51 35 90 49
+                </p>
+            </div>
+
+            <div class="kcon4">
+                <div class="fleximg1"><img src="img/womantwo.png"></div>
+
+                <p class="kflextext3">
+                    Medlemsansvarlig
+                    <br>
+                    Mie Lyngstrøm
+                    <br>
+                    mec@jci-slagelse.dk
+                    <br>
+                    21 49 08 49
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+        <footer></footer>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (e) {
+
+        var navOpen = 0;
+
+        $(".dropdown_btn").click(function () {
+            if (navOpen == 1) {
+                $(".h_content").stop().slideUp(200);
+                navOpen = 0;
+            }
+            else {
+                $(".h_content").stop().slideDown(200);
+                navOpen = 1;
+            }
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if (width > 1200) {
+                $(".h_content").css( "display", "grid");
+            }
+            else {
+                $(".h_content").css("display", "none");
+                navOpen = 0;
+            }
+        });
+
+    });
+</script>
+</body>
+</html>
