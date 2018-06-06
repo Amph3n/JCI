@@ -12,6 +12,13 @@
 
 
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; // Ingen ydre margen fra overskrifter
+  padding: 0; // Ingen indre margen fra overskrifter
+  font-family: Cambria;
+}
+
+
   h1, h2, h3, h4, h5, h6 {
     margin: 0; // Ingen ydre margen fra overskrifter
     padding: 0; // Ingen indre margen fra overskrifter
@@ -23,9 +30,17 @@
     list-style-position: inside; // List punkter står på linje
   }
 
+
+p {
+  margin: 0; // Ingen ydre margen fra paragraffer
+  padding: 0; // Ingen indre margen fra paragraffer
+  font-family: Classico URW;
+}
+
   li {
     margin: 0; // Ingen ydre margen fra listpunkter
   }
+
 
   p {
     margin: 0; // Ingen ydre margen fra paragraffer
@@ -39,8 +54,14 @@
     height: auto; // Højden skal tilpasse sig
   }
 
-  .grid {
-    display: grid;
+
+$primar_color: #0A6466;
+$CTA: #B56C0C;
+$CTA_border: #EF8F0F;
+
+
+.grid {
+  display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
 }
@@ -88,10 +109,122 @@ main {
 
 footer {
   grid-row: 3;
+  background-color: $primar_color;
+
+  h3 {
+    color: white;
+
+  }
+
+  p {
+    color: white;
+
+  }
+
+  label {
+    color: white;
+  }
+
+  i {
+    color: white;
+  }
+}
+
+.f_grid {
+  display: grid;
+  width: 100%;
+}
+
+.f_formula {
+  margin: 10px 0 20px 20px;
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  input {
+    width: 70%;
+    height: 30px;
+    color: #000000;
+    padding-left: 5px;
+    border: 0;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    font-family: Cambria;
+  }
+
+  button {
+    text-align: center;
+    font-family: cambria;
+    color: white;
+    background-color: $CTA;
+    border-radius: 2px;
+    border: solid 1px $CTA_border;
+    width: 80px;
+    height: 20px;
+    font-size: 16px;
+    padding-top: 0;
+  }
 }
 
 
-  /* Start Kristian ----------------------------------------------------*/
+
+.f_name, .f_email, .f_tlf, .f_links {
+  margin-bottom: 20px;
+}
+
+.f_coop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 0px 0px 20px 20px;
+}
+
+.f_box1{
+  grid-column: 1;
+}
+
+.f_box2{
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  line-height: 30px;
+}
+
+.f_contact {
+  margin: 0 0 15px 0;
+
+  .fa {
+    margin: 0 20px 0 0;
+  }
+}
+
+.f_links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 50px;
+  font-size: 30px;
+
+  i {
+    margin-right: 5px;
+  }
+}
+
+.f_text {
+  display: none;
+}
+
+.f_icons {
+  display: flex;
+  justify-content: center;
+}
+
+//Oliver Slut -------------------------------------------------------------
+
+/* Start Kristian ----------------------------------------------------*/
 
 .eContent{
   display: block;
@@ -334,9 +467,6 @@ footer {
 
   // Nillerbrunch slut ----------------------------------------------------
 
-
-
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -347,8 +477,8 @@ footer {
   }
 
   .h_logo {
-     display: none;
-   }
+    display: none;
+  }
 
   .h_content {
     display: grid;
@@ -372,6 +502,7 @@ footer {
 
   .box1 {
     grid-column: 1;
+
   }
 
   .box2 {
@@ -386,6 +517,81 @@ footer {
     position: absolute;
   }
 
+  .f_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 18px;
+  }
+
+  .f_formula {
+    grid-column: 1;
+    margin: 45px 0 0 115px;
+  }
+
+  .f_formula button {
+    position: absolute;
+  }
+
+  .f_name, .f_email, .f_tlf, .f_links {
+    margin-bottom: 12px;
+  }
+
+  .f_coop {
+    margin: 0 0 0 0;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+
+  .f_box1 {
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 45px;
+  }
+
+  .f_box2 {
+    grid-row: 2;
+    grid-column: 1;
+    line-height: 50px;
+  }
+
+  .f_contact {
+    grid-column: 3;
+    display: grid;
+    grid-template-rows: 4fr 4fr;
+  }
+
+  .f_contact {
+    margin: 0 0 15px 0;
+
+    .fa {
+      margin: 0 20px 55px 0;
+    }
+  }
+
+  .f_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .f_icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .f_links {
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0 30px 0;
+    padding: 0 510px;
+  }
 }
 
 @media print {
