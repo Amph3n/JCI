@@ -1,0 +1,149 @@
+<!doctype html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="Free Web tutorials">
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="titel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.domain.dk">
+    <meta property="og:image" content="https://www.domain.dk/img.jpg">
+    <meta property="og:description" content="Beskrivelse">
+    <meta property="og:locale" content="da_DK">
+
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+<div class="grid">
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropdown_btn">
+                    <i class="fa fa-bars fa-3x"></i>
+                </button>
+                <div class="h_content">
+                    <div class="box1">
+                        <div class="h_menu1">
+                            <a href="vine.html">Vores vine</a>
+                        </div>
+
+                        <div class="h_menu2">
+                            <a href="history.html">Vores historie</a>
+                        </div>
+                    </div>
+
+                    <div class="box2">
+                        <div class="h_menu3">
+                            <a href="vinblog.html">Blog</a>
+                        </div>
+
+                        <div class="h_menu4">
+                            <a href="contact.html">Kontakt</a>
+                        </div>
+                    </div>
+
+                    <div class="menu_logo">
+                        <a href="index.html">
+                            <img src="img/Baby%20jesus.png">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="h_logo">
+                <a href="index.html">
+                    <img src="img/Baby%20jesus.png">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       <div class="kgrid"> <h3 class="koverskrift">
+            VI VIL GERNE
+            <br>
+            HØRE MERE FRA DIG
+        </h3>
+
+        <p class="kbroed">
+            Hos JCI Slagelse
+            <br>
+            kan vi hjælpe dig
+            <br>
+            med at danne et
+            <br>
+            overblik.
+        </p>
+
+        <div class="kimage1">
+            <img src="img/manonphone.png">
+        </div>
+        </div>
+
+
+    </main>
+
+
+        <footer></footer>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (e) {
+
+        var navOpen = 0;
+
+        $(".dropdown_btn").click(function () {
+            if (navOpen == 1) {
+                $(".h_content").stop().slideUp(200);
+                navOpen = 0;
+            }
+            else {
+                $(".h_content").stop().slideDown(200);
+                navOpen = 1;
+            }
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if (width > 1200) {
+                $(".h_content").css( "display", "grid");
+            }
+            else {
+                $(".h_content").css("display", "none");
+                navOpen = 0;
+            }
+        });
+
+    });
+</script>
+</body>
+</html>
