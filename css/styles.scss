@@ -225,36 +225,64 @@ footer {
   margin: 5%;
 }
 
+  // Sofie start --------------------------------------------
 
-
-.kgrid {
-  display: grid;
-  grid-template-rows: repeat(11, 1fr);
-  grid-template-columns: repeat(2, 1fr);
+.kflex1 {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 10%;
 }
 
-.koverskrift {
-  grid-row: 1;
-  padding-top: 15%;
-  padding-left: 35px;
-  font-size: 15pt;
-}
-
-.kbroed {
-  grid-row: 2;
-  padding-top: 10%;
-  padding-left: 35px;
-  display: inline-block;
+.kcon1 {
+  width: 48%;
+  padding-left: 8%;
+  margin-top: 10%;
 }
 
 .kimage1 {
-  grid-row: 1;
-  padding-top: 2%;
-  padding-right: 5%;
-  display: inline-block;
-  height: auto;
-  width: auto;
+  width: 48%;
 }
+
+.kflex2 {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.kcon2 {
+  width: 60%;
+  margin: 0 17% 0 23%;
+}
+
+.kflextext1 {
+  text-align: center;
+  margin: 13% 7% 0 0
+}
+
+.kcon3 {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.kflextext2 {
+  text-align: center;
+  margin: 0;
+}
+
+.kcon4 {
+  width: 69%;
+  margin: 8% 0 0 8%
+}
+
+.kflextext3 {
+  text-align: center;
+  margin: 10% 0 0 25%
+}
+
+  // Sofie Slut ---------------------------------------------
 
 
 
