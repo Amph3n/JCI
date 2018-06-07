@@ -394,10 +394,15 @@ footer {
   width: 100%;
   height: 300px;
   background-image: url("../img/mStartImg.jpg");
-
   background-size: cover;
-
+  .mOpa{
+    position: absolute;
+    background-color: rgba(10, 100, 102, 0.5);
+    width: 100%;
+    height: 300px;
+  }
 }
+
 
 .mCTA{
   position: absolute;
@@ -579,6 +584,9 @@ input{
 
   .mStartImg{
     height: 400px;
+    .mOpa{
+      height: 400px;
+    }
   }
 
   .mCTA{
@@ -604,6 +612,9 @@ input{
 
   .mStartImg{
     height: 500px;
+    .mOpa{
+      height: 500px;
+    }
   }
 
   .mCTA{
@@ -761,6 +772,19 @@ input{
       width: 30%;
     }
   }
+
+  /* -- Kristian ------------- */
+
+  /* Nillerbrunch start ------------------------- */
+
+  .mStartImg{
+    height: 650px;
+    .mOpa{
+      height: 650px;
+    }
+  }
+
+  /* Nillerbrunch slut ---------------------------- */
 
   .f_name, .f_email, .f_tlf, .f_links {
     margin-bottom: 12px;
