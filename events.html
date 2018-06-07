@@ -143,9 +143,10 @@
 
                     <button class="eMobDropBtn2">Lokalitet</button>
                     <div class="eMobDropContent2">
-                        <button class="eMobDropBtnLoc">Lokal</button>
-                        <button class="eMobDropBtnLoc">National</button>
-                        <button class="eMobDropBtnLoc">International</button>
+                        <button class="eMobDropBtnLoc" id="eLoc0">Alle</button>
+                        <button class="eMobDropBtnLoc" id="eLoc1">Lokal</button>
+                        <button class="eMobDropBtnLoc" id="eLoc2">National</button>
+                        <button class="eMobDropBtnLoc" id="eLoc3">International</button>
                     </div>
                 </div>
 
@@ -751,8 +752,7 @@
         })
 
         $("#eMon0").click(function () {
-            $(".eMon1, .eMon2, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "flex");
-            $(".eMon1, .eMon2, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").removeClass("eHidden");
+            location.reload();
         });
 
         $("#eMon1").click(function () {
@@ -837,6 +837,31 @@
             $(".eMon3, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon3").addClass("eHidden");
             $(".eMon12").css("display", "flex");
             $(".eMon12").removeClass("eHidden");
+        });
+
+        $("#eLoc0").click(function () {
+            location.reload();
+        });
+
+        $("#eLoc1").click(function () {
+            $(".eNational, .eInterNational").css("display", "none");
+            $(".eNational, .eInterNational").addClass("eHidden");
+            $(".eLocal").css("display", "flex");
+            $(".eLocal").removeClass("eHidden");
+        });
+
+        $("#eLoc2").click(function () {
+            $(".eLocal, .eInterNational").css("display", "none");
+            $(".eLocal, .eInterNational").addClass("eHidden");
+            $(".eNational").css("display", "flex");
+            $(".eNational").removeClass("eHidden");
+        });
+
+        $("#eLoc3").click(function () {
+            $(".eNational, .eLocal").css("display", "none");
+            $(".eNational, .eLocal").addClass("eHidden");
+            $(".eInterNational").css("display", "flex");
+            $(".eInterNational").removeClass("eHidden");
         });
 
         var ePageParts = $(".ePaginate");
