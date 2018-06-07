@@ -287,6 +287,11 @@ footer {
   height: 300px;
   background-image: url("../img/mStartImg.jpg");
   background-size: cover; }
+  .mStartImg .mOpa {
+    position: absolute;
+    background-color: rgba(10, 100, 102, 0.5);
+    width: 100%;
+    height: 300px; }
 
 .mCTA {
   position: absolute;
@@ -413,6 +418,8 @@ footer {
 
   .mStartImg {
     height: 400px; }
+    .mStartImg .mOpa {
+      height: 400px; }
 
   .mCTA {
     font-size: 1.5em; }
@@ -422,6 +429,8 @@ footer {
 @media screen and (min-width: 992px) {
   .mStartImg {
     height: 500px; }
+    .mStartImg .mOpa {
+      height: 500px; }
 
   .mCTA {
     font-size: 1.7em; }
@@ -532,6 +541,14 @@ footer {
   .eEventsList .eFlex {
     width: 30%; }
 
+  /* -- Kristian ------------- */
+  /* Nillerbrunch start ------------------------- */
+  .mStartImg {
+    height: 650px; }
+    .mStartImg .mOpa {
+      height: 650px; }
+
+  /* Nillerbrunch slut ---------------------------- */
   .f_name, .f_email, .f_tlf, .f_links {
     margin-bottom: 12px; }
 
