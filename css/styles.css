@@ -93,6 +93,20 @@ header {
 main {
   grid-row: 2; }
 
+.i_main_grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); }
+
+.i_bigtext {
+  grid-row: 1; }
+
+.i_hidebox {
+  grid-row: 3;
+  position: relative; }
+
+.i_heads {
+  grid-row: 2; }
+
 footer {
   grid-row: 3;
   background-color: #0A6466; }
@@ -466,25 +480,18 @@ footer {
       margin-top: 5%; }
 
   /* --Kristian slut --------------------------- */
+  .kbroed {
+    display: none; }
 
-  /* --Sofie Start ------------------------------ */
+  .kcon1 {
+    width: 25%;
+    margin-top: 16%;
+    margin-left: 10%; }
 
-    .mFlex {
-        flex-direction: row; }
-
-    .kbroed {
-        display: none; }
-
-    .kcon1 {
-        width: 25%;
-        margin-top: 16%;
-        margin-left: 10%; }
-
-    .kimage1 {
-        width: 28%;
-        margin-top: 4%;
-        margin-right: 12%; }
-}
+  .kimage1 {
+    width: 28%;
+    margin-top: 4%;
+    margin-right: 12%; } }
 @media screen and (min-width: 1200px) {
   header {
     height: 100px; }

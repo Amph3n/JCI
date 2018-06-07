@@ -130,6 +130,55 @@ main {
  grid-row: 2;
 }
 
+.i_main_grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.i_bigtext {
+  grid-row: 1;
+}
+
+.i_hidebox {
+  grid-row: 3;
+  position: relative;
+  //background-color: $primar_color;
+}
+
+.i_heads {
+  grid-row: 2;
+}
+
+.i_male1 {
+ 
+}
+
+.i_male2 {
+
+}
+
+.i_male3 {
+
+}
+
+.i_male4 {
+
+}
+
+.i_fe1 {
+
+}
+
+.i_fe2 {
+
+}
+
+
+.i_fe3 {
+
+}
+
+
 footer {
   grid-row: 3;
   background-color: $primar_color;
