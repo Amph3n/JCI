@@ -551,7 +551,7 @@ footer {
   .kconformula {
     height: 500px;
     width: 400px;
-    background-color: #0A6466; } }
+    background-color: green; } }
 @media screen and (min-width: 1200px) {
   header {
     height: 100px; }
