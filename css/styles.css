@@ -22,7 +22,7 @@ ul, ol {
 p {
   margin: 0;
   padding: 0;
-  font-family: Classico URW; }
+  font-family: Classico URW, sans-serif; }
 
 li {
   margin: 0; }
@@ -358,12 +358,24 @@ footer {
 .mForm label {
   font-weight: bold; }
 
+.koverskrift1 {
+  text-align: center;
+  font-size: 20pt;
+  margin-top: 10%; }
+
+.koverskrift2 {
+  text-align: center;
+  font-size: 15pt;
+  margin-top: 10%;
+  margin-bottom: 15%; }
+
 .kflex1 {
   display: flex;
   height: auto;
   width: 100%;
   justify-content: space-around;
-  margin-bottom: 10%; }
+  margin-bottom: 15%;
+  margin-top: 15%; }
 
 .kcon1 {
   width: 48%;
@@ -371,11 +383,12 @@ footer {
   margin-top: 10%; }
 
 .kimage1 {
-  width: 48%; }
+  width: 48%;
+  margin-top: 7%; }
 
 .kflex2 {
   display: flex;
-  height: 300px;
+  height: auto;
   width: 100%;
   flex-direction: column; }
 
@@ -401,7 +414,13 @@ footer {
 
 .kflextext3 {
   text-align: center;
-  margin: 10% 0 0 25%; }
+  margin: 10% 0 25% 25%; }
+
+.kbroed2 {
+  display: none; }
+
+.kflex3 {
+  display: none; }
 
 @media screen and (min-width: 768px) {
   /* -- Kristian ------------------------------- */
@@ -410,14 +429,6 @@ footer {
     flex-wrap: wrap; }
     .eEventsList .eFlex {
       width: 45%; }
-      .eEventsList .eFlex .eFlexImg {
-        width: 39%; }
-      .eEventsList .eFlex .eEventText {
-        display: flex;
-        flex-direction: column;
-        width: 59%; }
-      .eEventsList .eFlex .eEventBreadText {
-        height: 58%; }
 
   .mStartImg {
     height: 400px; }
@@ -474,25 +485,73 @@ footer {
       margin-top: 5%; }
 
   /* --Kristian slut --------------------------- */
+  .koverskrift1 {
+    text-align: center;
+    font-size: 30pt;
+    margin-top: 10%; }
 
-  /* --Sofie Start ------------------------------ */
+  .koverskrift2 {
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 2%;
+    margin-bottom: 1%; }
 
-    .mFlex {
-        flex-direction: row; }
+  .kbroed {
+    display: none; }
 
-    .kbroed {
-        display: none; }
+  .kcon1 {
+    width: 25%;
+    margin-top: 2%;
+    margin-left: 10%; }
 
-    .kcon1 {
-        width: 25%;
-        margin-top: 16%;
-        margin-left: 10%; }
+  .kimage1 {
+    width: 28%;
+    margin-top: -8%;
+    margin-right: 12%; }
 
-    .kimage1 {
-        width: 28%;
-        margin-top: 4%;
-        margin-right: 12%; }
-}
+  .kbroed2 {
+    display: block; }
+
+  .kflex2 {
+    flex-direction: row-reverse; }
+
+  .kcon2 {
+    margin: 5% 0 0 0; }
+
+  .kflextext1 {
+    margin: 10% 51% 0 0; }
+
+  .kcon3 {
+    margin: 7% 2% 0 0; }
+
+  .kflextext2 {
+    margin: 3% 48.5% 0 0; }
+
+  .kcon4 {
+    margin: 8% 0 0 12%; }
+
+  .kflextext3 {
+    margin: 10% 40% 0 0; }
+
+  #kcon3 {
+    margin: 5% 13% 0 0; }
+
+  #kflextext2 {
+    margin: 3% 48.5% 0 0; }
+
+  #kcon4 {
+    margin: 6% 0 15% 26%; }
+
+  #kflextext3 {
+    margin: 10% 43% 0 0; }
+
+  .kflex3 {
+    display: flex; }
+
+  .kconformula {
+    height: 500px;
+    width: 400px;
+    background-color: #0A6466; } }
 @media screen and (min-width: 1200px) {
   header {
     height: 100px; }
@@ -596,8 +655,6 @@ footer {
     display: flex;
     justify-content: space-around;
     margin: 25px 0 30px 0;
-    padding: 0 510px; }
-}
-
+    padding: 0 510px; } }
 
 /*# sourceMappingURL=styles.css.map */

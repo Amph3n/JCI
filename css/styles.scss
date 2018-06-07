@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
-  font-family: Classico URW;
+  font-family: Classico URW, sans-serif;
 }
 
   li {
@@ -497,12 +497,26 @@ input{
 
  // Sofie start --------------------------------------------
 
+.koverskrift1 {
+  text-align: center;
+  font-size: 20pt;
+  margin-top: 10%;
+}
+
+.koverskrift2 {
+  text-align: center;
+  font-size: 15pt;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
 .kflex1 {
   display: flex;
   height: auto;
   width: 100%;
   justify-content: space-around;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
+  margin-top: 15%;
 }
 
 .kcon1 {
@@ -513,11 +527,12 @@ input{
 
 .kimage1 {
   width: 48%;
+  margin-top: 7%;
 }
 
 .kflex2 {
   display: flex;
-  height: 300px;
+  height: auto;
   width: 100%;
   flex-direction: column;
 }
@@ -549,7 +564,15 @@ input{
 
 .kflextext3 {
   text-align: center;
-  margin: 10% 0 0 25%
+  margin: 10% 0 25% 25%
+}
+
+.kbroed2 {
+  display: none;
+}
+
+.kflex3 {
+  display: none;
 }
 
   // Sofie Slut ---------------------------------------------
@@ -672,20 +695,92 @@ input{
 
   // Sofie Start -----------------------------------------
 
+
+  .koverskrift1 {
+    text-align: center;
+    font-size: 30pt;
+    margin-top: 10%;
+  }
+
+  .koverskrift2 {
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 2%;
+    margin-bottom: 1%;
+  }
+
   .kbroed {
     display: none;
   }
 
   .kcon1 {
     width: 25%;
-    margin-top: 16%;
+    margin-top: 2%;
     margin-left: 10%;
   }
 
   .kimage1 {
     width: 28%;
-    margin-top: 4%;
+    margin-top: -8%;
     margin-right: 12%;
+  }
+
+  .kbroed2 {
+    display: block;
+  }
+
+  .kflex2{
+    flex-direction: row-reverse;
+  }
+
+  .kcon2 {
+    margin: 5% 0 0 0;
+  }
+
+  .kflextext1 {
+    margin: 10% 51% 0 0;
+  }
+
+  .kcon3 {
+    margin: 7% 2% 0 0;
+  }
+
+  .kflextext2 {
+    margin: 3% 48.5% 0 0;
+  }
+
+  .kcon4 {
+    margin: 8% 0 0 12%;
+  }
+
+  .kflextext3 {
+    margin: 10% 40% 0 0;
+  }
+
+  #kcon3 {
+    margin: 5% 13% 0 0;
+  }
+
+  #kflextext2 {
+    margin: 3% 48.5% 0 0;
+  }
+
+  #kcon4 {
+    margin: 6% 0 15% 26%;
+  }
+
+  #kflextext3 {
+    margin: 10% 43% 0 0;
+  }
+
+  .kflex3 {
+    display: flex;
+  }
+
+  .kconformula {
+    height: 500px;
+    width: 400px;
+    background-color: #0A6466;
   }
 
 }
