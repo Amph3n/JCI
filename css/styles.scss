@@ -443,7 +443,7 @@ footer {
 
 .mHeader{
   text-align: center;
-  margin: 10%;
+  margin: 7%;
 }
 
 .mStartImg{
@@ -488,9 +488,9 @@ footer {
 .mFlex{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
 
 }
 
@@ -500,6 +500,8 @@ footer {
 
 .mInfoPic{
   box-shadow: 2px 2px 2px black;
+  width: 100%;
+  height: 250px;
 }
 
 .mInfoPicText{
@@ -712,6 +714,11 @@ input{
 
     .mInfoPic{
       height: 160px;
+      width: 240px;
+    }
+
+    .mInfoPicText{
+      width: 240px;
     }
 
   }
@@ -1081,6 +1088,10 @@ input{
       height: 650px;
     }
 
+  }
+
+  .mInfoPic{
+    width: 340px;
   }
 
   /* Nillerbrunch slut ---------------------------- */
