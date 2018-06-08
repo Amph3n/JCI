@@ -129,7 +129,7 @@ header {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 50px 300px 300px 180px 250px 200px 350px 250px 300px;
+  grid-template-rows: 50px 300px 300px 180px 320px 250px 300px 150px 350px 200px;
   grid-template-areas:
           "a1 b1 c1 d1 e1 f1 g1 h1"
           "a2 b2 c2 d2 e2 f2 g2 h2"
@@ -144,35 +144,31 @@ header {
 
 
 h1{
-  grid-column: d1 / g1;
+  grid-column: a1 / h1;
   grid-row: a1;
   font-size: 20px;
-  font-family: Cambria;
+  font-family: Cambria, serif;
   color: #5d5d5d;
+  text-align: center;
 }
 
-.o_boks1{
-  grid-column: a2 / d2;
-  grid-row: a2;
-  background-color: #0A6466;
-}
-
-h2{
+.o_overskrift1{
   grid-column: a2 / d2;
   grid-row: a2;
   font-size: 22px;
-  font-family: Cambria;
-  margin-left: 50px;
-  color: #FFFFFF;
+  font-family: Cambria, Serif;
+  font-weight: bold;
+  color: #0A6466;
+  text-align: center;
 }
 
-p{
+.o_text1{
   grid-column: a2 / d2;
   grid-row: a2;
   font-size: 20px;
-  margin: 20px;
   font-family: "Classico URW";
-  color: #FFFFFF;
+  color: #0A6466;
+  text-align: center;
 }
 
 .o_billede1{
@@ -182,27 +178,24 @@ p{
   background-size: cover;
 }
 
-.o_boks2{
-  grid-column: d3 / h3;
-  grid-row: a3;
-  background-color: #0A6466;
-}
 
-h4{
+.o_overskrift2{
   grid-column: e3 / h3;
   grid-row: a3;
+  font-weight: bold;
   font-size: 22px;
-  margin-left: 75px;
-  font-family: Cambria;
-  color: #FFFFFF;
+  font-family: Cambria,serif;
+  color: #0A6466;
+  text-align: center;
 }
 
-p1{
+.o_text2{
   grid-column: e3 / h3;
   grid-row: a3;
   font-size: 20px;
   font-family: "Classico URW";
-  color: #FFFFFF;
+  color: #0A6466;
+  text-align: center;
 }
 
 .o_billede2{
@@ -215,84 +208,98 @@ p1{
 h5{
   grid-column: a4 / h4;
   grid-row: a4;
-  font-family: Cambria;
+  font-family: Cambria,serif;
   font-size: 20px;
   color: #0A6466;
-  margin-left: 75px;
+  text-align: center;
 }
 
-p2{
+.o_text3{
   grid-column: a4 / h4;
   grid-row: a4;
   font-family: "Classico URW";
   font-size: 18px;
   color: #0A6466;
-  margin: 25px;
+  text-align: center;
+  margin: 10px;
 }
 
 .o_partner1{
   grid-column: a5/ h5;
   grid-row: a5;
-  background: url("../img/theupperhill.png") no-repeat center;
-  background-size: cover;
+  background: url("../img/o_upperhill.png") no-repeat center;
+  background-size: 45%;
 }
 
 h6{
   grid-column: a6/ h6;
   grid-row: a6;
-  font-family: Cambria;
+  font-family: Cambria,serif;
   font-size: 20px;
   color: #0A6466;
+  text-align: center;
 }
-p3{
+.o_text4{
   grid-column: a6/ h6;
   grid-row: a6;
   font-family: "Classico URW";
   font-size: 18px;
   color: #0A6466;
+  text-align: center;
+  margin: 20px;
 }
 .o_partner2{
   grid-column: a7/ h7;
   grid-row: a7;
-  background: url("../img/sparnord.png") no-repeat center;
-  background-size: cover;
+  background: url("../img/o_sparnord.png") no-repeat center;
+  background-size: 45%;
+
 }
 
-h7{
+h2{
   grid-column: a8/ h8;
   grid-row: a8;
-  font-family: Cambria bold;
+  font-family: Cambria,serif;
   font-size: 20px;
   color: #0A6466;
+  text-align: center;
 }
-p4{
+.o_text5{
   grid-column: a8/ h8;
   grid-row: a8;
   font-family: "Classico URW";
   font-size: 18px;
   color: #0A6466;
+  text-align: center;
+  margin: 20px;
 }
 
 .o_partner3{
   grid-column: a9/ h9;
   grid-row: a9;
-  background: url("../img/ditslagelse.png") no-repeat center;
-  background-size: cover;
+  background: url("../img/o_ditslagelse.png") no-repeat center;
+  background-size: 60%;
+  margin-left: 50px;
 }
 
-h8{
+h4{
   grid-column: a10/ h10;
   grid-row: a10;
-  font-family: Cambria bold;
+  font-family: Cambria,serif;
   font-size: 20px;
   color: #0A6466;
+  text-align: center;
+  margin-right: 60px;
+
 }
-p5{
+.o_text6{
   grid-column: a10/ h10;
   grid-row: a10;
   font-family: "Classico URW";
   font-size: 18px;
   color: #0A6466;
+  text-align: center;
+  margin-right: 40px;
 }
 main {
  grid-row: 2;

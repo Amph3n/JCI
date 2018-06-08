@@ -92,38 +92,35 @@ header {
 
 .o_grid {
   display: grid;
-  width: 100vw;
+  width: 100%;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 50px 300px 300px 180px 250px 200px 350px 250px 300px 300px 350px 300px 300px 50px;
-  grid-template-areas: "a1 b1 c1 d1 e1 f1 g1 h1" "a2 b2 c2 d2 e2 f2 g2 h2" "a3 b3 c3 d3 e3 f3 g3 h3" "a4 b4 c4 d4 e4 f4 g4 h4" "a5 b5 c5 d5 e5 f5 g5 h5" "a6 b6 c6 d6 e6 f6 g6 h6" "a7 b7 c7 d7 e7 f7 g7 h7" "a8 b8 c8 d8 e8 f8 g8 h8" "a9 b9 c9 d9 e9 f9 g9 h9" "a10 b10 c10 d10 e10 f10 g10 h10" "a11 b11 c11 d11 e11 f11 g11 h11" "a12 b12 c12 d12 e12 f12 g12 h12" "a13 b13 c13 d13 e13 f13 g13 h13" "a14 b14 c14 d14 e14 f14 g14 h14" "a15 b15 c15 d15 e15 f15 g15 h15"; }
+  grid-template-rows: 50px 300px 300px 180px 320px 250px 300px 150px 350px 200px;
+  grid-template-areas: "a1 b1 c1 d1 e1 f1 g1 h1" "a2 b2 c2 d2 e2 f2 g2 h2" "a3 b3 c3 d3 e3 f3 g3 h3" "a4 b4 c4 d4 e4 f4 g4 h4" "a5 b5 c5 d5 e5 f5 g5 h5" "a6 b6 c6 d6 e6 f6 g6 h6" "a7 b7 c7 d7 e7 f7 g7 h7" "a8 b8 c8 d8 e8 f8 g8 h8" "a9 b9 c9 d9 e9 f9 g9 h9" "a10 b10 c10 d10 e10 f10 g10 h10"; }
 
 h1 {
-  grid-column: d1 / g1;
+  grid-column: a1 / h1;
   grid-row: a1;
   font-size: 20px;
-  font-family: Cambria;
-  color: #5d5d5d; }
+  font-family: Cambria, serif;
+  color: #5d5d5d;
+  text-align: center; }
 
-.o_boks1 {
-  grid-column: a2 / d2;
-  grid-row: a2;
-  background-color: #0A6466; }
-
-h2 {
+.o_overskrift1 {
   grid-column: a2 / d2;
   grid-row: a2;
   font-size: 22px;
-  font-family: Cambria;
-  margin-left: 50px;
-  color: #FFFFFF; }
+  font-family: Cambria, Serif;
+  font-weight: bold;
+  color: #0A6466;
+  text-align: center; }
 
-p {
+.o_text1 {
   grid-column: a2 / d2;
   grid-row: a2;
   font-size: 20px;
-  margin: 20px;
   font-family: "Classico URW";
-  color: #FFFFFF; }
+  color: #0A6466;
+  text-align: center; }
 
 .o_billede1 {
   grid-column: e2 / h2;
@@ -131,25 +128,22 @@ p {
   background: url("../img/o_billede1.jpg") no-repeat;
   background-size: cover; }
 
-.o_boks2 {
-  grid-column: d3 / h3;
-  grid-row: a3;
-  background-color: #0A6466; }
-
-h4 {
+.o_overskrift2 {
   grid-column: e3 / h3;
   grid-row: a3;
+  font-weight: bold;
   font-size: 22px;
-  margin-left: 75px;
-  font-family: Cambria;
-  color: #FFFFFF; }
+  font-family: Cambria,serif;
+  color: #0A6466;
+  text-align: center; }
 
-p1 {
+.o_text2 {
   grid-column: e3 / h3;
   grid-row: a3;
   font-size: 20px;
   font-family: "Classico URW";
-  color: #FFFFFF; }
+  color: #0A6466;
+  text-align: center; }
 
 .o_billede2 {
   grid-column: a3 / d3;
@@ -160,78 +154,90 @@ p1 {
 h5 {
   grid-column: a4 / h4;
   grid-row: a4;
-  font-family: Cambria;
+  font-family: Cambria,serif;
   font-size: 20px;
   color: #0A6466;
-  margin-left: 75px; }
+  text-align: center; }
 
-p2 {
+.o_text3 {
   grid-column: a4 / h4;
   grid-row: a4;
   font-family: "Classico URW";
   font-size: 18px;
   color: #0A6466;
-  margin: 25px; }
+  text-align: center;
+  margin: 10px; }
 
 .o_partner1 {
   grid-column: a5/ h5;
   grid-row: a5;
-  background: url("../img/theupperhill.png") no-repeat center;
-  background-size: cover; }
+  background: url("../img/o_upperhill.png") no-repeat center;
+  background-size: 45%; }
 
 h6 {
   grid-column: a6/ h6;
   grid-row: a6;
-  font-family: Cambria;
+  font-family: Cambria,serif;
   font-size: 20px;
-  color: #0A6466; }
+  color: #0A6466;
+  text-align: center; }
 
-p3 {
+.o_text4 {
   grid-column: a6/ h6;
   grid-row: a6;
   font-family: "Classico URW";
   font-size: 18px;
-  color: #0A6466; }
+  color: #0A6466;
+  text-align: center;
+  margin: 20px; }
 
 .o_partner2 {
   grid-column: a7/ h7;
   grid-row: a7;
-  background: url("../img/sparnord.png") no-repeat center;
-  background-size: cover; }
+  background: url("../img/o_sparnord.png") no-repeat center;
+  background-size: 45%; }
 
-h7 {
+h2 {
   grid-column: a8/ h8;
   grid-row: a8;
-  font-family: Cambria bold;
+  font-family: Cambria,serif;
   font-size: 20px;
-  color: #0A6466; }
+  color: #0A6466;
+  text-align: center; }
 
-p4 {
+.o_text5 {
   grid-column: a8/ h8;
   grid-row: a8;
   font-family: "Classico URW";
   font-size: 18px;
-  color: #0A6466; }
+  color: #0A6466;
+  text-align: center;
+  margin: 20px; }
 
 .o_partner3 {
   grid-column: a9/ h9;
   grid-row: a9;
-  background: url("../img/ditslagelse.png") no-repeat center;
-  background-size: cover; }
+  background: url("../img/o_ditslagelse.png") no-repeat center;
+  background-size: 60%;
+  margin-left: 50px; }
 
-h8 {
+h4 {
   grid-column: a10/ h10;
   grid-row: a10;
-  font-family: Cambria bold;
+  font-family: Cambria,serif;
   font-size: 20px;
-  color: #0A6466; }
+  color: #0A6466;
+  text-align: center;
+  margin-right: 60px; }
 
-p5 {
+.o_text6 {
   grid-column: a10/ h10;
   grid-row: a10;
   font-family: "Classico URW";
   font-size: 18px;
-  color: #0A6466; }
+  color: #0A6466;
+  text-align: center;
+  margin-right: 40px; }
 
 main {
   grid-row: 2; }
