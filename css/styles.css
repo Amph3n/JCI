@@ -22,7 +22,7 @@ ul, ol {
 p {
   margin: 0;
   padding: 0;
-  font-family: Classico URW, sans-serif; }
+  font-family: 'Tajawal', sans-serif; }
 
 li {
   margin: 0; }
@@ -592,7 +592,7 @@ footer {
   .kconformula {
     height: 500px;
     width: 400px;
-    background-color: #0A6466; } }
+    background-color: blue; } }
 @media screen and (min-width: 1200px) {
   header {
     height: 100px; }
