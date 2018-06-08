@@ -337,9 +337,7 @@ footer {
   justify-content: space-around;
 }
 
-.eDropBtn{
-  display: block;
-  position: relative;
+.eMobDropBtn{
   background-color: white;
   color: black;
   padding: 5px;
@@ -348,45 +346,42 @@ footer {
   cursor: pointer;
 }
 
-.eDropContent{
-  display: none;
-  position: absolute;
-  z-index: 3;
-  min-width: 100%;
-  left: 0;
-  background-color: white;
-  outline: 5px auto #5d5d5d;
-}
-
-.eDropBtnMon{
-  width: 100%;
-  display: inline;
-  position: relative;
-}
-
-.eDropBtn2{
-  display: block;
-  position: relative;
-  background-color: white;
-  color: black;
-  padding: 5px;
-  font-size: 12pt;
-  border: none;
-  cursor: pointer;
-}
-
-.eDropContent2{
+.eMobDropContent{
   display: none;
   position: absolute;
   z-index: 3;
   min-width: 100%;
   right: 0;
-  margin-top: 8%;
+  margin-top: 9%;
   background-color: white;
   outline: 5px auto #5d5d5d;
 }
 
-.eDropBtnLoc{
+.eMobDropBtnMon{
+  width: 100%;
+}
+
+.eMobDropBtn2{
+  background-color: white;
+  color: black;
+  padding: 5px;
+  font-size: 12pt;
+  border: none;
+  cursor: pointer;
+}
+
+.eMobDropContent2{
+  display: none;
+  position: absolute;
+  z-index: 3;
+  min-width: 100%;
+  right: 0;
+  margin-top: 9%;
+  background-color: white;
+  outline: 5px auto #5d5d5d;
+}
+
+.eMobDropBtnLoc{
   width: 100%;
 }
 
@@ -432,8 +427,6 @@ footer {
     font-size: 36px;
   }
 }
-
-
 /* -- Slut Kristian ------------------------------------------------------ */
 
 
@@ -718,6 +711,10 @@ input{
 
   /* --Kristian ------------ */
 
+  #jegkanikkeseenskid{
+    background-color: #707070;
+  }
+
   .eMobHeadline1{
     display: none;
   }
@@ -732,40 +729,13 @@ input{
 
   .eContent{
     display: flex;
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     justify-content: space-between;
 
     .eContentAside{
       display: block;
       width: 24%;
-
-      .eAsideFlex{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        text-align: center;
-
-        width: 60%;
-        height: 150px;
-        margin: 5% auto;
-
-        .eDropBtn {
-
-        }
-
-        .eDropContent{
-          max-width: 25%;
-          position: absolute;
-          left: 0;
-
-          .eDropBtnMon{
-            position: relative;
-            display: inline;
-          }
-        }
-      }
     }
 
     .eContentEvents{
@@ -791,8 +761,6 @@ input{
     }
   }
 
-
-
   /* --Kristian slut --------------------------- */
 
   // Sofie Start -----------------------------------------
@@ -811,8 +779,20 @@ input{
     margin-bottom: 1%;
   }
 
+  .koverskrift3 {
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-right: -10%;
+  }
+
   .kbroed {
     display: none;
+  }
+
+  .kbroed3 {
+    margin-left: 38%;
   }
 
   .kcon1 {
@@ -879,11 +859,64 @@ input{
     display: flex;
   }
 
-  .kconformula {
-    height: 500px;
-    width: 400px;
-    background-color: blue;
+  .kcontainer {
+    display: inline-block;
+    padding: 20px;
+    margin-left: 200px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    float: left;
   }
+
+  .knavn {
+    width: 200%;
+    height: 40px;
+    font-size: 12pt;
+    padding-top: 1%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: none;
+
+  }
+
+  .kemail {
+    @extend .knavn
+  }
+
+  .kbesked {
+    width: 200%;
+    height: 200px;
+    font-size: 12pt;
+    padding-top: 1%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: none;
+  }
+
+  .sendbutton {
+    background-color: $CTA;
+    border: 1px solid $CTA_border;
+    border-radius: 10px;
+    font-size: 12pt;
+    font-family: 'Tajawal', sans-serif;
+    margin: 10% 0 0 150%;
+    padding: 5px 12px;
+    color: white;
+    height: 40px;
+    width: 50%;
+
+  }
+
+.kconformula {
+  margin: -6% 0 0 0;
+}
+
+  .kfleximg2 {
+    margin: -10% -12% 10% 8%;
+  }
+
+
 
 }
 
