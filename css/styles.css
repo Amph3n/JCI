@@ -328,6 +328,7 @@ footer {
 .mNews {
   margin-top: 10%;
   color: white; }
+
   .mNews h2 {
     margin-bottom: 3%; }
   .mNews button {
@@ -410,6 +411,11 @@ footer {
     flex-wrap: wrap; }
     .eEventsList .eFlex {
       width: 45%; }
+
+
+  .mStartImg {
+    height: 400px; } }
+
       .eEventsList .eFlex .eFlexImg {
         width: 39%; }
       .eEventsList .eFlex .eEventText {
@@ -426,7 +432,8 @@ footer {
     font-size: 1.5em; }
 
   .mNews button {
-    right: auto; } }
+    right: auto; }
+
 @media screen and (min-width: 992px) {
   .mStartImg {
     height: 500px; }
@@ -577,8 +584,6 @@ footer {
     display: flex;
     justify-content: space-around;
     margin: 25px 0 30px 0;
-    padding: 0 510px; }
-}
-
+    padding: 0 510px; } }
 
 /*# sourceMappingURL=styles.css.map */
