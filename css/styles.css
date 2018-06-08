@@ -483,9 +483,12 @@ footer {
 
   .mFlex {
     flex-direction: row; }
+    .mFlex .mInfoPic {
+      height: 160px; }
 
   /* --Kristian ------------ */
-  .eMobHeadline1 {
+
+    .eMobHeadline1 {
     display: none; }
 
   .eFilterMobile {
@@ -582,8 +585,18 @@ footer {
     margin-top: 2%;
     margin-bottom: 1%; }
 
+  .koverskrift3 {
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-right: -10%; }
+
   .kbroed {
     display: none; }
+
+  .kbroed3 {
+    margin-left: 38%; }
 
   .kcon1 {
     width: 25%;
@@ -634,10 +647,50 @@ footer {
   .kflex3 {
     display: flex; }
 
+  .kcontainer {
+    display: inline-block;
+    padding: 20px;
+    margin-left: 200px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    float: left; }
+
+  .knavn, .kemail {
+    width: 200%;
+    height: 40px;
+    font-size: 12pt;
+    padding-top: 1%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: none; }
+
+  .kbesked {
+    width: 200%;
+    height: 200px;
+    font-size: 12pt;
+    padding-top: 1%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: none; }
+
+  .sendbutton {
+    background-color: #B56C0C;
+    border: 1px solid #EF8F0F;
+    border-radius: 10px;
+    font-size: 12pt;
+    font-family: 'Tajawal', sans-serif;
+    margin: 10% 0 0 150%;
+    padding: 5px 12px;
+    color: white;
+    height: 40px;
+    width: 50%; }
+
   .kconformula {
-    height: 500px;
-    width: 400px;
-    background-color: blue; } }
+    margin: -6% 0 0 0; }
+
+  .kfleximg2 {
+    margin: -10% -12% 10% 8%; } }
 @media screen and (min-width: 1200px) {
   header {
     height: 100px; }
@@ -694,6 +747,9 @@ footer {
 
   /* -- Kristian ------------- */
   /* Nillerbrunch start ------------------------- */
+  .mHeader {
+    margin: 5%; }
+
   .mStartImg {
     height: 650px; }
     .mStartImg .mOpa {

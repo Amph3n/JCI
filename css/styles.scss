@@ -15,7 +15,7 @@
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
-  font-family: Cambria  ;
+  font-family: Cambria;
 }
 
 
@@ -435,8 +435,6 @@ footer {
     font-size: 36px;
   }
 }
-
-
 /* -- Slut Kristian ------------------------------------------------------ */
 
 
@@ -445,7 +443,7 @@ footer {
 
 .mHeader{
   text-align: center;
-
+  margin: 10%;
 }
 
 .mStartImg{
@@ -498,12 +496,10 @@ footer {
 
 .mInfoPicBox{
  margin-bottom: 8%;
-
 }
 
 .mInfoPic{
   box-shadow: 2px 2px 2px black;
-
 }
 
 .mInfoPicText{
@@ -713,6 +709,11 @@ input{
 
   .mFlex{
     flex-direction: row;
+
+    .mInfoPic{
+      height: 160px;
+    }
+
   }
 
   // Nillerbrunch slut ----------------------------------------------------
@@ -835,8 +836,6 @@ input{
     }
   }
 
-
-
   /* --Kristian slut --------------------------- */
 
   // Sofie Start -----------------------------------------
@@ -855,8 +854,20 @@ input{
     margin-bottom: 1%;
   }
 
+  .koverskrift3 {
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-right: -10%;
+  }
+
   .kbroed {
     display: none;
+  }
+
+  .kbroed3 {
+    margin-left: 38%;
   }
 
   .kcon1 {
@@ -923,11 +934,64 @@ input{
     display: flex;
   }
 
-  .kconformula {
-    height: 500px;
-    width: 400px;
-    background-color: blue;
+  .kcontainer {
+    display: inline-block;
+    padding: 20px;
+    margin-left: 200px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    float: left;
   }
+
+  .knavn {
+    width: 200%;
+    height: 40px;
+    font-size: 12pt;
+    padding-top: 1%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: none;
+
+  }
+
+  .kemail {
+    @extend .knavn
+  }
+
+  .kbesked {
+    width: 200%;
+    height: 200px;
+    font-size: 12pt;
+    padding-top: 1%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: none;
+  }
+
+  .sendbutton {
+    background-color: $CTA;
+    border: 1px solid $CTA_border;
+    border-radius: 10px;
+    font-size: 12pt;
+    font-family: 'Tajawal', sans-serif;
+    margin: 10% 0 0 150%;
+    padding: 5px 12px;
+    color: white;
+    height: 40px;
+    width: 50%;
+
+  }
+
+.kconformula {
+  margin: -6% 0 0 0;
+}
+
+  .kfleximg2 {
+    margin: -10% -12% 10% 8%;
+  }
+
+
 
 }
 
@@ -1007,11 +1071,16 @@ input{
 
   /* Nillerbrunch start ------------------------- */
 
+  .mHeader{
+    margin: 5%;
+  }
+
   .mStartImg{
     height: 650px;
     .mOpa{
       height: 650px;
     }
+
   }
 
   /* Nillerbrunch slut ---------------------------- */
