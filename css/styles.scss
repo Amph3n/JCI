@@ -15,7 +15,7 @@
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
-  font-family: Cambria;
+  font-family: Cambria  ;
 }
 
 
@@ -346,6 +346,8 @@ footer {
   font-size: 12pt;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+
 }
 
 .eDropContent{
@@ -353,7 +355,7 @@ footer {
   position: absolute;
   z-index: 3;
   min-width: 100%;
-  left: 0;
+  top: 396px;
   background-color: white;
   outline: 5px auto #5d5d5d;
 }
@@ -373,6 +375,7 @@ footer {
   font-size: 12pt;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .eDropContent2{
@@ -380,7 +383,7 @@ footer {
   position: absolute;
   z-index: 3;
   min-width: 100%;
-  right: 0;
+  top: 367px;
   margin-top: 8%;
   background-color: white;
   outline: 5px auto #5d5d5d;
@@ -658,6 +661,14 @@ input{
     }
   }
 
+  .eDropContent{
+    top: 520px;
+  }
+
+  .eDropContent2{
+    top: 460px;
+  }
+
   // Nillerbrunch start --------------------------------------------
 
 
@@ -736,24 +747,67 @@ input{
         flex-wrap: nowrap;
         justify-content: space-around;
         text-align: center;
-
-        width: 60%;
         height: 150px;
+        width: 60%;
         margin: 5% auto;
 
-        .eDropBtn {
+        .eDropBtn{
+          display: block;
+          position: relative;
+          background-color: white;
+          color: black;
+          padding: 5px;
+          font-size: 12pt;
+          border: none;
+          cursor: pointer;
+          border-radius: 4px;
 
         }
 
         .eDropContent{
-          max-width: 25%;
+          display: none;
+          flex-direction: column;
           position: absolute;
-          left: 0;
+          z-index: 3;
+          min-width: 14.4%;
+          top: 31.1%;
 
-          .eDropBtnMon{
-            position: relative;
-            display: inline;
-          }
+          background-color: white;
+          outline: 5px auto #5d5d5d;
+        }
+
+        .eDropBtnMon{
+          width: 100%;
+          display: inline;
+          position: relative;
+        }
+
+        .eDropBtn2{
+          display: block;
+          position: relative;
+          background-color: white;
+          color: black;
+          padding: 5px;
+          font-size: 12pt;
+          border: none;
+          cursor: pointer;
+          border-radius: 4px;
+        }
+
+        .eDropContent2{
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          z-index: 3;
+          min-width: 14.4%;
+          top: 21.4%;
+
+          background-color: white;
+          outline: 5px auto #5d5d5d;
+        }
+
+        .eDropBtnLoc{
+          width: 100%;
         }
       }
     }
