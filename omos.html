@@ -1,0 +1,230 @@
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="description" content="Free Web tutorials">
+    <!-- Max ca 170-200 karakterer - 600px -->
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript"><!-- Få unikke og relevante (Skal gå igen på siden)-->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <meta property="og:title" content="titel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.domain.dk">
+    <meta property="og:image" content="https://www.domain.dk/img.jpg">
+    <meta property="og:description" content="Beskrivelse">
+    <meta property="og:locale" content="da_DK">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/1823101846.js"></script>
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+<div class="grid">
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropdown_btn">
+                    <i class="fa fa-bars fa-3x"></i>
+                </button>
+                <div class="h_content">
+                    <div class="box1">
+                        <div class="h_menu1">
+                            <a href="medlemskab.html">Medlemskab</a>
+                        </div>
+
+                        <div class="h_menu2">
+                            <a href="events.html">Events</a>
+                        </div>
+                    </div>
+
+                    <div class="box2">
+                        <div class="h_menu3">
+                            <a href="kontakt.html">Kontakt</a>
+                        </div>
+
+                        <div class="h_menu4">
+                            <a href="contact.html">Om Os</a>
+                        </div>
+                    </div>
+
+                    <div class="menu_logo">
+                        <a href="index.html">
+                            <img src="img/Danmark_Print_6cm_300dpi.png">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="h_logo">
+                <a href="index.html">
+                    <img src="img/Danmark_Print_6cm_300dpi.png">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       <div class="o_grid">
+         <h1>HVEM ER VI?</h1>
+
+           <div class="o_boks1"><br>
+               <h2>Om os</h2>
+               <br>
+               <p>Hos JCI Slagelse kan vi  hjælpe dig med at danne et overblik </p>
+           </div>
+
+           <div class="o_billede1"></div>
+
+        <div class="o_boks2">
+            <br>
+            <h4>HVEM ER VI?</h4>
+            <br>
+            <p1>Hos JCI Slagelse kan vi  hjælpe dig med at danne et overblik</p1>
+        </div>
+
+           <div class="o_billede2"></div>
+
+           <h5><br>SAMARBEJDSPARTNERE</h5>
+
+           <p2><br><br>I JCI Slagelse har vi indgået partnerskaber med flere virksomheder, som er med til at hjælpe os med vores lokale virke.</p2>
+
+
+       </div>
+    </main>
+
+    <footer>
+        <div class="f_grid">
+            <div class="f_formula">
+
+                <h3>INTERESSERET?</h3>
+
+                <p>Bliv kontaktet for mere informaiton.</p>
+
+                <label class="f_name">Dit Navn</label>
+                <div class="f_name">
+                    <input type="text" placeholder="Navn">
+                </div>
+
+                <label class="f_email">E-mail</label>
+                <div class="f_email">
+                    <input type="email" placeholder="E-mail">
+                </div>
+
+                <label class="f_tlf">Mobil</label>
+                <div class="f_name">
+                    <input type="tel" placeholder="Mobil">
+                </div>
+
+                <button type="submit">SEND</button>
+            </div>
+
+            <div class="f_coop">
+
+                <div class="f_box1">
+
+                    <h3>VI SAMARBEJDER MED</h3>
+
+                    <p>I JCI Slagelse har vi indgået partnerskab med flere virksomheder.</p>
+
+                </div>
+
+                <div class="f_box2">
+
+                    <h3>The Upper Hill</h3>
+                    <h3>Spar Nord</h3>
+                    <h3>Dit Slagelse</h3>
+
+                </div>
+
+            </div>
+
+            <div class="f_contact">
+
+                <div class="f_text">
+                    <h3>KONTAKT INFORMATION</h3>
+
+                    <p>Du kan kontakte os på:</p>
+                </div>
+
+                <div class="f_icons">
+
+                    <i class="fa fa-envelope"> JCI@hotmail.com</i>
+
+                    <i class="fa fa-phone"> +45 11 22 33 44</i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="f_links">
+
+            <a href="">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+
+            <a href="">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+
+            <a href="">
+                <i class="fa fa-linkedin"></i>
+            </a>
+
+        </div>
+    </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (e) {
+
+        var navOpen = 0;
+
+        $(".dropdown_btn").click(function () {
+            if (navOpen == 1) {
+                $(".h_content").stop().slideUp(200);
+                navOpen = 0;
+            }
+            else {
+                $(".h_content").stop().slideDown(200);
+                navOpen = 1;
+            }
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if (width > 1200) {
+                $(".h_content").css( "display", "grid");
+            }
+            else {
+                $(".h_content").css("display", "none");
+                navOpen = 0;
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>
+

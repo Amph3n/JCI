@@ -90,6 +90,89 @@ header {
   justify-content: center;
   display: flex; }
 
+.o_grid {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 50px 300px 300px 300px 250px 200px 350px 160px 250px 300px 350px 300px 300px 50px;
+  grid-template-areas: "a1 b1 c1 d1 e1 f1 g1 h1" "a2 b2 c2 d2 e2 f2 g2 h2" "a3 b3 c3 d3 e3 f3 g3 h3" "a4 b4 c4 d4 e4 f4 g4 h4" "a5 b5 c5 d5 e5 f5 g5 h5" "a6 b6 c6 d6 e6 f6 g6 h6" "a7 b7 c7 d7 e7 f7 g7 h7" "a8 b8 c8 d8 e8 f8 g8 h8" "a9 b9 c9 d9 e9 f9 g9 h9" "a10 b10 c10 d10 e10 f10 g10 h10" "a11 b11 c11 d11 e11 f11 g11 h11" "a12 b12 c12 d12 e12 f12 g12 h12" "a13 b13 c13 d13 e13 f13 g13 h13" "a14 b14 c14 d14 e14 f14 g14 h14" "a15 b15 c15 d15 e15 f15 g15 h15"; }
+
+h1 {
+  grid-column: d1 / g1;
+  grid-row: a1;
+  font-size: 20px;
+  font-family: Cambria;
+  color: #5d5d5d; }
+
+.o_boks1 {
+  grid-column: a2 / d2;
+  grid-row: a2;
+  background-color: #0A6466; }
+
+h2 {
+  grid-column: a2 / d2;
+  grid-row: a2;
+  font-size: 22px;
+  font-family: Cambria;
+  margin-left: 50px;
+  color: #FFFFFF; }
+
+p {
+  grid-column: a2 / d2;
+  grid-row: a2;
+  font-size: 20px;
+  margin: 20px;
+  font-family: "Classico URW";
+  color: #FFFFFF; }
+
+.o_billede1 {
+  grid-column: e2 / h2;
+  grid-row: a2;
+  background: url("../img/o_billede1.jpg") no-repeat;
+  background-size: cover; }
+
+.o_boks2 {
+  grid-column: d3 / h3;
+  grid-row: a3;
+  background-color: #0A6466; }
+
+h4 {
+  grid-column: e3 / h3;
+  grid-row: a3;
+  font-size: 22px;
+  margin-left: 75px;
+  font-family: Cambria;
+  color: #FFFFFF; }
+
+p1 {
+  grid-column: e3 / h3;
+  grid-row: a3;
+  font-size: 20px;
+  font-family: "Classico URW";
+  color: #FFFFFF; }
+
+.o_billede2 {
+  grid-column: a3 / d3;
+  grid-row: a3;
+  background: url("../img/o_billede2.jpg") no-repeat center;
+  background-size: cover; }
+
+h5 {
+  grid-column: a4 / h4;
+  grid-row: a4;
+  font-family: Cambria;
+  font-size: 20px;
+  color: #0A6466;
+  margin-left: 75px; }
+
+p2 {
+  grid-column: a4 / h4;
+  grid-row: a4;
+  font-family: "Classico URW";
+  font-size: 18px;
+  color: #0A6466;
+  margin: 25px; }
+
 main {
   grid-row: 2; }
 
