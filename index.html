@@ -82,20 +82,14 @@
         <main>
             <div  class="i_main_grid">
 
-                <div class="i_bigtext"></div>
-
-                <div class="i_heads">
-                    <div class="i_male1"></div>
-                    <div class="i_male2"></div>
-                    <div class="i_male3"></div>
-                    <div class="i_male4"></div>
-                    <div class="i_fe1"></div>
-                    <div class="i_fe2"></div>
-                    <div class="i_fe3"></div>
+                <div class="i_bigtext">
+                    <h1 class="i_junior">JUNIOR CHAMBER INTERNATIONAL</h1>
+                    <h1>SLAGELSE</h1>
                 </div>
 
-                <div class="i_hidebox"></div>
-
+                <div class="i_heads">
+                   <div class="i_theboys"></div>
+                </div>
             </div>
         </main>
 
@@ -211,6 +205,14 @@
                 navOpen = 0;
             }
         });
+
+        $(".do_something").click(function () {
+            $(".i_male1, .i_male2, .i_male3, .i_male4, .i_fe1, .i_fe2, .i_fe3").stop().animate({
+                height: '100%',
+                width: '100%'
+            }, 400);
+        })
+
 
     });
 </script>
