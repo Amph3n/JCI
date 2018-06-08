@@ -198,8 +198,24 @@ footer {
 .eContent {
   display: block;
   width: 100%;
+  min-height: 800px;
   background-color: #0A6466;
   color: white; }
+
+.eWebHeadline {
+  display: none; }
+
+.eMobHeadline1 {
+  text-align: center;
+  width: 100%;
+  height: 37px;
+  color: #707070; }
+
+.eMobHeadline2 {
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0; }
 
 .eContentAside {
   display: none; }
@@ -207,23 +223,33 @@ footer {
 .ePopular {
   display: flex;
   width: 100%;
+  height: 220px;
   justify-content: space-around; }
   .ePopular .eFlex {
     width: 45%; }
+    .ePopular .eFlex img {
+      height: 100px; }
 
 .ePopularText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 90%;
+  height: 110px;
   margin: 0 auto; }
 
 .ePoppularPicture {
   display: none; }
 
 .ePrice {
+  position: relative;
   text-align: right; }
 
 .eFilterMobile {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  width: 100%;
+  height: 30px; }
 
 .eDropBtn {
   display: block;
@@ -238,10 +264,11 @@ footer {
 
 .eDropContent {
   display: none;
+  flex-direction: column;
   position: absolute;
   z-index: 3;
   min-width: 100%;
-  top: 396px;
+  top: 394px;
   background-color: white;
   outline: 5px auto #5d5d5d; }
 
@@ -263,11 +290,11 @@ footer {
 
 .eDropContent2 {
   display: none;
+  flex-direction: column;
   position: absolute;
   z-index: 3;
   min-width: 100%;
-  top: 367px;
-  margin-top: 8%;
+  top: 394px;
   background-color: white;
   outline: 5px auto #5d5d5d; }
 
@@ -278,7 +305,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 100%; }
+  width: 100%;
+  margin-top: 10px; }
   .eEventsList .eFlex {
     display: flex;
     flex-direction: row;
@@ -458,17 +486,41 @@ footer {
 
 @media screen and (min-width: 768px) {
   /* -- Kristian ------------------------------- */
+  .eMobHeadline1 {
+    height: 50px; }
+
+  .eContent {
+    min-height: 800px; }
+
+  .ePopular {
+    height: 330px; }
+    .ePopular .eFlex {
+      width: 40%; }
+      .ePopular .eFlex img {
+        height: 206px; }
+
+  .eFilterMobile {
+    width: 46%;
+    margin-right: 2%;
+    margin-left: auto; }
+    .eFilterMobile .eDropContent {
+      min-width: 45%;
+      top: 517px;
+      right: 0; }
+      .eFilterMobile .eDropContent .eDropBtnMon {
+        height: 35px; }
+    .eFilterMobile .eDropContent2 {
+      min-width: 45%;
+      top: 517px;
+      right: 0; }
+      .eFilterMobile .eDropContent2 .eDropBtnLoc {
+        height: 35px; }
+
   .eEventsList {
     flex-direction: row;
     flex-wrap: wrap; }
     .eEventsList .eFlex {
       width: 45%; }
-
-  .eDropContent {
-    top: 520px; }
-
-  .eDropContent2 {
-    top: 460px; }
 
   .mStartImg {
     height: 400px; }
@@ -501,10 +553,6 @@ footer {
       width: 240px; }
 
   /* --Kristian ------------ */
-
-    .eMobHeadline1 {
-    display: none; }
-
   .eFilterMobile {
     display: none; }
 
