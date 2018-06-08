@@ -220,46 +220,53 @@ footer {
   display: flex;
   justify-content: space-around; }
 
-.eMobDropBtn {
+.eDropBtn {
+  display: block;
+  position: relative;
   background-color: white;
   color: black;
   padding: 5px;
   font-size: 12pt;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  border-radius: 4px; }
 
-.eMobDropContent {
+.eDropContent {
   display: none;
   position: absolute;
   z-index: 3;
   min-width: 100%;
-  right: 0;
-  margin-top: 9%;
+  top: 396px;
   background-color: white;
   outline: 5px auto #5d5d5d; }
 
-.eMobDropBtnMon {
-  width: 100%; }
+.eDropBtnMon {
+  width: 100%;
+  display: inline;
+  position: relative; }
 
-.eMobDropBtn2 {
+.eDropBtn2 {
+  display: block;
+  position: relative;
   background-color: white;
   color: black;
   padding: 5px;
   font-size: 12pt;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  border-radius: 4px; }
 
-.eMobDropContent2 {
+.eDropContent2 {
   display: none;
   position: absolute;
   z-index: 3;
   min-width: 100%;
-  right: 0;
-  margin-top: 9%;
+  top: 367px;
+  margin-top: 8%;
   background-color: white;
   outline: 5px auto #5d5d5d; }
 
-.eMobDropBtnLoc {
+.eDropBtnLoc {
   width: 100%; }
 
 .eEventsList {
@@ -452,6 +459,12 @@ footer {
     .eEventsList .eFlex {
       width: 45%; }
 
+  .eDropContent {
+    top: 520px; }
+
+  .eDropContent2 {
+    top: 460px; }
+
   .mStartImg {
     height: 400px; }
     .mStartImg .mOpa {
@@ -480,10 +493,8 @@ footer {
       width: 240px; }
 
   /* --Kristian ------------ */
-  #jegkanikkeseenskid {
-    background-color: #707070; }
 
-  .eMobHeadline1 {
+    .eMobHeadline1 {
     display: none; }
 
   .eFilterMobile {
@@ -494,12 +505,65 @@ footer {
 
   .eContent {
     display: flex;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-between; }
     .eContent .eContentAside {
       display: block;
       width: 24%; }
+      .eContent .eContentAside .eAsideFlex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        text-align: center;
+        height: 150px;
+        width: 60%;
+        margin: 5% auto; }
+        .eContent .eContentAside .eAsideFlex .eDropBtn {
+          display: block;
+          position: relative;
+          background-color: white;
+          color: black;
+          padding: 5px;
+          font-size: 12pt;
+          border: none;
+          cursor: pointer;
+          border-radius: 4px; }
+        .eContent .eContentAside .eAsideFlex .eDropContent {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          z-index: 3;
+          min-width: 14.4%;
+          top: 31.1%;
+          background-color: white;
+          outline: 5px auto #5d5d5d; }
+        .eContent .eContentAside .eAsideFlex .eDropBtnMon {
+          width: 100%;
+          display: inline;
+          position: relative; }
+        .eContent .eContentAside .eAsideFlex .eDropBtn2 {
+          display: block;
+          position: relative;
+          background-color: white;
+          color: black;
+          padding: 5px;
+          font-size: 12pt;
+          border: none;
+          cursor: pointer;
+          border-radius: 4px; }
+        .eContent .eContentAside .eAsideFlex .eDropContent2 {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          z-index: 3;
+          min-width: 14.4%;
+          top: 21.4%;
+          background-color: white;
+          outline: 5px auto #5d5d5d; }
+        .eContent .eContentAside .eAsideFlex .eDropBtnLoc {
+          width: 100%; }
     .eContent .eContentEvents {
       width: 74%; }
 

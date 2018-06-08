@@ -88,7 +88,6 @@
 
                     <button class="eDropBtn">Måned</button>
                     <div class="eDropContent">
-                        <button class="eDropBtnMon eMon0Btn">Alle</button>
                         <button class="eDropBtnMon eMon1Btn">Januar</button>
                         <button class="eDropBtnMon eMon2Btn">Febuar</button>
                         <button class="eDropBtnMon eMon3Btn">Marts</button>
@@ -101,14 +100,15 @@
                         <button class="eDropBtnMon eMon10Btn">Oktober</button>
                         <button class="eDropBtnMon eMon11Btn">November</button>
                         <button class="eDropBtnMon eMon12Btn">December</button>
+                        <button class="eDropBtnMon eMon0Btn">Alle</button>
                     </div>
 
                     <button class="eDropBtn2">Lokalitet</button>
                     <div class="eDropContent2">
-                        <button class="eDropBtnLoc eLoc0Btn">Alle</button>
                         <button class="eDropBtnLoc eLoc1Btn">Lokal</button>
                         <button class="eDropBtnLoc eLoc2Btn">National</button>
                         <button class="eDropBtnLoc eLoc3Btn">International</button>
+                        <button class="eDropBtnLoc eLoc0Btn">Alle</button>
                     </div>
                 </div>
             </aside>
@@ -755,14 +755,13 @@
             document.getElementById("#eDropM").classList.toggle(".eDrobShow");
         }
 
-
         var eMon = 0;
         $(".eDropBtn").click(function(){
             if (eMon == 1) {
-                $(".eDropContent").stop().slideUp(200);
+                $(".eDropContent").css("display", "none");
                 eMon = 0;
             }   else {
-                $(".eDropContent").stop().slideDown(200);
+                $(".eDropContent").css("display", "flex");
                 eMon = 1;
             }
         })
@@ -770,10 +769,10 @@
         var eLoc = 0;
         $(".eDropBtn2").click(function(){
             if (eLoc == 1) {
-                $(".eDropContent2").stop().slideUp(200);
+                $(".eDropContent2").css("display", "none");
                 eLoc = 0;
             }   else {
-                $(".eDropContent2").stop().slideDown(200);
+                $(".eDropContent2").css("display", "flex");
                 eLoc = 1;
             }
         })
