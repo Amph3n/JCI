@@ -442,7 +442,7 @@ footer {
 
 .mHeader{
   text-align: center;
-
+  margin: 10%;
 }
 
 .mStartImg{
@@ -495,12 +495,10 @@ footer {
 
 .mInfoPicBox{
  margin-bottom: 8%;
-
 }
 
 .mInfoPic{
   box-shadow: 2px 2px 2px black;
-
 }
 
 .mInfoPicText{
@@ -702,6 +700,11 @@ input{
 
   .mFlex{
     flex-direction: row;
+
+    .mInfoPic{
+      height: 160px;
+    }
+
   }
 
   // Nillerbrunch slut ----------------------------------------------------
@@ -952,6 +955,10 @@ input{
   /* -- Kristian ------------- */
 
   /* Nillerbrunch start ------------------------- */
+
+  .mHeader{
+    margin: 5%;
+  }
 
   .mStartImg{
     height: 650px;
