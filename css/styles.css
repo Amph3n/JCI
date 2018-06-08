@@ -220,9 +220,7 @@ footer {
   display: flex;
   justify-content: space-around; }
 
-.eDropBtn {
-  display: block;
-  position: relative;
+.eMobDropBtn {
   background-color: white;
   color: black;
   padding: 5px;
@@ -230,41 +228,38 @@ footer {
   border: none;
   cursor: pointer; }
 
-.eDropContent {
-  display: none;
-  position: absolute;
-  z-index: 3;
-  min-width: 100%;
-  left: 0;
-  background-color: white;
-  outline: 5px auto #5d5d5d; }
-
-.eDropBtnMon {
-  width: 100%;
-  display: inline;
-  position: relative; }
-
-.eDropBtn2 {
-  display: block;
-  position: relative;
-  background-color: white;
-  color: black;
-  padding: 5px;
-  font-size: 12pt;
-  border: none;
-  cursor: pointer; }
-
-.eDropContent2 {
+.eMobDropContent {
   display: none;
   position: absolute;
   z-index: 3;
   min-width: 100%;
   right: 0;
-  margin-top: 8%;
+  margin-top: 9%;
   background-color: white;
   outline: 5px auto #5d5d5d; }
 
-.eDropBtnLoc {
+.eMobDropBtnMon {
+  width: 100%; }
+
+.eMobDropBtn2 {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  font-size: 12pt;
+  border: none;
+  cursor: pointer; }
+
+.eMobDropContent2 {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  min-width: 100%;
+  right: 0;
+  margin-top: 9%;
+  background-color: white;
+  outline: 5px auto #5d5d5d; }
+
+.eMobDropBtnLoc {
   width: 100%; }
 
 .eEventsList {
@@ -477,6 +472,9 @@ footer {
     flex-direction: row; }
 
   /* --Kristian ------------ */
+  #jegkanikkeseenskid {
+    background-color: #707070; }
+
   .eMobHeadline1 {
     display: none; }
 
@@ -488,28 +486,12 @@ footer {
 
   .eContent {
     display: flex;
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     justify-content: space-between; }
     .eContent .eContentAside {
       display: block;
       width: 24%; }
-      .eContent .eContentAside .eAsideFlex {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        text-align: center;
-        width: 60%;
-        height: 150px;
-        margin: 5% auto; }
-        .eContent .eContentAside .eAsideFlex .eDropContent {
-          max-width: 25%;
-          position: absolute;
-          left: 0; }
-          .eContent .eContentAside .eAsideFlex .eDropContent .eDropBtnMon {
-            position: relative;
-            display: inline; }
     .eContent .eContentEvents {
       width: 74%; }
 
@@ -537,8 +519,18 @@ footer {
     margin-top: 2%;
     margin-bottom: 1%; }
 
+  .koverskrift3 {
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-right: -10%; }
+
   .kbroed {
     display: none; }
+
+  .kbroed3 {
+    margin-left: 38%; }
 
   .kcon1 {
     width: 25%;
@@ -589,10 +581,50 @@ footer {
   .kflex3 {
     display: flex; }
 
+  .kcontainer {
+    display: inline-block;
+    padding: 20px;
+    margin-left: 200px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    float: left; }
+
+  .knavn, .kemail {
+    width: 200%;
+    height: 40px;
+    font-size: 12pt;
+    padding-top: 1%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: none; }
+
+  .kbesked {
+    width: 200%;
+    height: 200px;
+    font-size: 12pt;
+    padding-top: 1%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: none; }
+
+  .sendbutton {
+    background-color: #B56C0C;
+    border: 1px solid #EF8F0F;
+    border-radius: 10px;
+    font-size: 12pt;
+    font-family: 'Tajawal', sans-serif;
+    margin: 10% 0 0 150%;
+    padding: 5px 12px;
+    color: white;
+    height: 40px;
+    width: 50%; }
+
   .kconformula {
-    height: 500px;
-    width: 400px;
-    background-color: blue; } }
+    margin: -6% 0 0 0; }
+
+  .kfleximg2 {
+    margin: -10% -12% 10% 8%; } }
 @media screen and (min-width: 1200px) {
   header {
     height: 100px; }
