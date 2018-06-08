@@ -294,7 +294,7 @@ footer {
 /* -- Slut Kristian ------------------------------------------------------ */
 .mHeader {
   text-align: center;
-  margin: 10%; }
+  margin: 7%; }
 
 .mStartImg {
   position: relative;
@@ -329,15 +329,17 @@ footer {
 .mFlex {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  max-width: 100%; }
+  width: 100%; }
 
 .mInfoPicBox {
   margin-bottom: 8%; }
 
 .mInfoPic {
-  box-shadow: 2px 2px 2px black; }
+  box-shadow: 2px 2px 2px black;
+  width: 100%;
+  height: 250px; }
 
 .mInfoPicText {
   color: white;
@@ -472,7 +474,10 @@ footer {
   .mFlex {
     flex-direction: row; }
     .mFlex .mInfoPic {
-      height: 160px; }
+      height: 160px;
+      width: 240px; }
+    .mFlex .mInfoPicText {
+      width: 240px; }
 
   /* --Kristian ------------ */
   #jegkanikkeseenskid {
@@ -691,6 +696,9 @@ footer {
     height: 650px; }
     .mStartImg .mOpa {
       height: 650px; }
+
+  .mInfoPic {
+    width: 340px; }
 
   /* Nillerbrunch slut ---------------------------- */
   .f_name, .f_email, .f_tlf, .f_links {
