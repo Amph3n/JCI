@@ -245,11 +245,14 @@ footer {
   position: relative;
   text-align: right; }
 
-.eFilterMobile {
-  display: flex;
-  justify-content: space-around;
+.eContentAside {
+  display: block;
   width: 100%;
   height: 30px; }
+  .eContentAside .eAsideFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
 
 .eDropBtn {
   display: block;
@@ -499,21 +502,21 @@ footer {
       .ePopular .eFlex img {
         height: 206px; }
 
-  .eFilterMobile {
+  .eContentAside {
     width: 46%;
     margin-right: 2%;
     margin-left: auto; }
-    .eFilterMobile .eDropContent {
+    .eContentAside .eDropContent {
       min-width: 45%;
       top: 517px;
       right: 0; }
-      .eFilterMobile .eDropContent .eDropBtnMon {
+      .eContentAside .eDropContent .eDropBtnMon {
         height: 35px; }
-    .eFilterMobile .eDropContent2 {
+    .eContentAside .eDropContent2 {
       min-width: 45%;
       top: 517px;
       right: 0; }
-      .eFilterMobile .eDropContent2 .eDropBtnLoc {
+      .eContentAside .eDropContent2 .eDropBtnLoc {
         height: 35px; }
 
   .eEventsList {
@@ -553,20 +556,26 @@ footer {
       width: 240px; }
 
   /* --Kristian ------------ */
-  .eFilterMobile {
-    display: none; }
-
   .eMobHeadline2 {
     display: none; }
+
+  .eContentTop {
+    width: 100%;
+    height: 450px; }
 
   .eContent {
     display: flex;
     width: 100%;
-    margin: 0 auto;
+    padding: 5% 0 0 0;
     justify-content: space-between; }
     .eContent .eContentAside {
-      display: block;
-      width: 24%; }
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      width: 24%;
+      height: 200px;
+      margin: 0 1%; }
       .eContent .eContentAside .eAsideFlex {
         display: flex;
         flex-direction: column;
@@ -574,8 +583,8 @@ footer {
         justify-content: space-around;
         text-align: center;
         height: 150px;
-        width: 60%;
-        margin: 5% auto; }
+        width: 100%;
+        margin: 0; }
         .eContent .eContentAside .eAsideFlex .eDropBtn {
           display: block;
           position: relative;
@@ -590,15 +599,14 @@ footer {
           display: none;
           flex-direction: column;
           position: absolute;
-          z-index: 3;
-          min-width: 14.4%;
-          top: 31.1%;
+          min-width: 24%;
+          top: 698px;
+          right: inherit;
           background-color: white;
           outline: 5px auto #5d5d5d; }
         .eContent .eContentAside .eAsideFlex .eDropBtnMon {
           width: 100%;
-          display: inline;
-          position: relative; }
+          height: 21px; }
         .eContent .eContentAside .eAsideFlex .eDropBtn2 {
           display: block;
           position: relative;
@@ -613,27 +621,57 @@ footer {
           display: none;
           flex-direction: column;
           position: absolute;
-          z-index: 3;
-          min-width: 14.4%;
-          top: 21.4%;
+          min-width: 24%;
+          top: 750px;
+          right: inherit;
           background-color: white;
           outline: 5px auto #5d5d5d; }
         .eContent .eContentAside .eAsideFlex .eDropBtnLoc {
-          width: 100%; }
+          width: 100%;
+          height: 21px; }
     .eContent .eContentEvents {
-      width: 74%; }
+      width: 100%; }
+      .eContent .eContentEvents .eWebHeadline {
+        display: block; }
+      .eContent .eContentEvents .ePopular .ePopularText {
+        margin: 0;
+        width: 100%; }
+
+  .eEventFlex {
+    display: flex; }
 
   .ePopular {
-    width: 95%;
+    width: 99%;
+    height: 380px;
     justify-content: space-between;
     margin: 0; }
     .ePopular .ePoppularPicture {
       display: block;
-      width: 20%;
-      margin-right: 5%; }
+      width: 25%;
+      height: 221px; }
+      .ePopular .ePoppularPicture img {
+        height: 360px; }
     .ePopular .eFlex {
       width: 35%;
       margin-top: 5%; }
+      .ePopular .eFlex img {
+        height: 230px; }
+
+  #eEventNav {
+    margin-left: 27%; }
+
+  .eEventsList {
+    width: 74%; }
+    .eEventsList .eFlex {
+      width: 30%;
+      flex-direction: column;
+      justify-content: space-between; }
+      .eEventsList .eFlex .eFlexImg {
+        width: 100%;
+        height: 155px; }
+      .eEventsList .eFlex .eEventText {
+        width: 100%;
+        height: 120px; }
 
   /* --Kristian slut --------------------------- */
   .koverskrift1 {
