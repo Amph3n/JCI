@@ -94,18 +94,23 @@ main {
   grid-row: 2; }
 
 .i_main_grid {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr); }
+  height: 300px; }
 
 .i_bigtext {
-  grid-row: 1; }
-
-.i_hidebox {
-  grid-row: 3;
-  position: relative; }
+  margin: auto;
+  margin-top: 80px; }
+  .i_bigtext h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #707070; }
+  .i_bigtext .i_junior {
+    font-weight: 100; }
 
 .i_heads {
-  grid-row: 2; }
+  height: 170px;
+  background: url("../img/fastboi.gif") no-repeat center;
+  background-size: contain;
+  margin: 80px 0 0 0; }
 
 footer {
   grid-row: 3;
@@ -439,7 +444,10 @@ footer {
     font-size: 1.5em; }
 
   .mNews button {
-    right: auto; } }
+    right: auto; }
+
+  .i_heads {
+    margin: 101px 0 0 0; } }
 @media screen and (min-width: 992px) {
   .mStartImg {
     height: 500px; }
