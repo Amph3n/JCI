@@ -94,7 +94,7 @@ header {
   display: grid;
   width: 100vw;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 50px 300px 300px 300px 250px 200px 350px 160px 250px 300px 350px 300px 300px 50px;
+  grid-template-rows: 50px 300px 300px 180px 250px 200px 350px 250px 300px 300px 350px 300px 300px 50px;
   grid-template-areas: "a1 b1 c1 d1 e1 f1 g1 h1" "a2 b2 c2 d2 e2 f2 g2 h2" "a3 b3 c3 d3 e3 f3 g3 h3" "a4 b4 c4 d4 e4 f4 g4 h4" "a5 b5 c5 d5 e5 f5 g5 h5" "a6 b6 c6 d6 e6 f6 g6 h6" "a7 b7 c7 d7 e7 f7 g7 h7" "a8 b8 c8 d8 e8 f8 g8 h8" "a9 b9 c9 d9 e9 f9 g9 h9" "a10 b10 c10 d10 e10 f10 g10 h10" "a11 b11 c11 d11 e11 f11 g11 h11" "a12 b12 c12 d12 e12 f12 g12 h12" "a13 b13 c13 d13 e13 f13 g13 h13" "a14 b14 c14 d14 e14 f14 g14 h14" "a15 b15 c15 d15 e15 f15 g15 h15"; }
 
 h1 {
@@ -172,6 +172,66 @@ p2 {
   font-size: 18px;
   color: #0A6466;
   margin: 25px; }
+
+.o_partner1 {
+  grid-column: a5/ h5;
+  grid-row: a5;
+  background: url("../img/theupperhill.png") no-repeat center;
+  background-size: cover; }
+
+h6 {
+  grid-column: a6/ h6;
+  grid-row: a6;
+  font-family: Cambria;
+  font-size: 20px;
+  color: #0A6466; }
+
+p3 {
+  grid-column: a6/ h6;
+  grid-row: a6;
+  font-family: "Classico URW";
+  font-size: 18px;
+  color: #0A6466; }
+
+.o_partner2 {
+  grid-column: a7/ h7;
+  grid-row: a7;
+  background: url("../img/sparnord.png") no-repeat center;
+  background-size: cover; }
+
+h7 {
+  grid-column: a8/ h8;
+  grid-row: a8;
+  font-family: Cambria bold;
+  font-size: 20px;
+  color: #0A6466; }
+
+p4 {
+  grid-column: a8/ h8;
+  grid-row: a8;
+  font-family: "Classico URW";
+  font-size: 18px;
+  color: #0A6466; }
+
+.o_partner3 {
+  grid-column: a9/ h9;
+  grid-row: a9;
+  background: url("../img/ditslagelse.png") no-repeat center;
+  background-size: cover; }
+
+h8 {
+  grid-column: a10/ h10;
+  grid-row: a10;
+  font-family: Cambria bold;
+  font-size: 20px;
+  color: #0A6466; }
+
+p5 {
+  grid-column: a10/ h10;
+  grid-row: a10;
+  font-family: "Classico URW";
+  font-size: 18px;
+  color: #0A6466; }
 
 main {
   grid-row: 2; }
