@@ -21,8 +21,10 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/simplePagination.css" rel="stylesheet" type="text/css">
     <!-- Tillader brug af Font Awesome ikoner -->
-    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
-    <!-- Googlefonts -->
+    <script src="https://use.fontawesome.com/1823101846.js"></script>
+
+
+    <link rel="stylesheet" href="https://use.typekit.net/fln2dwx.css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +32,7 @@
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
-<body id="jegkanikkeseenskid">
+<body>
 
 <div class="grid">
     <header>
@@ -81,7 +83,34 @@
         <h1 class="eMobHeadline1">Events</h1>
         <div class="eContent">
             <aside class="eContentAside">
+                <div class="eAsideFlex">
+                    <h3 class="eDropContentHeadline">Filtrer efter:</h3>
 
+                    <button class="eDropBtn">Måned</button>
+                    <div class="eDropContent">
+                        <button class="eDropBtnMon eMon0Btn">Alle</button>
+                        <button class="eDropBtnMon eMon1Btn">Januar</button>
+                        <button class="eDropBtnMon eMon2Btn">Febuar</button>
+                        <button class="eDropBtnMon eMon3Btn">Marts</button>
+                        <button class="eDropBtnMon eMon4Btn">April</button>
+                        <button class="eDropBtnMon eMon5Btn">Maj</button>
+                        <button class="eDropBtnMon eMon6Btn">Juni</button>
+                        <button class="eDropBtnMon eMon7Btn">Juli</button>
+                        <button class="eDropBtnMon eMon8Btn">August</button>
+                        <button class="eDropBtnMon eMon9Btn">September</button>
+                        <button class="eDropBtnMon eMon10Btn">Oktober</button>
+                        <button class="eDropBtnMon eMon11Btn">November</button>
+                        <button class="eDropBtnMon eMon12Btn">December</button>
+                    </div>
+
+                    <button class="eDropBtn2">Lokalitet</button>
+                    <div class="eDropContent2">
+                        <button class="eDropBtnLoc eLoc0Btn">Alle</button>
+                        <button class="eDropBtnLoc eLoc1Btn">Lokal</button>
+                        <button class="eDropBtnLoc eLoc2Btn">National</button>
+                        <button class="eDropBtnLoc eLoc3Btn">International</button>
+                    </div>
+                </div>
             </aside>
 
             <div class="eContentEvents">
@@ -120,30 +149,31 @@
                 <div class="eFilterMobile">
                     <!-- Her skal event filtrene ligge -->
 
-                    <p>Filtrer efter:</p>
+                    <h3>Filtrer efter:</h3>
 
-                    <button class="eMobDropBtn">Måned</button>
-                    <div class="eMobDropContent">
-                        <button class="eMobDropBtnMon" id="eMon0">Alle</button>
-                        <button class="eMobDropBtnMon" id="eMon1">Januar</button>
-                        <button class="eMobDropBtnMon" id="eMon2">Febuar</button>
-                        <button class="eMobDropBtnMon" id="eMon3">Marts</button>
-                        <button class="eMobDropBtnMon" id="eMon4">April</button>
-                        <button class="eMobDropBtnMon" id="eMon5">Maj</button>
-                        <button class="eMobDropBtnMon" id="eMon6">Juni</button>
-                        <button class="eMobDropBtnMon" id="eMon7">Juli</button>
-                        <button class="eMobDropBtnMon" id="eMon8">August</button>
-                        <button class="eMobDropBtnMon" id="eMon9">September</button>
-                        <button class="eMobDropBtnMon" id="eMon10">Oktober</button>
-                        <button class="eMobDropBtnMon" id="eMon11">November</button>
-                        <button class="eMobDropBtnMon" id="eMon12">December</button>
+                    <button class="eDropBtn">Måned</button>
+                    <div class="eDropContent">
+                        <button class="eDropBtnMon eMon0Btn">Alle</button>
+                        <button class="eDropBtnMon eMon1Btn">Januar</button>
+                        <button class="eDropBtnMon eMon2Btn">Febuar</button>
+                        <button class="eDropBtnMon eMon3Btn">Marts</button>
+                        <button class="eDropBtnMon eMon4Btn">April</button>
+                        <button class="eDropBtnMon eMon5Btn">Maj</button>
+                        <button class="eDropBtnMon eMon6Btn">Juni</button>
+                        <button class="eDropBtnMon eMon7Btn">Juli</button>
+                        <button class="eDropBtnMon eMon8Btn">August</button>
+                        <button class="eDropBtnMon eMon9Btn">September</button>
+                        <button class="eDropBtnMon eMon10Btn">Oktober</button>
+                        <button class="eDropBtnMon eMon11Btn">November</button>
+                        <button class="eDropBtnMon eMon12Btn">December</button>
                     </div>
 
-                    <button class="eMobDropBtn2">Lokalitet</button>
-                    <div class="eMobDropContent2">
-                        <button class="eMobDropBtnLoc">Lokal</button>
-                        <button class="eMobDropBtnLoc">National</button>
-                        <button class="eMobDropBtnLoc">International</button>
+                    <button class="eDropBtn2">Lokalitet</button>
+                    <div class="eDropContent2">
+                        <button class="eDropBtnLoc eLoc0Btn">Alle</button>
+                        <button class="eDropBtnLoc eLoc1Btn">Lokal</button>
+                        <button class="eDropBtnLoc eLoc2Btn">National</button>
+                        <button class="eDropBtnLoc eLoc3Btn">International</button>
                     </div>
                 </div>
 
@@ -721,120 +751,144 @@
             }
         });
 
-        function eMobDropMonth() {
-            document.getElementById("#eMobDropM").classList.toggle(".eMobDrobShow");
+        function eDropMonth() {
+            document.getElementById("#eDropM").classList.toggle(".eDrobShow");
         }
 
 
-        var eMobMon = 0;
-        $(".eMobDropBtn").click(function(){
-            if (eMobMon == 1) {
-                $(".eMobDropContent").stop().slideUp(200);
-                eMobMon = 0;
+        var eMon = 0;
+        $(".eDropBtn").click(function(){
+            if (eMon == 1) {
+                $(".eDropContent").stop().slideUp(200);
+                eMon = 0;
             }   else {
-                $(".eMobDropContent").stop().slideDown(200);
-                eMobMon = 1;
+                $(".eDropContent").stop().slideDown(200);
+                eMon = 1;
             }
         })
 
-        var eMobLoc = 0;
-        $(".eMobDropBtn2").click(function(){
-            if (eMobLoc == 1) {
-                $(".eMobDropContent2").stop().slideUp(200);
-                eMobLoc = 0;
+        var eLoc = 0;
+        $(".eDropBtn2").click(function(){
+            if (eLoc == 1) {
+                $(".eDropContent2").stop().slideUp(200);
+                eLoc = 0;
             }   else {
-                $(".eMobDropContent2").stop().slideDown(200);
-                eMobLoc = 1;
+                $(".eDropContent2").stop().slideDown(200);
+                eLoc = 1;
             }
         })
 
-        $("#eMon0").click(function () {
-            $(".eMon1, .eMon2, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "flex");
-            $(".eMon1, .eMon2, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").removeClass("eHidden");
+        $(".eMon0Btn").click(function () {
+            location.reload();
         });
 
-        $("#eMon1").click(function () {
+        $(".eMon1Btn").click(function () {
             $(".eMon2, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
             $(".eMon2, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon1").css("display", "flex");
             $(".eMon1").removeClass("eHidden");
         });
 
-        $("#eMon2").click(function () {
+        $(".eMon2Btn").click(function () {
             $(".eMon1, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
             $(".eMon1, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon2").css("display", "flex");
             $(".eMon2").removeClass("eHidden");
         });
 
-        $("#eMon3").click(function () {
+        $(".eMon3Btn").click(function () {
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon3").css("display", "flex");
             $(".eMon3").removeClass("eHidden");
         });
 
-        $("#eMon4").click(function () {
+        $(".eMon4Btn").click(function () {
             $(".eMon1, .eMon2, .eMon3, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
             $(".eMon1, .eMon2, .eMon3, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon4").css("display", "flex");
             $(".eMon4").removeClass("eHidden");
         });
 
-        $("#eMon5").click(function () {
+        $(".eMon5Btn").click(function () {
             $(".eMon1, .eMon2, .eMon4, .eMon3, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
             $(".eMon1, .eMon2, .eMon4, .eMon3, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon5").css("display", "flex");
             $(".eMon5").removeClass("eHidden");
         });
 
-        $("#eMon6").click(function () {
+        $(".eMon6Btn").click(function () {
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon3, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon3, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon6").css("display", "flex");
             $(".eMon6").removeClass("eHidden");
         });
 
-        $("#eMon7").click(function () {
+        $(".eMon7Btn").click(function () {
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon3, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon3, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon7").css("display", "flex");
             $(".eMon7").removeClass("eHidden");
         });
 
-        $("#eMon8").click(function () {
+        $(".eMon8Btn").click(function () {
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon3, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon3, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon8").css("display", "flex");
             $(".eMon8").removeClass("eHidden");
         });
 
-        $("#eMon9").click(function () {
+        $(".eMon9Btn").click(function () {
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon3, .eMon10, .eMon11, .eMon12").css("display", "none");
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon3, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon9").css("display", "flex");
             $(".eMon9").removeClass("eHidden");
         });
 
-        $("#eMon10").click(function () {
+        $(".eMon10Btn").click(function () {
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon3, .eMon11, .eMon12").css("display", "none");
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon3, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon10").css("display", "flex");
             $(".eMon10").removeClass("eHidden");
         });
 
-        $("#eMon11").click(function () {
+        $(".eMon11Btn").click(function () {
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon3, .eMon12").css("display", "none");
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon3, .eMon12").addClass("eHidden");
             $(".eMon11").css("display", "flex");
             $(".eMon11").removeClass("eHidden");
         });
 
-        $("#eMon12").click(function () {
+        $(".eMon12Btn").click(function () {
             $(".eMon3, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon3").css("display", "none");
             $(".eMon3, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon3").addClass("eHidden");
             $(".eMon12").css("display", "flex");
             $(".eMon12").removeClass("eHidden");
+        });
+
+        $(".eLoc0Btn").click(function () {
+            location.reload();
+        });
+
+        $(".eLoc1Btn").click(function () {
+            $(".eNational, .eInterNational").css("display", "none");
+            $(".eNational, .eInterNational").addClass("eHidden");
+            $(".eLocal").css("display", "flex");
+            $(".eLocal").removeClass("eHidden");
+        });
+
+        $(".eLoc2Btn").click(function () {
+            $(".eLocal, .eInterNational").css("display", "none");
+            $(".eLocal, .eInterNational").addClass("eHidden");
+            $(".eNational").css("display", "flex");
+            $(".eNational").removeClass("eHidden");
+        });
+
+        $(".eLoc3Btn").click(function () {
+            $(".eNational, .eLocal").css("display", "none");
+            $(".eNational, .eLocal").addClass("eHidden");
+            $(".eInterNational").css("display", "flex");
+            $(".eInterNational").removeClass("eHidden");
         });
 
         var ePageParts = $(".ePaginate");

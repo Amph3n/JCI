@@ -220,7 +220,9 @@ footer {
   display: flex;
   justify-content: space-around; }
 
-.eMobDropBtn {
+.eDropBtn {
+  display: block;
+  position: relative;
   background-color: white;
   color: black;
   padding: 5px;
@@ -228,20 +230,23 @@ footer {
   border: none;
   cursor: pointer; }
 
-.eMobDropContent {
+.eDropContent {
   display: none;
   position: absolute;
   z-index: 3;
   min-width: 100%;
-  right: 0;
-  margin-top: 9%;
+  left: 0;
   background-color: white;
   outline: 5px auto #5d5d5d; }
 
-.eMobDropBtnMon {
-  width: 100%; }
+.eDropBtnMon {
+  width: 100%;
+  display: inline;
+  position: relative; }
 
-.eMobDropBtn2 {
+.eDropBtn2 {
+  display: block;
+  position: relative;
   background-color: white;
   color: black;
   padding: 5px;
@@ -249,17 +254,17 @@ footer {
   border: none;
   cursor: pointer; }
 
-.eMobDropContent2 {
+.eDropContent2 {
   display: none;
   position: absolute;
   z-index: 3;
   min-width: 100%;
   right: 0;
-  margin-top: 9%;
+  margin-top: 8%;
   background-color: white;
   outline: 5px auto #5d5d5d; }
 
-.eMobDropBtnLoc {
+.eDropBtnLoc {
   width: 100%; }
 
 .eEventsList {
@@ -472,9 +477,6 @@ footer {
     flex-direction: row; }
 
   /* --Kristian ------------ */
-  #jegkanikkeseenskid {
-    background-color: #707070; }
-
   .eMobHeadline1 {
     display: none; }
 
@@ -486,12 +488,28 @@ footer {
 
   .eContent {
     display: flex;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-between; }
     .eContent .eContentAside {
       display: block;
       width: 24%; }
+      .eContent .eContentAside .eAsideFlex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        text-align: center;
+        width: 60%;
+        height: 150px;
+        margin: 5% auto; }
+        .eContent .eContentAside .eAsideFlex .eDropContent {
+          max-width: 25%;
+          position: absolute;
+          left: 0; }
+          .eContent .eContentAside .eAsideFlex .eDropContent .eDropBtnMon {
+            position: relative;
+            display: inline; }
     .eContent .eContentEvents {
       width: 74%; }
 
