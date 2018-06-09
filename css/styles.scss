@@ -159,6 +159,74 @@ main {
   margin: 80px 0 0 0;
 }
 
+.i_intro {
+  display: grid;
+  height: 300px;
+  grid-template-rows: 1fr 1fr;
+  background-color: $primar_color;
+}
+
+.i_introflexbig {
+  display: none;
+}
+
+.i_introflex1 {
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.i_introflex2 {
+  grid-row: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.i_introflex1, .i_introflex2, .i_introflexbig {
+  margin: 10px 0 0 0;
+}
+
+.i_introgrid1, .i_introgrid2, .i_introgrid3, .i_introgridbig {
+  display: grid;
+  height: 126px;
+  width: 40%;
+  grid-template-rows: 2fr 1fr;
+}
+
+.i_introtext1, .i_introtext2, .i_introtext3, .i_introtextbig{
+  grid-row: 1;
+  margin-left: 16px;
+
+  p {
+    color: white;
+  }
+
+  b {
+    color: white;
+  }
+}
+
+.i_introtext2 {
+  margin-top: 15px;
+}
+
+
+.i_introcta1, .i_introcta2, .i_introcta3, .i_introctabig {
+  grid-row: 2;
+  background-color: #B56C0C;
+  border-radius: 2px;
+  border: solid 2px #EF8F0F;
+  text-align: center;
+  margin: auto;
+  padding: 3px;
+  font-size: 11px;
+
+  a {
+    color: white;
+    font-family: Cambria;
+  }
+}
+
 
 
 footer {
@@ -231,7 +299,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  margin: 0px 0px 20px 20px;
+  margin: 0 0 20px 20px;
 }
 
 .f_box1{
@@ -759,6 +827,19 @@ input{
 
   }
 
+  .i_intro {
+    display: flex;
+    height: 200px;
+    /* grid-template-rows: 1fr 1fr; */
+    background-color: #0A6466;
+    /* margin: 20px 0 0 0; */
+  }
+
+  .i_introflex1, .i_introflex2, .i_introflexbig {
+    margin: 40px 0 0px 0px;
+  }
+
+
   // Oliver slut--------------------------------------------------------
 }
 
@@ -1127,6 +1208,33 @@ input{
   .kfleximg2 {
     margin: -10% -12% 10% 8%;
   }
+
+
+
+
+//Oliver start --------------------------------------------------------------------------
+
+  .i_intro {
+    display: grid;
+    height: 200px;
+    grid-template-rows: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .i_introflexbig {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .i_introgrid3 {
+    display: none;
+  }
+
+  .i_introflex2 {
+    grid-row: 1;
+  }
+
+
 
 
 
