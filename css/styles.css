@@ -251,7 +251,7 @@ footer {
   display: block;
   width: 100%;
   min-height: 800px;
-  background-color: #0A6466;
+  background: linear-gradient(#0A6466, white);
   color: white; }
 
 .eWebHeadline {
@@ -290,7 +290,7 @@ footer {
   height: 110px;
   margin: 0 auto; }
 
-.ePoppularPicture {
+.ePopularPicture {
   display: none; }
 
 .ePrice {
@@ -309,13 +309,14 @@ footer {
 .eDropBtn {
   display: block;
   position: relative;
-  background-color: white;
-  color: black;
-  padding: 5px;
   font-size: 12pt;
-  border: none;
+  background-color: #B56C0C;
+  border-color: #EF8F0F;
+  color: white;
   cursor: pointer;
-  border-radius: 4px; }
+  border-radius: 4px;
+  border-style: solid;
+  padding: 5px; }
 
 .eDropContent {
   display: none;
@@ -335,13 +336,14 @@ footer {
 .eDropBtn2 {
   display: block;
   position: relative;
-  background-color: white;
-  color: black;
-  padding: 5px;
   font-size: 12pt;
-  border: none;
+  background-color: #B56C0C;
+  border-color: #EF8F0F;
+  color: white;
   cursor: pointer;
-  border-radius: 4px; }
+  border-radius: 4px;
+  border-style: solid;
+  padding: 5px; }
 
 .eDropContent2 {
   display: none;
@@ -373,18 +375,13 @@ footer {
     .eEventsList .eFlex .eEventText {
       display: block;
       width: 59%;
-      font-size: 10pt; }
+      font-size: 10pt;
+      color: #0A6466; }
     .eEventsList .eFlex .eEventBreadText {
       height: 58%; }
 
-.eEventNav {
-  font-size: 24px;
-  margin: 0 auto; }
-  .eEventNav li {
-    display: inline;
-    width: 10%; }
-  .eEventNav .eArrow {
-    font-size: 36px; }
+#eEventNav {
+  margin-left: 2%; }
 
 /* -- Slut Kristian ------------------------------------------------------ */
 .mHeader {
@@ -648,44 +645,21 @@ footer {
         height: 150px;
         width: 100%;
         margin: 0; }
-        .eContent .eContentAside .eAsideFlex .eDropBtn {
-          display: block;
-          position: relative;
-          background-color: white;
-          color: black;
-          padding: 5px;
-          font-size: 12pt;
-          border: none;
-          cursor: pointer;
-          border-radius: 4px; }
         .eContent .eContentAside .eAsideFlex .eDropContent {
           display: none;
           flex-direction: column;
           position: absolute;
           min-width: 24%;
-          top: 698px;
+          top: 703px;
           right: inherit;
           background-color: white;
           outline: 5px auto #5d5d5d; }
-        .eContent .eContentAside .eAsideFlex .eDropBtnMon {
-          width: 100%;
-          height: 21px; }
-        .eContent .eContentAside .eAsideFlex .eDropBtn2 {
-          display: block;
-          position: relative;
-          background-color: white;
-          color: black;
-          padding: 5px;
-          font-size: 12pt;
-          border: none;
-          cursor: pointer;
-          border-radius: 4px; }
         .eContent .eContentAside .eAsideFlex .eDropContent2 {
           display: none;
           flex-direction: column;
           position: absolute;
           min-width: 24%;
-          top: 750px;
+          top: 755px;
           right: inherit;
           background-color: white;
           outline: 5px auto #5d5d5d; }
@@ -695,7 +669,8 @@ footer {
     .eContent .eContentEvents {
       width: 100%; }
       .eContent .eContentEvents .eWebHeadline {
-        display: block; }
+        display: block;
+        margin: 0 0 0 27%; }
       .eContent .eContentEvents .ePopular .ePopularText {
         margin: 0;
         width: 100%; }
@@ -708,11 +683,11 @@ footer {
     height: 380px;
     justify-content: space-between;
     margin: 0; }
-    .ePopular .ePoppularPicture {
+    .ePopular .ePopularPicture {
       display: block;
       width: 25%;
       height: 221px; }
-      .ePopular .ePoppularPicture img {
+      .ePopular .ePopularPicture img {
         height: 360px; }
     .ePopular .eFlex {
       width: 35%;
@@ -721,7 +696,7 @@ footer {
         height: 230px; }
 
   #eEventNav {
-    margin-left: 27%; }
+    margin: 0 0 5% 27%; }
 
   .eEventsList {
     width: 74%; }
@@ -921,8 +896,43 @@ footer {
     position: absolute; }
 
   /* --Kristian ------------ */
-  .eEventsList .eFlex {
-    width: 30%; }
+  .eContent {
+    padding: 2% 0 0 0;
+    height: 1400px; }
+    .eContent .eContentEvents {
+      height: 100%;
+      width: 100%; }
+      .eContent .eContentEvents .eContentTop {
+        height: 30%; }
+        .eContent .eContentEvents .eContentTop .eWebHeadline {
+          height: 10%; }
+
+  .ePopular {
+    height: 90%; }
+    .ePopular .ePopularPicture {
+      height: 100%; }
+      .ePopular .ePopularPicture img {
+        height: 100%; }
+    .ePopular .eFlex {
+      margin: 2% 0 0 0; }
+      .ePopular .eFlex img {
+        height: 74%; }
+
+  .eEventFlex {
+    margin: 1% 0 0 0;
+    height: 900px; }
+    .eEventFlex .eContentAside {
+      margin: 0.5% 1% 0 1%; }
+      .eEventFlex .eContentAside .eAsideFlex .eDropContent {
+        display: none;
+        top: 119%; }
+      .eEventFlex .eContentAside .eAsideFlex .eDropContent2 {
+        display: none;
+        top: 127%; }
+    .eEventFlex .eEventsList .eFlex {
+      display: block; }
+      .eEventFlex .eEventsList .eFlex .eFlexImg {
+        height: auto; }
 
   /* -- Kristian ------------- */
   /* Nillerbrunch start ------------------------- */
