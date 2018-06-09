@@ -60,6 +60,15 @@ $CTA: #B56C0C;
 $CTA_border: #EF8F0F;
 $gray: #707070;
 
+@mixin eBtn(){
+  background-color: $CTA;
+  border-color: $CTA_border;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: solid;
+  padding: 5px;
+}
 
 .grid {
   display: grid;
@@ -284,7 +293,7 @@ footer {
   display: block;
   width: 100%;
   min-height: 800px;
-  background-color: #0A6466;
+  background: linear-gradient($primar_color, white);
   color: white;
 }
 
@@ -334,7 +343,7 @@ footer {
   margin: 0 auto;
 }
 
-.ePoppularPicture{
+.ePopularPicture{
   display: none;
 }
 
@@ -358,14 +367,8 @@ footer {
 .eDropBtn{
   display: block;
   position: relative;
-  background-color: white;
-  color: black;
-  padding: 5px;
   font-size: 12pt;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-
+  @include eBtn();
 }
 
 .eDropContent{
@@ -389,13 +392,8 @@ footer {
 .eDropBtn2{
   display: block;
   position: relative;
-  background-color: white;
-  color: black;
-  padding: 5px;
   font-size: 12pt;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
+  @include eBtn();
 }
 
 .eDropContent2{
@@ -436,6 +434,7 @@ footer {
       display: block;
       width: 59%;
       font-size: 10pt;
+      color: #0A6466;
     }
 
     .eEventBreadText{
@@ -444,18 +443,8 @@ footer {
   }
 }
 
-.eEventNav{
-  font-size: 24px;
-  margin: 0 auto;
-
-  li{
-    display: inline;
-    width: 10%;
-  }
-
-  .eArrow{
-    font-size: 36px;
-  }
+#eEventNav{
+  margin-left: 2%;
 }
 /* -- Slut Kristian ------------------------------------------------------ */
 
@@ -841,15 +830,6 @@ input{
         margin: 0;
 
         .eDropBtn{
-          display: block;
-          position: relative;
-          background-color: white;
-          color: black;
-          padding: 5px;
-          font-size: 12pt;
-          border: none;
-          cursor: pointer;
-          border-radius: 4px;
 
         }
 
@@ -858,36 +838,23 @@ input{
           flex-direction: column;
           position: absolute;
           min-width: 24%;
-          top: 698px;
+          top: 703px;
           right: inherit;
 
           background-color: white;
           outline: 5px auto #5d5d5d;
         }
 
-        .eDropBtnMon{
-          width: 100%;
-          height: 21px;
-        }
 
-        .eDropBtn2{
-          display: block;
-          position: relative;
-          background-color: white;
-          color: black;
-          padding: 5px;
-          font-size: 12pt;
-          border: none;
-          cursor: pointer;
-          border-radius: 4px;
-        }
+
+
 
         .eDropContent2{
           display: none;
           flex-direction: column;
           position: absolute;
           min-width: 24%;
-          top: 750px;
+          top: 755px;
           right: inherit;
 
           background-color: white;
@@ -906,6 +873,7 @@ input{
 
       .eWebHeadline{
         display: block;
+        margin: 0 0 0 27%;
       }
 
       .ePopular{
@@ -929,7 +897,7 @@ input{
     justify-content: space-between;
     margin: 0;
 
-    .ePoppularPicture{
+    .ePopularPicture{
       display: block;
       width: 25%;
       height: 221px;
@@ -950,7 +918,7 @@ input{
   }
 
   #eEventNav{
-    margin-left: 27%;
+    margin: 0 0 5% 27%;
   }
 
   .eEventsList{
@@ -1198,11 +1166,88 @@ input{
 
   /* --Kristian ------------ */
 
-  .eEventsList{
-    .eFlex{
-      width: 30%;
+    .eContent{
+      padding: 2% 0 0 0;
+      height: 1400px;
+
+      .eContentEvents{
+        height: 100%;
+        width: 100%;
+
+        .eContentTop{
+          height: 30%;
+
+          .eWebHeadline{
+            height: 10%;
+          }
+
+
+        }
+      }
+    }
+
+    .ePopular{
+      height: 90%;
+
+
+
+      .ePopularPicture{
+        height: 100%;
+
+        img{
+          height: 100%;
+        }
+      }
+
+
+      .eFlex{
+        margin: 2% 0 0 0;
+
+        img{
+
+          height: 74%;
+        }
+      }
+    }
+
+  .eEventFlex{
+    margin: 1% 0 0 0;
+    height: 900px;
+
+    .eContentAside{
+      margin: 0.5% 1% 0 1%;
+
+      .eAsideFlex{
+
+        .eDropContent{
+          display: none;
+          top: 119%;
+
+        }
+
+        .eDropContent2{
+          display: none;
+          top: 127%;
+
+        }
+      }
+    }
+
+    .eEventsList{
+
+      .eFlex{
+        display: block;
+
+
+        .eFlexImg{
+
+          height: auto;
+        }
+      }
     }
   }
+
+
 
   /* -- Kristian ------------- */
 
