@@ -689,7 +689,7 @@ footer {
     height: 20px;
     font-size: 16px;
     padding-top: 0;
-    margin-top: 5%;
+    margin-top: 1%;
     right: 10%;
   }
 }
@@ -710,6 +710,12 @@ input{
   label{
     font-weight: bold;
   }
+}
+
+.mNewsImg{
+  Width: 300px;
+  height: auto;
+  background-color: grey;
 }
 
 // Nillerbrunch slut ------------------------------------------
@@ -987,8 +993,9 @@ input{
     font-size: 1.7em;
   }
 
-  .mFlex{
+  .mFlex {
     flex-direction: row;
+  }
 
     .mInfoPic{
       height: 160px;
@@ -998,6 +1005,12 @@ input{
     .mInfoPicText{
       width: 240px;
     }
+
+    .mForm{
+      input {
+        width: 40%;
+      }
+
 
   }
 
@@ -1538,8 +1551,13 @@ input{
   }
 
   .mInfoPic{
-    width: 340px;
+    height: 160px;
+    width: 320px;
   }
+
+
+
+
 
   /* Nillerbrunch slut ---------------------------- */
 
