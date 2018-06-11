@@ -95,7 +95,7 @@
                         </div>
 
                         <div class="eFlex">
-                            <img src="img/eGame.png" alt="Game pieces">
+                            <img src="img/eGame.png" alt="Game pieces" class="eWebImgWidth">
 
                             <div class="ePopularText">
                                 <div>
@@ -912,6 +912,15 @@
 
                 ePageParts.hide()
                     .slice(start, end).show();
+            }
+        });
+
+        var eWebPopImgWidth = $(".eWebImgWidth").width();
+        $(document).ready(function (e) {
+            var eWidth = $(window).width();
+
+            if (eWidth > 1200) {
+                $(".ePopularText").css("width", eWebPopImgWidth);
             }
         });
 
