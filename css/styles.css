@@ -364,7 +364,7 @@ footer {
     height: 20px;
     font-size: 16px;
     padding-top: 0;
-    margin-top: 5%;
+    margin-top: 1%;
     right: 10%; }
 
 .mForm input {
@@ -379,6 +379,11 @@ footer {
   margin: 10px 0; }
 .mForm label {
   font-weight: bold; }
+
+.mNewsImg {
+  Width: 300px;
+  height: auto;
+  background-color: grey; }
 
 .koverskrift1 {
   text-align: center;
@@ -473,11 +478,16 @@ footer {
 
   .mFlex {
     flex-direction: row; }
-    .mFlex .mInfoPic {
-      height: 160px;
-      width: 240px; }
-    .mFlex .mInfoPicText {
-      width: 240px; }
+
+  .mInfoPic {
+    height: 160px;
+    width: 240px; }
+
+  .mInfoPicText {
+    width: 240px; }
+
+  .mForm input {
+    width: 40%; }
 
   /* --Kristian ------------ */
   #jegkanikkeseenskid {
@@ -698,7 +708,8 @@ footer {
       height: 650px; }
 
   .mInfoPic {
-    width: 340px; }
+    height: 160px;
+    width: 320px; }
 
   /* Nillerbrunch slut ---------------------------- */
   .f_name, .f_email, .f_tlf, .f_links {
