@@ -103,7 +103,6 @@ header {
 .o_hvemervi {
   grid-column: a1 / h1;
   grid-row: a1;
-  font-size: 20px;
   font-family: Cambria, serif;
   color: #5d5d5d;
   text-align: center; }
@@ -716,13 +715,11 @@ footer {
 
 .koverskrift1 {
   text-align: center;
-  font-size: 20pt;
   margin-top: 10%;
   color: #707070; }
 
 .koverskrift2 {
   text-align: center;
-  font-size: 15pt;
   margin-top: 10%;
   margin-bottom: 15%;
   color: white; }
@@ -934,6 +931,7 @@ footer {
   .i_main_grid a, .i_intro a, .i_infogrid a {
     font-size: 16px; }
 
+
   .i_heads {
     margin: 101px 0 0 0; }
 
@@ -1072,6 +1070,8 @@ footer {
       width: 100%; }
       .eContent .eContentEvents .eWebHeadline {
         display: block;
+        color: white;
+        text-align: left;
         margin: 0 0 0 27%; }
       .eContent .eContentEvents .ePopular .ePopularText {
         margin: 0;
@@ -1116,7 +1116,6 @@ footer {
   /* --Kristian slut --------------------------- */
   .koverskrift1 {
     text-align: center;
-    font-size: 30pt;
     margin-top: 10%;
     color: #707070; }
 
@@ -1125,14 +1124,12 @@ footer {
 
   .koverskrift2 {
     text-align: center;
-    font-size: 25pt;
     margin-top: 2%;
     margin-bottom: 1%;
     color: white; }
 
   .koverskrift3 {
     text-align: center;
-    font-size: 25pt;
     margin-top: 2%;
     margin-bottom: 1%;
     margin-right: -10%;
@@ -1373,6 +1370,9 @@ footer {
     margin: 0 0 15px 0; }
     .f_contact .fa {
       margin: 0 20px 55px 0; }
+
+  .f_formula input {
+    width: 65%; }
 
   .f_text {
     display: flex;
