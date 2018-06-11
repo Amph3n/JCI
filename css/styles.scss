@@ -158,7 +158,7 @@ header {
 
 
 
-h1{
+.o_hvemervi{
   grid-column: a1 / h1;
   grid-row: a1;
   font-size: 20px;
@@ -225,7 +225,7 @@ h1{
   background-size: cover;
 }
 
-h5{
+.o_samarbejdspartner{
   grid-column: a4 / h4;
   grid-row: a4;
   font-family: Cambria,serif;
@@ -249,16 +249,16 @@ h5{
   grid-row: a5;
   background: url("../img/o_upperhill.png") no-repeat center;
   background-size: 45%;
+  h6{
+    grid-column: a6/ h6;
+    grid-row: a6;
+    font-family: Cambria,serif;
+    font-size: 20px;
+    color: #0A6466;
+    text-align: center;
+  }
 }
 
-h6{
-  grid-column: a6/ h6;
-  grid-row: a6;
-  font-family: Cambria,serif;
-  font-size: 20px;
-  color: #0A6466;
-  text-align: center;
-}
 .o_text4{
   grid-column: a6/ h6;
   grid-row: a6;
@@ -273,17 +273,17 @@ h6{
   grid-row: a7;
   background: url("../img/o_sparnord.png") no-repeat center;
   background-size: 45%;
+  h2{
+    grid-column: a8/ h8;
+    grid-row: a8;
+    font-family: Cambria,serif;
+    font-size: 20px;
+    color: #0A6466;
+    text-align: center;
+  }
 
 }
 
-h2{
-  grid-column: a8/ h8;
-  grid-row: a8;
-  font-family: Cambria,serif;
-  font-size: 20px;
-  color: #0A6466;
-  text-align: center;
-}
 .o_text5{
   grid-column: a8/ h8;
   grid-row: a8;
@@ -300,18 +300,18 @@ h2{
   background: url("../img/o_ditslagelse.png") no-repeat center;
   background-size: 60%;
   margin-left: 50px;
+  h4{
+    grid-column: a10/ h10;
+    grid-row: a10;
+    font-family: Cambria,serif;
+    font-size: 20px;
+    color: #0A6466;
+    text-align: center;
+    margin-right: 60px;
+
+  }
 }
 
-h4{
-  grid-column: a10/ h10;
-  grid-row: a10;
-  font-family: Cambria,serif;
-  font-size: 20px;
-  color: #0A6466;
-  text-align: center;
-  margin-right: 60px;
-
-}
 .o_text6{
   grid-column: a10/ h10;
   grid-row: a10;
@@ -1989,12 +1989,24 @@ input{
     grid-row: a5;
     background-size: 70%;
 
+    h6{
+      grid-column: a7/ c7;
+      grid-row: a7;
+      margin-top: 70px;
+
+    }
   }
   .o_partner2{
     grid-column: d5/ e5;
     grid-row: a5;
     background-size: 65%;
    margin-top: 30px;
+    h2{
+      grid-column: d7/ e7;
+      grid-row: a7;
+      margin-top: 80px;
+
+    }
 
 
   }
@@ -2002,46 +2014,37 @@ input{
     grid-column: f5/ g5;
     grid-row: a5;
     background-size: 73%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    h4{
+      grid-column: f7/ h7;
+      grid-row: a7;
+      text-align: center;
+      margin-top: 35px;
+
+    }
 
   }
 
-  h6{
-    grid-column: a7/ c7;
-    grid-row: a7;
-    margin-top: 50px;
-
-  }
   .o_text4{
     grid-column: a8/ c8;
     grid-row: a8;
     text-align: left;
-  }
-
-  h2{
-    grid-column: d7/ e7;
-    grid-row: a7;
-    margin-top: 60px;
 
   }
+
+
   .o_text5{
     grid-column: d8/ e8;
     grid-row: a8;
     text-align: left;
   }
 
-  h4{
-    grid-column: f7/ h7;
-    grid-row: a7;
-    text-align: center;
-    margin-top: 30px;
 
-
-  }
   .o_text6{
     grid-column: f8/ h8;
     grid-row: a8;
     text-align: left;
+    margin-top: 30px;
 
   }
 
