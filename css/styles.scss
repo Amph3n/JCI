@@ -443,7 +443,7 @@ footer {
   display: none;
   flex-direction: column;
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   min-width: 100%;
   top: 394px;
 
@@ -1329,13 +1329,13 @@ input{
 
         .eDropContent{
           display: none;
-          top: 119%;
+          top: 705px;
 
         }
 
         .eDropContent2{
           display: none;
-          top: 127%;
+          top: 760px;
 
         }
       }
