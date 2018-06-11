@@ -806,7 +806,7 @@ footer {
     margin-left: auto; }
     .eContentAside .eDropContent {
       min-width: 45%;
-      top: 517px;
+      top: 100px;
       right: 0; }
       .eContentAside .eDropContent .eDropBtnMon {
         height: 35px; }
@@ -1277,6 +1277,9 @@ footer {
     position: absolute; }
 
   /* --Kristian ------------ */
+  .eMobHeadline1 {
+    margin-top: 0; }
+
   .eContent {
     padding: 2% 0 0 0;
     height: 1400px; }

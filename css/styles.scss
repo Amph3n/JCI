@@ -1064,15 +1064,18 @@ input{
     margin-right: 2%;
     margin-left: auto;
 
-    .eDropContent{
-      min-width: 45%;
-      top: 517px;
-      right: 0;
 
-      .eDropBtnMon{
-        height: 35px;
+      .eDropContent{
+
+        min-width: 45%;
+        top: 100px;
+        right: 0;
+
+        .eDropBtnMon{
+          height: 35px;
+        }
       }
-    }
+
 
     .eDropContent2{
       min-width: 45%;
@@ -1767,6 +1770,10 @@ input{
 
   /* --Kristian ------------ */
 
+  .eMobHeadline1{
+    margin-top: 0;
+  }
+
     .eContent{
       padding: 2% 0 0 0;
       height: 1400px;
@@ -1781,8 +1788,6 @@ input{
           .eWebHeadline{
             height: 10%;
           }
-
-
         }
       }
     }
