@@ -158,7 +158,7 @@ header {
 
 
 
-h1{
+.o_hvemervi{
   grid-column: a1 / h1;
   grid-row: a1;
   font-size: 20px;
@@ -225,7 +225,7 @@ h1{
   background-size: cover;
 }
 
-h5{
+.o_samarbejdspartner{
   grid-column: a4 / h4;
   grid-row: a4;
   font-family: Cambria,serif;
@@ -249,16 +249,16 @@ h5{
   grid-row: a5;
   background: url("../img/o_upperhill.png") no-repeat center;
   background-size: 45%;
+  h6{
+    grid-column: a6/ h6;
+    grid-row: a6;
+    font-family: Cambria,serif;
+    font-size: 20px;
+    color: #0A6466;
+    text-align: center;
+  }
 }
 
-h6{
-  grid-column: a6/ h6;
-  grid-row: a6;
-  font-family: Cambria,serif;
-  font-size: 20px;
-  color: #0A6466;
-  text-align: center;
-}
 .o_text4{
   grid-column: a6/ h6;
   grid-row: a6;
@@ -273,17 +273,17 @@ h6{
   grid-row: a7;
   background: url("../img/o_sparnord.png") no-repeat center;
   background-size: 45%;
+  h2{
+    grid-column: a8/ h8;
+    grid-row: a8;
+    font-family: Cambria,serif;
+    font-size: 20px;
+    color: #0A6466;
+    text-align: center;
+  }
 
 }
 
-h2{
-  grid-column: a8/ h8;
-  grid-row: a8;
-  font-family: Cambria,serif;
-  font-size: 20px;
-  color: #0A6466;
-  text-align: center;
-}
 .o_text5{
   grid-column: a8/ h8;
   grid-row: a8;
@@ -300,18 +300,18 @@ h2{
   background: url("../img/o_ditslagelse.png") no-repeat center;
   background-size: 60%;
   margin-left: 50px;
+  h4{
+    grid-column: a10/ h10;
+    grid-row: a10;
+    font-family: Cambria,serif;
+    font-size: 20px;
+    color: #0A6466;
+    text-align: center;
+    margin-right: 60px;
+
+  }
 }
 
-h4{
-  grid-column: a10/ h10;
-  grid-row: a10;
-  font-family: Cambria,serif;
-  font-size: 20px;
-  color: #0A6466;
-  text-align: center;
-  margin-right: 60px;
-
-}
 .o_text6{
   grid-column: a10/ h10;
   grid-row: a10;
@@ -360,7 +360,7 @@ main {
   display: grid;
   height: 300px;
   grid-template-rows: 1fr 1fr;
-  background-color: $primar_color;
+  background: linear-gradient($primar_color, white);
 }
 
 .i_introflexbig {
@@ -545,10 +545,11 @@ footer {
   display: grid;
   height: 600px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-color: $primar_color;
+  background: linear-gradient($primar_color, white);
 
-  h3 {
+  h2 {
     color: white;
+    font-size: 14pt;
   }
 
   p {
@@ -611,7 +612,7 @@ footer {
 
 
 .i_space2, .i_space1 {
-  background-color: $primar_color;
+  background-color: white;
   height:100px;
 }
 
@@ -817,11 +818,13 @@ footer {
 
 .mInfoText{
   margin: 8% 10%;
-
+h2{
+  margin-bottom: 2%;
+}
 }
 
 .mBackground{
-  background-color: $primar_color;
+  background: linear-gradient($primar_color, white);
   width: 100%;
   padding: 10%;
 
@@ -844,6 +847,24 @@ footer {
   box-shadow: 2px 2px 2px black;
   width: 100%;
   height: 250px;
+  background-image: url("../img/mFlex1.jpg");
+  background-size: cover;
+}
+
+.mInfoPic1{
+  box-shadow: 2px 2px 2px black;
+  width: 100%;
+  height: 250px;
+  background-image: url("../img/mFlex2.jpg");
+  background-size: cover;
+}
+
+.mInfoPic2{
+  box-shadow: 2px 2px 2px black;
+  width: 100%;
+  height: 250px;
+  background-image: url("../img/mFlex3.jpg");
+  background-size: cover;
 }
 
 .mInfoPicText{
@@ -856,7 +877,6 @@ footer {
 }
 
 .mNews{
-  margin-top: 10%;
   color: white;
   h2{
     margin-bottom: 3%;
@@ -898,8 +918,8 @@ input{
 
 .mNewsImg{
   Width: 300px;
-  height: auto;
-  background-color: grey;
+  height: 300px;
+  display: none;
 }
 
 // Nillerbrunch slut ------------------------------------------
@@ -1166,13 +1186,58 @@ input{
     grid-column: f8/ h8;
     grid-row: a8;
     text-align: left;
+  }
+  
+  .h_logo {
+    display: none;
+  }
+
+  .h_content {
+    display: grid;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    background-color: white;
+    outline: 0 auto #5d5d5d;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr 3fr;
+  }
+
+  .dropdown_btn {
+    display: none;
+  }
+
+  .box1, .box2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7px;
+  }
+
+  .box1 {
+    grid-column: 1;
 
   }
 
-}
-//Josefine slut --------------------------
+  .box2 {
+    grid-column: 3;
+  }
+
+  .menu_logo {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1/2;
+    max-width: 115px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .i_bigtext {
+    margin-top: 170px;
+  }
+
 
     // Oliver start ---------------------------------------------------
+
   .f_formula input {
     width: 30%;
   }
@@ -1193,9 +1258,7 @@ input{
   .i_intro {
     display: flex;
     height: 200px;
-    /* grid-template-rows: 1fr 1fr; */
     background-color: #0A6466;
-    /* margin: 20px 0 0 0; */
   }
 
   .i_introflex1, .i_introflex2, .i_introflexbig {
@@ -1234,7 +1297,7 @@ input{
 
 
   // Oliver slut--------------------------------------------------------
-
+}
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
@@ -1261,16 +1324,47 @@ input{
       width: 240px;
     }
 
+  .mInfoPic1{
+    height: 160px;
+    width: 240px;
+  }
+
+  .mInfoPic2{
+    height: 160px;
+    width: 240px;
+  }
+
     .mInfoPicText{
       width: 240px;
     }
 
+  .mNews-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mNews{
+    width: 100%;
+    h2{
+      width: 80%;
+    }
+    p{
+      width: 80%;
+    }
+  }
+
     .mForm{
       input {
-        width: 40%;
+        width: 80%;
       }
+  }
 
-
+  .mNewsImg{
+    display: block;
+    float: right;
+    width: 40%;
+    margin-bottom: 5%;
   }
 
   // Nillerbrunch slut ----------------------------------------------------
@@ -1649,47 +1743,8 @@ input{
 
   //oliver start --------------------------------------------------------------
 
-  .h_logo {
-    display: none;
-  }
-
-  .h_content {
-    display: grid;
-    position: absolute;
-    top: 30px;
-    width: 100%;
-    background-color: white;
-    outline: 0 auto #5d5d5d;
-    grid-template-rows: 1fr;
-    grid-template-columns: 3fr 1fr 3fr;
-  }
-
-  .dropdown_btn {
-    display: none;
-  }
-
-  .box1, .box2 {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 7px;
-  }
-
-  .box1 {
-    grid-column: 1;
-
-  }
-
-  .box2 {
-    grid-column: 3;
-  }
-
-  .menu_logo {
-    display: flex;
-    grid-column: 2;
-    grid-row: 1/2;
-    max-width: 115px;
-    margin: auto;
-    justify-content: center;
+  .i_bigtext {
+    margin-top: 80px;
   }
 
   .f_grid {
@@ -1816,6 +1871,17 @@ input{
     width: 320px;
   }
 
+  .mInfoPic1{
+    height: 160px;
+    width: 320px;
+  }
+
+  .mInfoPic2{
+    height: 160px;
+    width: 320px;
+  }
+  
+
 
 
 
@@ -1865,6 +1931,10 @@ input{
     }
   }
 
+  .f_formula input {
+    width: 65%;
+  }
+
   .f_text {
     display: flex;
     flex-direction: column;
@@ -1890,6 +1960,7 @@ input{
   .i_infopic1 {
     background-position-y: 0;
     background-size: contain;
+    margin-top: 20px;
   }
 
   .i_infopic2 {
@@ -1924,12 +1995,24 @@ input{
     grid-row: a5;
     background-size: 70%;
 
+    h6{
+      grid-column: a7/ c7;
+      grid-row: a7;
+      margin-top: 70px;
+
+    }
   }
   .o_partner2{
     grid-column: d5/ e5;
     grid-row: a5;
     background-size: 65%;
    margin-top: 30px;
+    h2{
+      grid-column: d7/ e7;
+      grid-row: a7;
+      margin-top: 80px;
+
+    }
 
 
   }
@@ -1937,46 +2020,37 @@ input{
     grid-column: f5/ g5;
     grid-row: a5;
     background-size: 73%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    h4{
+      grid-column: f7/ h7;
+      grid-row: a7;
+      text-align: center;
+      margin-top: 35px;
+
+    }
 
   }
 
-  h6{
-    grid-column: a7/ c7;
-    grid-row: a7;
-    margin-top: 50px;
-
-  }
   .o_text4{
     grid-column: a8/ c8;
     grid-row: a8;
     text-align: left;
-  }
-
-  h2{
-    grid-column: d7/ e7;
-    grid-row: a7;
-    margin-top: 60px;
 
   }
+
+
   .o_text5{
     grid-column: d8/ e8;
     grid-row: a8;
     text-align: left;
   }
 
-  h4{
-    grid-column: f7/ h7;
-    grid-row: a7;
-    text-align: center;
-    margin-top: 30px;
 
-
-  }
   .o_text6{
     grid-column: f8/ h8;
     grid-row: a8;
     text-align: left;
+    margin-top: 30px;
 
   }
 

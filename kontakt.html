@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Kontakt</title>
+    <title>JCI Slagelse Kontakt</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -24,8 +24,8 @@
     <!-- OpenGraph -->
     <meta property="JCI Slagelse : Kontakt" content="titel">
     <meta property="Website" content="website">
-    <meta property="www.oliversummer.dk" content="http://www.domain.dk">
-    <meta property="www.oliversummer.dk/manonphone.png" content="https://www.domain.dk/img.jpg">
+    <meta property="www.oliversommer.dk" content="http://www.domain.dk">
+    <meta property="www.oliversommer.dk/manonphone.png" content="https://www.domain.dk/img.jpg">
     <meta property="JCI Slagelses kontaktside" content="Beskrivelse">
     <meta property=danmark content="da_DK">
 
@@ -37,6 +37,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Tajawal:500" rel="stylesheet">
 
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
 
 </head>
 
@@ -109,8 +111,8 @@
                 Hos JCI Slagelse
                 kan vi hjælpe dig
                 med at danne et
-                overblik, skriv til os
-                ved hjælp af formularen
+                overblik. Skriv til os
+                ved hjælp af formularen,
                 i bunden af siden.
             </p>
 
@@ -118,11 +120,11 @@
                 <br>
                 Her hos JCI Slagelse kan vi hjælpe dig med at danne et overblik,
                 udvikle dine personlige kompetencer indenfor lederskab, projektstyring og så meget mere.
-                Vi ønsker at hjælpe dig med at skabe et større netværk, nogle tætte forretningsforbindelser
+                Vi ønsker at hjælpe dig med at skabe et større netværk, tætte forretningsforbindelser
                 men ikke mindst også at du har nogle mennesker som du kan sparre med når idéerne
                 får frit spil og skal være mere end blot idéer.
-                Du kan kontankte os ved hjælp af kontaktformularen herunder og du finder vores
-                kontakinformation under bestyrrelsen her på siden så du kan komme i kontakt
+                Du kan kontankte os ved hjælp af kontaktformularen herunder, eller du kan finde vores
+                kontakinformation under bestyrrelsen her på siden. Så kan du komme i kontakt
                 med lige den af os du ønsker.
             </p>
         </div>
@@ -156,7 +158,8 @@
                     <input class="kemail" type="text" id="email" name="lastname" placeholder="     E-mail"> <br><br>
 
                     <label for="besked"></label> <br>
-                    <textarea id="besked" name="subject" placeholder="     Skriv din besked her..." style="height:200px; width:200%; border-radius: 10px; font-family: 'Tajawal', sans-serif; font-size: 13pt; padding-top: 1%; border: 1px solid white;" ></textarea>
+                    <textarea id="besked" name="subject" placeholder="     Skriv din besked her..."
+                              style="height:200px; width:200%; border-radius: 10px; font-family: 'Tajawal', sans-serif; font-size: 13pt; padding-top: 1%; border: 1px solid white;" ></textarea>
 
                     <br>
 
@@ -356,7 +359,7 @@
         $(window).resize(function (e) {
             var width = $(window).width();
 
-            if (width > 1200) {
+            if (width > 768) {
                 $(".h_content").css( "display", "grid");
             }
             else {
