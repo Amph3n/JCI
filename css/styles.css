@@ -1319,7 +1319,7 @@ footer {
     .o_partner1 h6 {
       grid-column: a7/ c7;
       grid-row: a7;
-      margin-top: 50px; }
+      margin-top: 70px; }
 
   .o_partner2 {
     grid-column: d5/ e5;
@@ -1329,18 +1329,18 @@ footer {
     .o_partner2 h2 {
       grid-column: d7/ e7;
       grid-row: a7;
-      margin-top: 60px; }
+      margin-top: 80px; }
 
   .o_partner3 {
     grid-column: f5/ g5;
     grid-row: a5;
     background-size: 73%;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
     .o_partner3 h4 {
       grid-column: f7/ h7;
       grid-row: a7;
       text-align: center;
-      margin-top: 30px; }
+      margin-top: 35px; }
 
   .o_text4 {
     grid-column: a8/ c8;
@@ -1355,6 +1355,7 @@ footer {
   .o_text6 {
     grid-column: f8/ h8;
     grid-row: a8;
-    text-align: left; } }
+    text-align: left;
+    margin-top: 30px; } }
 
 /*# sourceMappingURL=styles.css.map */
