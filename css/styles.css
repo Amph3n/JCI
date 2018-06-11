@@ -784,6 +784,39 @@ footer {
 .kflex3 {
   display: none; }
 
+/* 403 & 404 Start */
+.nMain {
+  margin-top: 0; }
+
+.nFoot {
+  display: none; }
+
+.nHead {
+  text-align: center;
+  color: #707070; }
+
+.nContent {
+  display: flex;
+  justify-content: space-around;
+  height: 335px;
+  background: linear-gradient(#0A6466, white); }
+  .nContent .nTxt {
+    width: 55%;
+    margin-top: 23%;
+    color: #FFFFFF;
+    font-family: 'Tajawal', sans-serif;
+    text-align: right;
+    font-size: 12pt; }
+    .nContent .nTxt h2 {
+      font-size: 13pt; }
+    .nContent .nTxt a {
+      color: #0A6466;
+      font-size: 16pt;
+      text-decoration: none;
+      font-weight: bold; }
+  .nContent .nImg {
+    width: 35%; }
+
 @media screen and (min-width: 768px) {
   /* -- Kristian ------------------------------- */
   .eMobHeadline1 {
@@ -967,7 +1000,20 @@ footer {
   .i_infopic2 {
     grid-row: 2;
     grid-column: 1;
-    background-size: cover; } }
+    background-size: cover; }
+
+  /* 404 & 403 */
+  .nMain {
+    margin-top: 90px; }
+
+  .nContent {
+    height: 500px;
+    padding-top: 5%; }
+    .nContent .nTxt {
+      width: 45%;
+      margin-top: 14%; }
+    .nContent .nImg {
+      width: 45%; } }
 @media screen and (min-width: 992px) {
   .mStartImg {
     height: 500px; }
@@ -1257,7 +1303,20 @@ footer {
     background-position-y: -32px; }
 
   .i_infopic2 {
-    background-position-y: -90px; } }
+    background-position-y: -90px; }
+
+  /* 404 & 403 */
+  .nMain {
+    margin-top: 90px; }
+
+  .nContent {
+    height: 410px;
+    padding-top: 2%; }
+    .nContent .nTxt {
+      width: 45%;
+      margin-top: 11%; }
+    .nContent .nImg {
+      width: 45%; } }
 @media screen and (min-width: 1200px) {
   header {
     height: 100px; }
@@ -1458,6 +1517,19 @@ footer {
     grid-column: f8/ h8;
     grid-row: a8;
     text-align: left;
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  /* 404 & 403 */
+  .nMain {
+    margin-top: 0; }
+
+  .nContent {
+    height: 440px;
+    padding-top: 2%; }
+    .nContent .nTxt {
+      width: 45%;
+      margin-top: 100px; }
+    .nContent .nImg {
+      width: 45%; } }
 
 /*# sourceMappingURL=styles.css.map */
