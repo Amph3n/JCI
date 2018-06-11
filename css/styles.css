@@ -713,13 +713,11 @@ footer {
 
 .koverskrift1 {
   text-align: center;
-  font-size: 20pt;
   margin-top: 10%;
   color: #707070; }
 
 .koverskrift2 {
   text-align: center;
-  font-size: 15pt;
   margin-top: 10%;
   margin-bottom: 15%;
   color: white; }
@@ -1110,7 +1108,6 @@ footer {
   /* --Kristian slut --------------------------- */
   .koverskrift1 {
     text-align: center;
-    font-size: 30pt;
     margin-top: 10%;
     color: #707070; }
 
@@ -1119,14 +1116,12 @@ footer {
 
   .koverskrift2 {
     text-align: center;
-    font-size: 25pt;
     margin-top: 2%;
     margin-bottom: 1%;
     color: white; }
 
   .koverskrift3 {
     text-align: center;
-    font-size: 25pt;
     margin-top: 2%;
     margin-bottom: 1%;
     margin-right: -10%;
