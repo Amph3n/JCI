@@ -536,16 +536,29 @@ footer {
   height: auto;
   background-color: grey; }
 
+/* -- Sofie Start ------------------- */
+
+.kbaggrund {
+  background: linear-gradient(#0A6466, white); }
+
+.koverskrift {
+  color: white; }
+
 .koverskrift1 {
   text-align: center;
   font-size: 20pt;
-  margin-top: 10%; }
+  margin-top: 10%;
+  color: #707070; }
 
 .koverskrift2 {
   text-align: center;
   font-size: 15pt;
   margin-top: 10%;
-  margin-bottom: 15%; }
+  margin-bottom: 15%;
+  color: white; }
+
+.kbroed {
+  color: white; }
 
 .kflex1 {
   display: flex;
@@ -576,7 +589,8 @@ footer {
 
 .kflextext1 {
   text-align: center;
-  margin: 13% 7% 0 0; }
+  margin: 13% 7% 0 0;
+  color: #0A6466; }
 
 .kcon3 {
   width: 60%;
@@ -584,7 +598,8 @@ footer {
 
 .kflextext2 {
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  color: #0A6466; }
 
 .kcon4 {
   width: 69%;
@@ -592,7 +607,8 @@ footer {
 
 .kflextext3 {
   text-align: center;
-  margin: 10% 0 25% 25%; }
+  margin: 10% 0 25% 25%;
+  color: #0A6466; }
 
 .kbroed2 {
   display: none; }
@@ -814,26 +830,33 @@ footer {
   .koverskrift1 {
     text-align: center;
     font-size: 30pt;
-    margin-top: 10%; }
+    margin-top: 10%;
+    color: #707070; }
+
+  .kflex1 {
+    margin-top: 4%; }
 
   .koverskrift2 {
     text-align: center;
     font-size: 25pt;
     margin-top: 2%;
-    margin-bottom: 1%; }
+    margin-bottom: 1%;
+    color: white; }
 
   .koverskrift3 {
     text-align: center;
     font-size: 25pt;
     margin-top: 2%;
     margin-bottom: 1%;
-    margin-right: -10%; }
+    margin-right: -10%;
+    color: white; }
 
   .kbroed {
     display: none; }
 
   .kbroed3 {
-    margin-left: 38%; }
+    margin-left: 38%;
+    color: white; }
 
   .kcon1 {
     width: 25%;
@@ -841,12 +864,14 @@ footer {
     margin-left: 10%; }
 
   .kimage1 {
-    width: 28%;
-    margin-top: -8%;
+    width: 20%;
+    margin-top: -0.5%;
     margin-right: 12%; }
 
   .kbroed2 {
-    display: block; }
+    display: block;
+    color: white;
+    margin-top: 1%; }
 
   .kflex2 {
     flex-direction: row-reverse; }
@@ -899,7 +924,7 @@ footer {
     font-size: 12pt;
     padding-top: 1%;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid white;
     box-shadow: none; }
 
   .kbesked {
@@ -908,7 +933,7 @@ footer {
     font-size: 12pt;
     padding-top: 1%;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid white;
     box-shadow: none; }
 
   .sendbutton {
