@@ -1929,6 +1929,10 @@ input{
     }
   }
 
+  .f_formula input {
+    width: 65%;
+  }
+
   .f_text {
     display: flex;
     flex-direction: column;
