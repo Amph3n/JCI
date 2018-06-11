@@ -32,7 +32,10 @@
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/1823101846.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:500" rel="stylesheet">
 
 
 </head>
@@ -49,27 +52,27 @@
                 <div class="h_content">
                     <div class="box1">
                         <div class="h_menu1">
-                            <a href="vine.html">Vores vine</a>
+                            <a href="vine.html">Medlemskab</a>
                         </div>
 
                         <div class="h_menu2">
-                            <a href="history.html">Vores historie</a>
+                            <a href="history.html">Events</a>
                         </div>
                     </div>
 
                     <div class="box2">
                         <div class="h_menu3">
-                            <a href="vinblog.html">Blog</a>
+                            <a href="vinblog.html">Kontakt</a>
                         </div>
 
                         <div class="h_menu4">
-                            <a href="contact.html">Kontakt</a>
+                            <a href="contact.html">Om Os</a>
                         </div>
                     </div>
 
                     <div class="menu_logo">
                         <a href="index.html">
-                            <img src="img/Baby%20jesus.png">
+                            <img src="img/Danmark_Print_6cm_300dpi.png">
                         </a>
                     </div>
 
@@ -78,13 +81,19 @@
 
             <div class="h_logo">
                 <a href="index.html">
-                    <img src="img/Baby%20jesus.png">
+                    <img src="img/Danmark_Print_6cm_300dpi.png">
                 </a>
             </div>
         </nav>
     </header>
 
     <main>
+
+        <div>
+            <h3 class="koverskrift1">
+                KONTAKT
+            </h3>
+        </div>
 
         <div class="kflex1">
         <div class="kcon1">
@@ -99,7 +108,9 @@
                 Hos JCI Slagelse
                 kan vi hjælpe dig
                 med at danne et
-                overblik.
+                overblik, skriv til os
+                ved hjælp af formularen
+                i bunden af siden.
             </p>
 
             <p class="kbroed2">
@@ -118,6 +129,46 @@
         <div class="kimage1">
             <img src="img/manonphone.png">
         </div>
+        </div>
+
+        <div class="kflex3">
+            <div class="kfleximg2"><img src="img/envelope.png"></div>
+
+            <div class="kconformula">
+
+                <div>
+                    <h3 class="koverskrift3">
+                        KONTAKT OS
+                    </h3>
+                    <p class="kbroed3">
+                        <br>
+                        Du kan kontakte os ved hjælp af vores kontaktformular som du finder lige under her.
+                    </p>
+                </div>
+
+                <div class="kcontainer">
+
+                    <label for="fname"></label> <br>
+                    <input class="knavn" type="text" id="fname" name="firstname" placeholder="     Navn"> <br><br>
+
+                    <label for="email"></label> <br>
+                    <input class="kemail" type="text" id="email" name="lastname" placeholder="     E-mail"> <br><br>
+
+                    <label for="besked"></label> <br>
+                    <textarea id="besked" name="subject" placeholder="     Skriv din besked her..." style="height:200px; width:200%; border-radius: 10px; font-family: 'Tajawal', sans-serif; font-size: 13pt; padding-top: 1%; border: 1px solid black;" ></textarea>
+
+                    <br>
+
+                    <input class="sendbutton" type="Submit" value="Send">
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="koverskrift2">
+                BESTYRELSEN
+            </h3>
         </div>
 
         <div class="kflex2">
@@ -163,11 +214,13 @@
                     21 26 96 25
                 </p>
             </div>
+        </div>
 
-            <div class="kcon3">
+        <div class="kflex2">
+            <div class="kcon3" id="kcon3">
                 <div class="fleximg1"><img src="img/womanone.png"></div>
 
-                <p class="kflextext2">
+                <p class="kflextext2" id="kflextext2">
                     Mødeansvarlig
                     <br>
                     Kamilla Jongejan
@@ -178,10 +231,10 @@
                 </p>
             </div>
 
-            <div class="kcon4">
+            <div class="kcon4" id="kcon4">
                 <div class="fleximg1"><img src="img/womantwo.png"></div>
 
-                <p class="kflextext3">
+                <p class="kflextext3" id="kflextext3">
                     Medlemsansvarlig
                     <br>
                     Mie Lyngstrøm
@@ -197,7 +250,86 @@
     </main>
 
 
-        <footer></footer>
+    <footer>
+        <div class="f_grid">
+            <div class="f_formula">
+
+                <h3>INTERESSERET?</h3>
+
+                <p>Bliv kontaktet for mere informaiton.</p>
+
+                <label class="f_name">Dit Navn</label>
+                <div class="f_name">
+                    <input type="text" placeholder="Navn">
+                </div>
+
+                <label class="f_email">E-mail</label>
+                <div class="f_email">
+                    <input type="email" placeholder="E-mail">
+                </div>
+
+                <label class="f_tlf">Mobil</label>
+                <div class="f_name">
+                    <input type="tel" placeholder="Mobil">
+                </div>
+
+                <button type="submit">SEND</button>
+            </div>
+
+            <div class="f_coop">
+
+                <div class="f_box1">
+
+                    <h3>VI SAMARBEJDER MED</h3>
+
+                    <p>I JCI Slagelse har vi indgået partnerskab med flere virksomheder.</p>
+
+                </div>
+
+                <div class="f_box2">
+
+                    <h3>The Upper Hill</h3>
+                    <h3>Spar Nord</h3>
+                    <h3>Dit Slagelse</h3>
+
+                </div>
+
+            </div>
+
+            <div class="f_contact">
+
+                <div class="f_text">
+                    <h3>KONTAKT INFORMATION</h3>
+
+                    <p>Du kan kontakte os på:</p>
+                </div>
+
+                <div class="f_icons">
+
+                    <i class="fa fa-envelope"> JCI@hotmail.com</i>
+
+                    <i class="fa fa-phone"> +45 11 22 33 44</i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="f_links">
+
+            <a href="">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+
+            <a href="">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+
+            <a href="">
+                <i class="fa fa-linkedin"></i>
+            </a>
+
+        </div>
+    </footer>
 
 </div>
 

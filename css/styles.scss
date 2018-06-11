@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
-  font-family: Classico URW;
+  font-family: 'Tajawal', sans-serif;
 }
 
   li {
@@ -54,12 +54,25 @@ p {
     height: auto; // Højden skal tilpasse sig
   }
 
+  a{
+    text-decoration: none;
+  }
+
 
 $primar_color: #0A6466;
 $CTA: #B56C0C;
 $CTA_border: #EF8F0F;
 $gray: #707070;
 
+@mixin eBtn(){
+  background-color: $CTA;
+  border-color: $CTA_border;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: solid;
+  padding: 5px;
+}
 
 .grid {
   display: grid;
@@ -308,52 +321,102 @@ main {
 }
 
 .i_main_grid {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  height: 300px;
 }
 
 .i_bigtext {
-  grid-row: 1;
-}
+  margin: auto;
+  margin-top: 80px;
 
-.i_hidebox {
-  grid-row: 3;
-  position: relative;
-  //background-color: $primar_color;
+
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    color: $gray;
+  }
+
+
+  .i_junior {
+    font-weight: 100;
+  }
+
 }
 
 .i_heads {
+  height: 170px;
+  background: url("../img/fastboi.gif") no-repeat center;
+  background-size: contain;
+  margin: 80px 0 0 0;
+}
+
+.i_intro {
+  display: grid;
+  height: 300px;
+  grid-template-rows: 1fr 1fr;
+  background-color: $primar_color;
+}
+
+.i_introflexbig {
+  display: none;
+}
+
+.i_introflex1 {
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.i_introflex2 {
   grid-row: 2;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.i_male1 {
- 
+.i_introflex1, .i_introflex2, .i_introflexbig {
+  margin: 10px 0 0 0;
 }
 
-.i_male2 {
-
+.i_introgrid1, .i_introgrid2, .i_introgrid3, .i_introgridbig {
+  display: grid;
+  height: 126px;
+  width: 40%;
+  grid-template-rows: 2fr 1fr;
 }
 
-.i_male3 {
+.i_introtext1, .i_introtext2, .i_introtext3, .i_introtextbig{
+  grid-row: 1;
+  margin-left: 16px;
 
+  p {
+    color: white;
+  }
+
+  b {
+    color: white;
+  }
 }
 
-.i_male4 {
-
-}
-
-.i_fe1 {
-
-}
-
-.i_fe2 {
-
+.i_introtext2 {
+  margin-top: 15px;
 }
 
 
-.i_fe3 {
+.i_introcta1, .i_introcta2, .i_introcta3, .i_introctabig {
+  grid-row: 2;
+  background-color: #B56C0C;
+  border-radius: 2px;
+  border: solid 2px #EF8F0F;
+  text-align: center;
+  margin: auto;
+  padding: 3px;
+  font-size: 11px;
 
+  a {
+    color: white;
+    font-family: Cambria;
+  }
 }
+
 
 
 footer {
@@ -426,7 +489,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  margin: 0px 0px 20px 20px;
+  margin: 0 0 20px 20px;
 }
 
 .f_box1{
@@ -471,6 +534,81 @@ footer {
   justify-content: center;
 }
 
+.i_infogrid {
+  display: grid;
+  height: 600px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: $primar_color;
+
+  h3 {
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.i_textbox1, .i_textbox2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.i_textbox1 {
+  grid-row: 1;
+}
+
+.i_infobigtext1 {
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.i_infosmalltext1 {
+  margin: 0 auto;
+}
+
+.i_infopic1 {
+  grid-row: 2;
+  background: url("../img/postit.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.i_textbox2 {
+  grid-row: 3;
+}
+
+.i_infobigtext2 {
+  margin: auto auto -25px auto;
+}
+
+.i_infosmalltext2 {
+  background-color: #B56C0C;
+  border-radius: 2px;
+  border: solid 2px #EF8F0F;
+  text-align: center;
+  margin: auto;
+  padding: 3px;
+  font-size: 11px;
+
+  a {
+    color: white;
+  }
+}
+
+.i_infopic2 {
+  grid-row: 4;
+  background: url("../img/writing.jpg") no-repeat center;
+  background-size: contain;
+}
+
+
+.i_space2, .i_space1 {
+  background-color: $primar_color;
+  height:100px;
+}
+
+
 //Oliver Slut -------------------------------------------------------------
 
 /* Start Kristian ----------------------------------------------------*/
@@ -478,8 +616,27 @@ footer {
 .eContent{
   display: block;
   width: 100%;
-  background-color: #0A6466;
+  min-height: 800px;
+  background: linear-gradient($primar_color, white);
   color: white;
+}
+
+.eWebHeadline{
+  display: none;
+}
+
+.eMobHeadline1{
+  text-align: center;
+  width: 100%;
+  height: 37px;
+  color: $gray;
+}
+
+.eMobHeadline2{
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
 }
 
 .eContentAside{
@@ -489,76 +646,93 @@ footer {
 .ePopular{
   display: flex;
   width: 100%;
+  height: 220px;
   justify-content: space-around;
 
   .eFlex{
     width: 45%;
+
+    img {
+      height: 100px;
+    }
   }
 }
 
 .ePopularText{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 90%;
+  height: 110px;
   margin: 0 auto;
 }
 
-.ePoppularPicture{
+.ePopularPicture{
   display: none;
 }
 
 .ePrice{
+  position: relative;
   text-align: right;
 }
 
-.eFilterMobile{
-  display: flex;
-  justify-content: space-around;
-}
-
-.eMobDropBtn{
-  background-color: white;
-  color: black;
-  padding: 5px;
-  font-size: 12pt;
-  border: none;
-  cursor: pointer;
-}
-
-.eMobDropContent{
-  display: none;
-  position: absolute;
-  z-index: 3;
-  min-width: 100%;
-  right: 0;
-  margin-top: 9%;
-  background-color: white;
-  outline: 5px auto #5d5d5d;
-}
-
-.eMobDropBtnMon{
+.eContentAside{
+  display: block;
   width: 100%;
+  height: 30px;
+
+  .eAsideFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
-.eMobDropBtn2{
-  background-color: white;
-  color: black;
-  padding: 5px;
+.eDropBtn{
+  display: block;
+  position: relative;
   font-size: 12pt;
-  border: none;
-  cursor: pointer;
+  @include eBtn();
 }
 
-.eMobDropContent2{
+.eDropContent{
   display: none;
+  flex-direction: column;
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   min-width: 100%;
-  right: 0;
-  margin-top: 9%;
+  top: 394px;
+
   background-color: white;
   outline: 5px auto #5d5d5d;
 }
 
-.eMobDropBtnLoc{
+.eDropBtnMon{
+  width: 100%;
+  display: inline;
+  position: relative;
+}
+
+.eDropBtn2{
+  display: block;
+  position: relative;
+  font-size: 12pt;
+  @include eBtn();
+}
+
+.eDropContent2{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 3;
+  min-width: 100%;
+  top: 394px;
+
+  background-color: white;
+  outline: 5px auto #5d5d5d;
+}
+
+.eDropBtnLoc{
   width: 100%;
 }
 
@@ -567,6 +741,7 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
+  margin-top: 10px;
 
   .eFlex{
     display: flex;
@@ -583,6 +758,7 @@ footer {
       display: block;
       width: 59%;
       font-size: 10pt;
+      color: #0A6466;
     }
 
     .eEventBreadText{
@@ -591,18 +767,8 @@ footer {
   }
 }
 
-.eEventNav{
-  font-size: 24px;
-  margin: 0 auto;
-
-  li{
-    display: inline;
-    width: 10%;
-  }
-
-  .eArrow{
-    font-size: 36px;
-  }
+#eEventNav{
+  margin-left: 2%;
 }
 /* -- Slut Kristian ------------------------------------------------------ */
 
@@ -612,7 +778,7 @@ footer {
 
 .mHeader{
   text-align: center;
-
+  margin: 7%;
 }
 
 .mStartImg{
@@ -657,20 +823,20 @@ footer {
 .mFlex{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
 
 }
 
 .mInfoPicBox{
  margin-bottom: 8%;
-
 }
 
 .mInfoPic{
   box-shadow: 2px 2px 2px black;
-
+  width: 100%;
+  height: 250px;
 }
 
 .mInfoPicText{
@@ -728,12 +894,26 @@ input{
 
  // Sofie start --------------------------------------------
 
+.koverskrift1 {
+  text-align: center;
+  font-size: 20pt;
+  margin-top: 10%;
+}
+
+.koverskrift2 {
+  text-align: center;
+  font-size: 15pt;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
 .kflex1 {
   display: flex;
   height: auto;
   width: 100%;
   justify-content: space-around;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
+  margin-top: 15%;
 }
 
 .kcon1 {
@@ -744,11 +924,12 @@ input{
 
 .kimage1 {
   width: 48%;
+  margin-top: 7%;
 }
 
 .kflex2 {
   display: flex;
-  height: 300px;
+  height: auto;
   width: 100%;
   flex-direction: column;
 }
@@ -780,7 +961,15 @@ input{
 
 .kflextext3 {
   text-align: center;
-  margin: 10% 0 0 25%
+  margin: 10% 0 25% 25%
+}
+
+.kbroed2 {
+  display: none;
+}
+
+.kflex3 {
+  display: none;
 }
 
   // Sofie Slut ---------------------------------------------
@@ -796,6 +985,53 @@ input{
   /* -- Kristian ------------------------------- */
 
 
+  .eMobHeadline1{
+    height: 50px;
+  }
+
+  .eContent{
+    min-height: 800px;
+
+  }
+
+  .ePopular{
+    height: 330px;
+
+    .eFlex{
+      width: 40%;
+
+      img {
+        height: 206px;
+      }
+    }
+  }
+
+  .eContentAside{
+    width: 46%;
+    margin-right: 2%;
+    margin-left: auto;
+
+    .eDropContent{
+      min-width: 45%;
+      top: 517px;
+      right: 0;
+
+      .eDropBtnMon{
+        height: 35px;
+      }
+    }
+
+    .eDropContent2{
+      min-width: 45%;
+      top: 517px;
+      right: 0;
+
+      .eDropBtnLoc{
+        height: 35px;
+      }
+    }
+  }
+
   .eEventsList{
     flex-direction: row;
     flex-wrap: wrap;
@@ -804,6 +1040,8 @@ input{
       width: 45%;
     }
   }
+
+
 
   // Nillerbrunch start --------------------------------------------
 
@@ -858,17 +1096,13 @@ input{
     background-size: 80%;
     margin-bottom: -30px;
 
-
   }
   .o_partner3{
     grid-column: f5/ g5;
     grid-row: a5;
     background-size: 80%;
     margin: -15px;
-
   }
-
-
 
   h6{
     grid-column: a7/ c7;
@@ -906,7 +1140,72 @@ input{
   }
 
 }
-//Josefine slut ---------------------------------------------
+//Josefine slut --------------------------
+
+    // Oliver start ---------------------------------------------------
+  .f_formula input {
+    width: 30%;
+  }
+
+
+  .i_main_grid, .i_intro, .i_infogrid {
+    a{
+      font-size: 16px;
+    }
+
+  }
+
+  .i_heads {
+    margin: 101px 0 0 0;
+
+  }
+
+  .i_intro {
+    display: flex;
+    height: 200px;
+    /* grid-template-rows: 1fr 1fr; */
+    background-color: #0A6466;
+    /* margin: 20px 0 0 0; */
+  }
+
+  .i_introflex1, .i_introflex2, .i_introflexbig {
+    margin: 40px 0 0px 0px;
+  }
+
+  .i_infogrid {
+    display: grid;
+    height: 495px;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    background-color: #0A6466;
+  }
+
+  .i_textbox1 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .i_infopic1 {
+    grid-row: 1;
+    grid-column: 2;
+    background-size: cover;
+  }
+
+  .i_textbox2 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .i_infopic2 {
+    grid-row: 2;
+    grid-column: 1;
+    background-size: cover;
+  }
+
+
+  // Oliver slut--------------------------------------------------------
+}
+
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
 
@@ -925,59 +1224,175 @@ input{
 
   .mFlex{
     flex-direction: row;
+
+    .mInfoPic{
+      height: 160px;
+      width: 240px;
+    }
+
+    .mInfoPicText{
+      width: 240px;
+    }
+
   }
 
   // Nillerbrunch slut ----------------------------------------------------
 
   /* --Kristian ------------ */
 
-  #jegkanikkeseenskid{
-    background-color: #707070;
-  }
-
   .eMobHeadline1{
-    display: none;
+
   }
 
-  .eFilterMobile{
-    display: none;
-  }
+
+
+
 
   .eMobHeadline2{
     display: none;
   }
 
+  .eContentTop{
+    width: 100%;
+    height: 450px;
+  }
+
   .eContent{
     display: flex;
-    width: 95%;
-    margin: 0 auto;
+    width: 100%;
+    padding: 5% 0 0 0;
     justify-content: space-between;
 
     .eContentAside{
-      display: block;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
       width: 24%;
+      height: 200px;
+      margin: 0 1%;
+
+
+
+      .eAsideFlex{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        text-align: center;
+        height: 150px;
+        width: 100%;
+        margin: 0;
+
+        .eDropBtn{
+
+        }
+
+        .eDropContent{
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          min-width: 24%;
+          top: 703px;
+          right: inherit;
+
+          background-color: white;
+          outline: 5px auto #5d5d5d;
+        }
+
+
+
+
+
+        .eDropContent2{
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          min-width: 24%;
+          top: 755px;
+          right: inherit;
+
+          background-color: white;
+          outline: 5px auto #5d5d5d;
+        }
+
+        .eDropBtnLoc{
+          width: 100%;
+          height: 21px;
+        }
+      }
     }
 
     .eContentEvents{
-      width: 74%;
+      width: 100%;
+
+      .eWebHeadline{
+        display: block;
+        margin: 0 0 0 27%;
+      }
+
+      .ePopular{
+
+        .ePopularText{
+          margin: 0;
+          width: 100%;
+        }
+      }
     }
   }
 
+  .eEventFlex{
+    display: flex;
+
+  }
+
   .ePopular{
-    width: 95%;
+    width: 99%;
+    height: 380px;
     justify-content: space-between;
     margin: 0;
 
-    .ePoppularPicture{
+    .ePopularPicture{
       display: block;
-      width: 20%;
-      margin-right: 5%;
+      width: 25%;
+      height: 221px;
 
+      img{
+        height: 360px;
+      }
     }
 
     .eFlex{
       width: 35%;
       margin-top: 5%;
+
+      img{
+        height: 230px;
+      }
+    }
+  }
+
+  #eEventNav{
+    margin: 0 0 5% 27%;
+  }
+
+  .eEventsList{
+    width: 74%;
+
+    .eFlex{
+      width: 30%;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .eFlexImg{
+        width: 100%;
+        height: 155px;
+      }
+
+      .eEventText{
+        width: 100%;
+        height: 120px;
+      }
     }
   }
 
@@ -985,21 +1400,193 @@ input{
 
   // Sofie Start -----------------------------------------
 
+
+  .koverskrift1 {
+    text-align: center;
+    font-size: 30pt;
+    margin-top: 10%;
+  }
+
+  .koverskrift2 {
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 2%;
+    margin-bottom: 1%;
+  }
+
+  .koverskrift3 {
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-right: -10%;
+  }
+
   .kbroed {
     display: none;
   }
 
+  .kbroed3 {
+    margin-left: 38%;
+  }
+
   .kcon1 {
     width: 25%;
-    margin-top: 16%;
+    margin-top: 2%;
     margin-left: 10%;
   }
 
   .kimage1 {
     width: 28%;
-    margin-top: 4%;
+    margin-top: -8%;
     margin-right: 12%;
   }
+
+  .kbroed2 {
+    display: block;
+  }
+
+  .kflex2{
+    flex-direction: row-reverse;
+  }
+
+  .kcon2 {
+    margin: 5% 0 0 0;
+  }
+
+  .kflextext1 {
+    margin: 10% 51% 0 0;
+  }
+
+  .kcon3 {
+    margin: 7% 2% 0 0;
+  }
+
+  .kflextext2 {
+    margin: 3% 48.5% 0 0;
+  }
+
+  .kcon4 {
+    margin: 8% 0 0 12%;
+  }
+
+  .kflextext3 {
+    margin: 10% 40% 0 0;
+  }
+
+  #kcon3 {
+    margin: 5% 13% 0 0;
+  }
+
+  #kflextext2 {
+    margin: 3% 48.5% 0 0;
+  }
+
+  #kcon4 {
+    margin: 6% 0 15% 26%;
+  }
+
+  #kflextext3 {
+    margin: 10% 43% 0 0;
+  }
+
+  .kflex3 {
+    display: flex;
+  }
+
+  .kcontainer {
+    display: inline-block;
+    padding: 20px;
+    margin-left: 200px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    float: left;
+  }
+
+  .knavn {
+    width: 200%;
+    height: 40px;
+    font-size: 12pt;
+    padding-top: 1%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: none;
+
+  }
+
+  .kemail {
+    @extend .knavn
+  }
+
+  .kbesked {
+    width: 200%;
+    height: 200px;
+    font-size: 12pt;
+    padding-top: 1%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: none;
+  }
+
+  .sendbutton {
+    background-color: $CTA;
+    border: 1px solid $CTA_border;
+    border-radius: 10px;
+    font-size: 12pt;
+    font-family: 'Tajawal', sans-serif;
+    margin: 10% 0 0 150%;
+    padding: 5px 12px;
+    color: white;
+    height: 40px;
+    width: 50%;
+
+  }
+
+.kconformula {
+  margin: -6% 0 0 0;
+}
+
+  .kfleximg2 {
+    margin: -10% -12% 10% 8%;
+  }
+
+
+
+
+//Oliver start --------------------------------------------------------------------------
+
+  .i_intro {
+    display: grid;
+    height: 200px;
+    grid-template-rows: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .i_introflexbig {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .i_introgrid3 {
+    display: none;
+  }
+
+  .i_introflex2 {
+    grid-row: 1;
+  }
+
+  .i_infopic1 {
+    background-position-y: -32px;
+  }
+
+  .i_infopic2 {
+    background-position-y: -90px;
+  }
+
+
+
+//oliver slut ---------------------------------------------------------------------
 
 }
 
@@ -1009,6 +1596,8 @@ input{
   header {
     height: 100px;
   }
+
+  //oliver start --------------------------------------------------------------
 
   .h_logo {
     display: none;
@@ -1067,26 +1656,119 @@ input{
     position: absolute;
   }
 
+  //oliver slut -----------------------------------------------------
+
   /* --Kristian ------------ */
 
-  .eEventsList{
-    .eFlex{
-      width: 30%;
+    .eContent{
+      padding: 2% 0 0 0;
+      height: 1400px;
+
+      .eContentEvents{
+        height: 100%;
+        width: 100%;
+
+        .eContentTop{
+          height: 30%;
+
+          .eWebHeadline{
+            height: 10%;
+          }
+
+
+        }
+      }
+    }
+
+    .ePopular{
+      height: 90%;
+
+
+
+      .ePopularPicture{
+        height: 100%;
+
+        img{
+          height: 100%;
+        }
+      }
+
+
+      .eFlex{
+        margin: 2% 0 0 0;
+
+        img{
+
+          height: 74%;
+        }
+
+
+      }
+    }
+
+  .eEventFlex{
+    margin: 1% 0 0 0;
+    height: 900px;
+
+    .eContentAside{
+      margin: 0.5% 1% 0 1%;
+
+      .eAsideFlex{
+
+        .eDropContent{
+          display: none;
+          top: 705px;
+
+        }
+
+        .eDropContent2{
+          display: none;
+          top: 760px;
+
+        }
+      }
+    }
+
+    .eEventsList{
+
+      .eFlex{
+        display: block;
+
+
+        .eFlexImg{
+
+          height: auto;
+        }
+      }
     }
   }
+
+
 
   /* -- Kristian ------------- */
 
   /* Nillerbrunch start ------------------------- */
+
+  .mHeader{
+    margin: 5%;
+  }
 
   .mStartImg{
     height: 650px;
     .mOpa{
       height: 650px;
     }
+
+  }
+
+  .mInfoPic{
+    width: 340px;
   }
 
   /* Nillerbrunch slut ---------------------------- */
+
+
+  //oliver start ----------------------------------------------------------------
 
   .f_name, .f_email, .f_tlf, .f_links {
     margin-bottom: 12px;
@@ -1149,6 +1831,19 @@ input{
     margin: 25px 0 30px 0;
     padding: 0 510px;
   }
+
+  .i_infopic1 {
+    background-position-y: 0;
+    background-size: contain;
+  }
+
+  .i_infopic2 {
+    background-position-y: 0;
+    background-size: contain;
+  }
+
+  //oliver slut -----------------------------------------------------------------------
+
 //Josefine start-----------------------------------------------------------------
   .o_grid{
     display: grid;
