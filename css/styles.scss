@@ -717,10 +717,19 @@ input{
 
  // Sofie start --------------------------------------------
 
+.kbaggrund {
+  background: linear-gradient($primar_color, white);
+}
+
+.koverskrift {
+  color: white;
+}
+
 .koverskrift1 {
   text-align: center;
   font-size: 20pt;
   margin-top: 10%;
+  color: $gray;
 }
 
 .koverskrift2 {
@@ -728,6 +737,11 @@ input{
   font-size: 15pt;
   margin-top: 10%;
   margin-bottom: 15%;
+  color: white;
+}
+
+.kbroed {
+  color: white;
 }
 
 .kflex1 {
@@ -764,7 +778,8 @@ input{
 
 .kflextext1 {
   text-align: center;
-  margin: 13% 7% 0 0
+  margin: 13% 7% 0 0;
+  color: $primar_color;
 }
 
 .kcon3 {
@@ -775,6 +790,7 @@ input{
 .kflextext2 {
   text-align: center;
   margin: 0;
+  color: $primar_color;
 }
 
 .kcon4 {
@@ -784,7 +800,8 @@ input{
 
 .kflextext3 {
   text-align: center;
-  margin: 10% 0 25% 25%
+  margin: 10% 0 25% 25%;
+  color: $primar_color;
 }
 
 .kbroed2 {
@@ -1149,10 +1166,16 @@ input{
   // Sofie Start -----------------------------------------
 
 
+
   .koverskrift1 {
     text-align: center;
     font-size: 30pt;
     margin-top: 10%;
+    color: $gray;
+  }
+
+  .kflex1 {
+    margin-top: 4%;
   }
 
   .koverskrift2 {
@@ -1160,6 +1183,7 @@ input{
     font-size: 25pt;
     margin-top: 2%;
     margin-bottom: 1%;
+    color: white;
   }
 
   .koverskrift3 {
@@ -1168,6 +1192,7 @@ input{
     margin-top: 2%;
     margin-bottom: 1%;
     margin-right: -10%;
+    color: white;
   }
 
   .kbroed {
@@ -1176,6 +1201,7 @@ input{
 
   .kbroed3 {
     margin-left: 38%;
+    color: white;
   }
 
   .kcon1 {
@@ -1185,13 +1211,15 @@ input{
   }
 
   .kimage1 {
-    width: 28%;
-    margin-top: -8%;
+    width: 20%;
+    margin-top: -0.5%;
     margin-right: 12%;
   }
 
   .kbroed2 {
     display: block;
+    color: white;
+    margin-top: 1%;
   }
 
   .kflex2{
@@ -1258,7 +1286,7 @@ input{
     font-size: 12pt;
     padding-top: 1%;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid white;
     box-shadow: none;
 
   }
@@ -1273,7 +1301,7 @@ input{
     font-size: 12pt;
     padding-top: 1%;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid white;
     box-shadow: none;
   }
 
