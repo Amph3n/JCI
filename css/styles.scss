@@ -785,7 +785,11 @@ footer {
 
 .mHeader{
   text-align: center;
-  margin: 7%;
+  h1{
+    color: $gray;
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
 }
 
 .mStartImg{
@@ -1092,6 +1096,11 @@ input{
 
   // Nillerbrunch start --------------------------------------------
 
+
+  .mHeader{
+    margin: 5%;
+
+  }
 
   .mStartImg{
     height: 400px;
@@ -1848,8 +1857,11 @@ input{
 
   /* Nillerbrunch start ------------------------- */
 
+
   .mHeader{
-    margin: 5%;
+    h1{
+      margin-top: 5%;
+    }
   }
 
   .mStartImg{

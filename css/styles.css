@@ -595,8 +595,11 @@ footer {
 
 /* -- Slut Kristian ------------------------------------------------------ */
 .mHeader {
-  text-align: center;
-  margin: 7%; }
+  text-align: center; }
+  .mHeader h1 {
+    color: #707070;
+    margin-top: 15%;
+    margin-bottom: 5%; }
 
 .mStartImg {
   position: relative;
@@ -818,6 +821,9 @@ footer {
     .eEventsList .eFlex {
       width: 45%; }
 
+  .mHeader {
+    margin: 5%; }
+
   .mStartImg {
     height: 400px; }
     .mStartImg .mOpa {
@@ -924,6 +930,7 @@ footer {
 
   .i_main_grid a, .i_intro a, .i_infogrid a {
     font-size: 16px; }
+
 
   .i_heads {
     margin: 101px 0 0 0; }
@@ -1311,8 +1318,8 @@ footer {
 
   /* -- Kristian ------------- */
   /* Nillerbrunch start ------------------------- */
-  .mHeader {
-    margin: 5%; }
+  .mHeader h1 {
+    margin-top: 5%; }
 
   .mStartImg {
     height: 650px; }
