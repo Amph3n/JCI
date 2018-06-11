@@ -98,14 +98,14 @@
                         </div>
 
                         <div class="eFlex">
-                            <img src="img/eGame.png" alt="Game pieces">
+                            <img src="img/eGame.png" alt="Game pieces" class="eWebImgWidth">
 
                             <div class="ePopularText">
                                 <div>
-                                    <h3>Event xx</h3>
-                                    <p>Æsel</p>
+                                    <h3>Europakonference / Letland: 6/6-18</h3>
+                                    <p>Skriv om event her</p>
                                 </div>
-                                <p class="ePrice">3kr</p>
+                                <p class="ePrice">750,-</p>
                             </div>
                         </div>
 
@@ -114,10 +114,10 @@
 
                             <div class="ePopularText">
                                 <div>
-                                    <h3>Event xx</h3>
-                                    <p>Æsel</p>
+                                    <h3>FK 2018 / København: 6/4-18</h3>
+                                    <p>Skriv om event her</p>
                                 </div>
-                                <p class="ePrice">3kr</p>
+                                <p class="ePrice">600,-</p>
                             </div>
                         </div>
                     </div>
@@ -765,6 +765,8 @@
             $(".eMon2, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon1").css("display", "flex");
             $(".eMon1").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
         });
 
         $(".eMon2Btn").click(function () {
@@ -772,6 +774,8 @@
             $(".eMon1, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon2").css("display", "flex");
             $(".eMon2").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
         });
 
         $(".eMon3Btn").click(function () {
@@ -779,6 +783,8 @@
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon3").css("display", "flex");
             $(".eMon3").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
         });
 
         $(".eMon4Btn").click(function () {
@@ -786,6 +792,8 @@
             $(".eMon1, .eMon2, .eMon3, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon4").css("display", "flex");
             $(".eMon4").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
         });
 
         $(".eMon5Btn").click(function () {
@@ -793,6 +801,8 @@
             $(".eMon1, .eMon2, .eMon4, .eMon3, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon5").css("display", "flex");
             $(".eMon5").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
         });
 
         $(".eMon6Btn").click(function () {
@@ -800,6 +810,8 @@
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon3, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon6").css("display", "flex");
             $(".eMon6").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
         });
 
         $(".eMon7Btn").click(function () {
@@ -807,6 +819,8 @@
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon3, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon7").css("display", "flex");
             $(".eMon7").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
         });
 
         $(".eMon8Btn").click(function () {
@@ -814,6 +828,8 @@
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon3, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon8").css("display", "flex");
             $(".eMon8").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
         });
 
         $(".eMon9Btn").click(function () {
@@ -821,6 +837,8 @@
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon3, .eMon10, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon9").css("display", "flex");
             $(".eMon9").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
         });
 
         $(".eMon10Btn").click(function () {
@@ -828,6 +846,8 @@
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon3, .eMon11, .eMon12").addClass("eHidden");
             $(".eMon10").css("display", "flex");
             $(".eMon10").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
         });
 
         $(".eMon11Btn").click(function () {
@@ -835,6 +855,8 @@
             $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon3, .eMon12").addClass("eHidden");
             $(".eMon11").css("display", "flex");
             $(".eMon11").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
         });
 
         $(".eMon12Btn").click(function () {
@@ -842,6 +864,8 @@
             $(".eMon3, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon3").addClass("eHidden");
             $(".eMon12").css("display", "flex");
             $(".eMon12").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
         });
 
         $(".eLoc0Btn").click(function () {
@@ -853,6 +877,8 @@
             $(".eNational, .eInterNational").addClass("eHidden");
             $(".eLocal").css("display", "flex");
             $(".eLocal").removeClass("eHidden");
+            $(".eDropContent2").css("display", "none");
+            eLoc = 0;
         });
 
         $(".eLoc2Btn").click(function () {
@@ -860,6 +886,8 @@
             $(".eLocal, .eInterNational").addClass("eHidden");
             $(".eNational").css("display", "flex");
             $(".eNational").removeClass("eHidden");
+            $(".eDropContent2").css("display", "none");
+            eLoc = 0;
         });
 
         $(".eLoc3Btn").click(function () {
@@ -867,6 +895,8 @@
             $(".eNational, .eLocal").addClass("eHidden");
             $(".eInterNational").css("display", "flex");
             $(".eInterNational").removeClass("eHidden");
+            $(".eDropContent2").css("display", "none");
+            eLoc = 0;
         });
 
         var ePageParts = $(".ePaginate");
@@ -885,6 +915,15 @@
 
                 ePageParts.hide()
                     .slice(start, end).show();
+            }
+        });
+
+        var eWebPopImgWidth = $(".eWebImgWidth").width();
+        $(document).ready(function (e) {
+            var eWidth = $(window).width();
+
+            if (eWidth > 1200) {
+                $(".ePopularText").css("width", eWebPopImgWidth);
             }
         });
 
