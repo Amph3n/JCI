@@ -82,21 +82,116 @@
         <main>
             <div  class="i_main_grid">
 
-                <div class="i_bigtext"></div>
-
-                <div class="i_heads">
-                    <div class="i_male1"></div>
-                    <div class="i_male2"></div>
-                    <div class="i_male3"></div>
-                    <div class="i_male4"></div>
-                    <div class="i_fe1"></div>
-                    <div class="i_fe2"></div>
-                    <div class="i_fe3"></div>
+                <div class="i_bigtext">
+                    <h1 class="i_junior">JUNIOR CHAMBER INTERNATIONAL</h1>
+                    <h1>SLAGELSE</h1>
                 </div>
 
-                <div class="i_hidebox"></div>
+                <div class="i_heads">
+                   <div class="i_theboys"></div>
+                </div>
+            </div>
+
+
+
+            <div class="i_intro">
+
+                <div class="i_introflex1">
+
+                    <div class="i_introgrid1">
+
+                        <div class="i_introtext1">
+                            <p>Lær os at kende og bliv en del af <b>fællesskabet</b></p>
+                        </div>
+                        <div class="i_introcta1">
+                            <a href="">LÆS MERE</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="i_introflex2">
+
+                    <div class="i_introgrid2">
+
+                        <div class="i_introtext2">
+                            <p>Hvad kan vi tilbyde <b>dig </b>som kunde?</p>
+                        </div>
+                        <div class="i_introcta2">
+                            <a href="">LÆS MERE</a>
+                        </div>
+
+                    </div>
+
+                    <div class="i_introgrid3">
+
+                        <div class="i_introtext3">
+                            <p>Bliv <b>medlem </b>i dag og tilmeld dig vores nyhedsbrev</p>
+                        </div>
+                        <div class="i_introcta3">
+                            <a href="">LÆS MERE</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                    <div class="i_introflexbig">
+
+                        <div class="i_introgridbig">
+
+                            <div class="i_introtextbig">
+                                <p>Lær os at kende og bliv en del af <b>fællesskabet</b></p>
+                            </div>
+                            <div class="i_introctabig">
+                                <a href="">LÆS MERE</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            <div class="i_space1"></div>
+
+            <div class="i_infogrid">
+
+                <div class="i_textbox1">
+
+                    <div class="i_infobigtext1">
+                        <h3>VIL DU LÆRE AT SKABE ET OVERBLIK?</h3>
+                    </div>
+                    <div class="i_infosmalltext1">
+                        <p>Hos JCI Slagelse kan vi hjælpe dig med at få et overblik.</p>
+                    </div>
+                </div>
+
+                <div class="i_infopic1">
+
+                </div>
+
+
+                <div class="i_textbox2">
+
+                    <div class="i_infobigtext2">
+                        <h3>HVORDAN FOR MAN LEDEREGENSKABER?</h3>
+                    </div>
+                    <div class="i_infosmalltext2">
+                        <a href="">LÆS MERE</a>
+                    </div>
+                </div>
+
+                <div class="i_infopic2">
+
+                </div>
 
             </div>
+
+            <div class="i_space2"></div>
+
+
+
         </main>
 
         <footer>
@@ -211,6 +306,14 @@
                 navOpen = 0;
             }
         });
+
+        $(".do_something").click(function () {
+            $(".i_male1, .i_male2, .i_male3, .i_male4, .i_fe1, .i_fe2, .i_fe3").stop().animate({
+                height: '100%',
+                width: '100%'
+            }, 400);
+        })
+
 
     });
 </script>
