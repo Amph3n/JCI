@@ -103,7 +103,6 @@ header {
 .o_hvemervi {
   grid-column: a1 / h1;
   grid-row: a1;
-  font-size: 20px;
   font-family: Cambria, serif;
   color: #5d5d5d;
   text-align: center; }
@@ -704,7 +703,6 @@ footer {
   Width: 300px;
   height: 300px;
   display: none; }
-
 
 .kbaggrund {
   background: linear-gradient(#0A6466, white); }
