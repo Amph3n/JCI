@@ -1027,7 +1027,50 @@ input{
   // Sofie Slut ---------------------------------------------
 
 
+  /* 403 & 404 Start */
 
+  .nMain{
+    margin-top: 0;
+  }
+
+  .nFoot{
+    display: none;
+  }
+
+  .nHead{
+    text-align: center;
+    color: $gray;
+  }
+
+  .nContent{
+    display: flex;
+    justify-content: space-around;
+    height: 335px;
+    background: linear-gradient($primar_color, white);
+
+    .nTxt{
+      width: 55%;
+      margin-top: 23%;
+      color: #FFFFFF;
+      font-family: 'Tajawal', sans-serif;
+      text-align: right;
+      font-size: 12pt;
+
+      h2{
+        font-size: 13pt;
+      }
+      a{
+        color: $primar_color;
+        font-size: 16pt;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+
+    .nImg{
+      width: 35%;
+    }
+  }
 
 
 @media screen and (min-width: 768px) {
@@ -1308,7 +1351,30 @@ input{
 
 
   // Oliver slut--------------------------------------------------------
+
+  /* 404 & 403 */
+  .nMain{
+    margin-top: 90px;
+  }
+
+  .nContent{
+    height: 500px;
+    padding-top: 5%;
+
+    .nTxt{
+      width: 45%;
+      margin-top: 14%;
+    }
+
+    .nImg{
+      width: 45%;
+    }
+  }
 }
+
+
+
+
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
@@ -1737,6 +1803,25 @@ input{
 
 //oliver slut ---------------------------------------------------------------------
 
+  /* 404 & 403 */
+  .nMain{
+    margin-top: 90px;
+  }
+
+  .nContent{
+    height: 410px;
+    padding-top: 2%;
+
+    .nTxt{
+      width: 45%;
+      margin-top: 11%;
+    }
+
+    .nImg{
+      width: 45%;
+    }
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -2066,6 +2151,25 @@ input{
     text-align: left;
     margin-top: 30px;
 
+  }
+
+  /* 404 & 403 */
+  .nMain{
+    margin-top: 0;
+  }
+
+  .nContent{
+    height: 440px;
+    padding-top: 2%;
+
+    .nTxt{
+      width: 45%;
+      margin-top: 100px;
+    }
+
+    .nImg{
+      width: 45%;
+    }
   }
 
 }
