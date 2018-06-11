@@ -626,7 +626,8 @@ footer {
 .mInfoText {
   margin: 8% 10%; }
   .mInfoText h2 {
-    margin-bottom: 2%; }
+    margin-bottom: 2%;
+    color: #707070; }
 
 .mBackground {
   background: linear-gradient(#0A6466, white);
@@ -931,7 +932,6 @@ footer {
   .i_main_grid a, .i_intro a, .i_infogrid a {
     font-size: 16px; }
 
-
   .i_heads {
     margin: 101px 0 0 0; }
 
@@ -1196,11 +1196,9 @@ footer {
   .kcontainer {
     display: inline-block;
     padding: 20px;
-    margin-left: 200px;
     font-family: 'Tajawal', sans-serif;
     font-size: 100%;
-    text-align: center;
-    float: left; }
+    text-align: center; }
 
   .knavn, .kemail {
     width: 200%;
@@ -1233,10 +1231,10 @@ footer {
     width: 50%; }
 
   .kconformula {
-    margin: -6% 0 0 0; }
+    margin: -6% 0 0 -357px; }
 
   .kfleximg2 {
-    margin: -10% -12% 10% 8%; }
+    padding-right: 148px; }
 
   .i_intro {
     display: grid;
