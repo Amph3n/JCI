@@ -31,6 +31,9 @@
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
@@ -60,7 +63,7 @@
                         </div>
 
                         <div class="h_menu4">
-                            <a href="contact.html">Om Os</a>
+                            <a href="omos.html">Om Os</a>
                         </div>
                     </div>
 
@@ -718,7 +721,7 @@
         $(window).resize(function (e) {
             var width = $(window).width();
 
-            if (width > 1200) {
+            if (width > 768) {
                 $(".h_content").css( "display", "grid");
             }
             else {
