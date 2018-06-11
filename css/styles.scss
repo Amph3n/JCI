@@ -360,7 +360,7 @@ main {
   display: grid;
   height: 300px;
   grid-template-rows: 1fr 1fr;
-  background-color: $primar_color;
+  background: linear-gradient($primar_color, white);
 }
 
 .i_introflexbig {
@@ -545,10 +545,11 @@ footer {
   display: grid;
   height: 600px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-color: $primar_color;
+  background: linear-gradient($primar_color, white);
 
-  h3 {
+  h2 {
     color: white;
+    font-size: 14pt;
   }
 
   p {
@@ -611,7 +612,7 @@ footer {
 
 
 .i_space2, .i_space1 {
-  background-color: $primar_color;
+  background-color: white;
   height:100px;
 }
 
@@ -1185,13 +1186,58 @@ input{
     grid-column: f8/ h8;
     grid-row: a8;
     text-align: left;
+  }
+  
+  .h_logo {
+    display: none;
+  }
+
+  .h_content {
+    display: grid;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    background-color: white;
+    outline: 0 auto #5d5d5d;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr 3fr;
+  }
+
+  .dropdown_btn {
+    display: none;
+  }
+
+  .box1, .box2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7px;
+  }
+
+  .box1 {
+    grid-column: 1;
 
   }
 
-}
-//Josefine slut --------------------------
+  .box2 {
+    grid-column: 3;
+  }
+
+  .menu_logo {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1/2;
+    max-width: 115px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .i_bigtext {
+    margin-top: 170px;
+  }
+
 
     // Oliver start ---------------------------------------------------
+
   .f_formula input {
     width: 30%;
   }
@@ -1212,9 +1258,7 @@ input{
   .i_intro {
     display: flex;
     height: 200px;
-    /* grid-template-rows: 1fr 1fr; */
     background-color: #0A6466;
-    /* margin: 20px 0 0 0; */
   }
 
   .i_introflex1, .i_introflex2, .i_introflexbig {
@@ -1253,7 +1297,7 @@ input{
 
 
   // Oliver slut--------------------------------------------------------
-
+}
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
@@ -1697,47 +1741,8 @@ input{
 
   //oliver start --------------------------------------------------------------
 
-  .h_logo {
-    display: none;
-  }
-
-  .h_content {
-    display: grid;
-    position: absolute;
-    top: 30px;
-    width: 100%;
-    background-color: white;
-    outline: 0 auto #5d5d5d;
-    grid-template-rows: 1fr;
-    grid-template-columns: 3fr 1fr 3fr;
-  }
-
-  .dropdown_btn {
-    display: none;
-  }
-
-  .box1, .box2 {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 7px;
-  }
-
-  .box1 {
-    grid-column: 1;
-
-  }
-
-  .box2 {
-    grid-column: 3;
-  }
-
-  .menu_logo {
-    display: flex;
-    grid-column: 2;
-    grid-row: 1/2;
-    max-width: 115px;
-    margin: auto;
-    justify-content: center;
+  .i_bigtext {
+    margin-top: 80px;
   }
 
   .f_grid {
@@ -1949,6 +1954,7 @@ input{
   .i_infopic1 {
     background-position-y: 0;
     background-size: contain;
+    margin-top: 20px;
   }
 
   .i_infopic2 {

@@ -13,11 +13,11 @@
     <script src="https://use.fontawesome.com/1823101846.js"></script>
 
     <!-- Font emdeb code  -->
-    <link rel="stylesheet" href="https://use.typekit.net/fln2dwx.css">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:500" rel="stylesheet">
 
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>JCI Slagelse</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -29,6 +29,9 @@
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
 
 </head>
 
@@ -58,7 +61,7 @@
                                 </div>
 
                                 <div class="h_menu4">
-                                    <a href="contact.html">Om Os</a>
+                                    <a href="omos.html">Om Os</a>
                                 </div>
                             </div>
 
@@ -94,7 +97,7 @@
 
 
 
-            <div class="i_intro">
+            <section class="i_intro">
 
                 <div class="i_introflex1">
 
@@ -104,7 +107,7 @@
                             <p>Lær os at kende og bliv en del af <b>fællesskabet</b></p>
                         </div>
                         <div class="i_introcta1">
-                            <a href="">LÆS MERE</a>
+                            <a href="omos.html">LÆS MERE</a>
                         </div>
 
                     </div>
@@ -116,10 +119,10 @@
                     <div class="i_introgrid2">
 
                         <div class="i_introtext2">
-                            <p>Hvad kan vi tilbyde <b>dig </b>som kunde?</p>
+                            <p>Hvad kan vi tilbyde <b>dig </b>som medlem?</p>
                         </div>
                         <div class="i_introcta2">
-                            <a href="">LÆS MERE</a>
+                            <a href="events.html">LÆS MERE</a>
                         </div>
 
                     </div>
@@ -130,7 +133,7 @@
                             <p>Bliv <b>medlem </b>i dag og tilmeld dig vores nyhedsbrev</p>
                         </div>
                         <div class="i_introcta3">
-                            <a href="">LÆS MERE</a>
+                            <a href="medlemskab.html">LÆS MERE</a>
                         </div>
 
                     </div>
@@ -151,16 +154,16 @@
                         </div>
 
                     </div>
-                </div>
+                </section>
 
             <div class="i_space1"></div>
 
-            <div class="i_infogrid">
+            <section class="i_infogrid">
 
                 <div class="i_textbox1">
 
                     <div class="i_infobigtext1">
-                        <h3>VIL DU LÆRE AT SKABE ET OVERBLIK?</h3>
+                        <h2>VIL DU LÆRE AT SKABE ET OVERBLIK?</h2>
                     </div>
                     <div class="i_infosmalltext1">
                         <p>Hos JCI Slagelse kan vi hjælpe dig med at få et overblik.</p>
@@ -175,10 +178,10 @@
                 <div class="i_textbox2">
 
                     <div class="i_infobigtext2">
-                        <h3>HVORDAN FOR MAN LEDEREGENSKABER?</h3>
+                        <h2>HVORDAN FÅR MAN LEDEREGENSKABER?</h2>
                     </div>
                     <div class="i_infosmalltext2">
-                        <a href="">LÆS MERE</a>
+                        <a href="medlemskab.html">LÆS MERE</a>
                     </div>
                 </div>
 
@@ -186,7 +189,7 @@
 
                 </div>
 
-            </div>
+            </section>
 
             <div class="i_space2"></div>
 
@@ -298,7 +301,7 @@
         $(window).resize(function (e) {
             var width = $(window).width();
 
-            if (width > 1200) {
+            if (width > 768) {
                 $(".h_content").css( "display", "grid");
             }
             else {
@@ -306,13 +309,6 @@
                 navOpen = 0;
             }
         });
-
-        $(".do_something").click(function () {
-            $(".i_male1, .i_male2, .i_male3, .i_male4, .i_fe1, .i_fe2, .i_fe3").stop().animate({
-                height: '100%',
-                width: '100%'
-            }, 400);
-        })
 
 
     });
