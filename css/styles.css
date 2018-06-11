@@ -1324,6 +1324,9 @@ footer {
     .mStartImg .mOpa {
       height: 650px; }
 
+  .mInfoText {
+    margin: 5% 20%; }
+
   .mInfoPic {
     height: 160px;
     width: 320px; }
