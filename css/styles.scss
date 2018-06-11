@@ -818,11 +818,13 @@ footer {
 
 .mInfoText{
   margin: 8% 10%;
-
+h2{
+  margin-bottom: 2%;
+}
 }
 
 .mBackground{
-  background-color: $primar_color;
+  background: linear-gradient($primar_color, white);
   width: 100%;
   padding: 10%;
 
@@ -845,6 +847,24 @@ footer {
   box-shadow: 2px 2px 2px black;
   width: 100%;
   height: 250px;
+  background-image: url("../img/mFlex1.jpg");
+  background-size: cover;
+}
+
+.mInfoPic1{
+  box-shadow: 2px 2px 2px black;
+  width: 100%;
+  height: 250px;
+  background-image: url("../img/mFlex2.jpg");
+  background-size: cover;
+}
+
+.mInfoPic2{
+  box-shadow: 2px 2px 2px black;
+  width: 100%;
+  height: 250px;
+  background-image: url("../img/mFlex3.jpg");
+  background-size: cover;
 }
 
 .mInfoPicText{
@@ -857,7 +877,6 @@ footer {
 }
 
 .mNews{
-  margin-top: 10%;
   color: white;
   h2{
     margin-bottom: 3%;
@@ -899,8 +918,8 @@ input{
 
 .mNewsImg{
   Width: 300px;
-  height: auto;
-  background-color: grey;
+  height: 300px;
+  display: none;
 }
 
 // Nillerbrunch slut ------------------------------------------
@@ -1305,16 +1324,47 @@ input{
       width: 240px;
     }
 
+  .mInfoPic1{
+    height: 160px;
+    width: 240px;
+  }
+
+  .mInfoPic2{
+    height: 160px;
+    width: 240px;
+  }
+
     .mInfoPicText{
       width: 240px;
     }
 
+  .mNews-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mNews{
+    width: 100%;
+    h2{
+      width: 80%;
+    }
+    p{
+      width: 80%;
+    }
+  }
+
     .mForm{
       input {
-        width: 40%;
+        width: 80%;
       }
+  }
 
-
+  .mNewsImg{
+    display: block;
+    float: right;
+    width: 40%;
+    margin-bottom: 5%;
   }
 
   // Nillerbrunch slut ----------------------------------------------------
@@ -1818,6 +1868,17 @@ input{
     height: 160px;
     width: 320px;
   }
+
+  .mInfoPic1{
+    height: 160px;
+    width: 320px;
+  }
+
+  .mInfoPic2{
+    height: 160px;
+    width: 320px;
+  }
+  
 
 
 
