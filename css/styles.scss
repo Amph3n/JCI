@@ -161,7 +161,6 @@ header {
 .o_hvemervi{
   grid-column: a1 / h1;
   grid-row: a1;
-  font-size: 20px;
   font-family: Cambria, serif;
   color: #5d5d5d;
   text-align: center;
@@ -786,7 +785,11 @@ footer {
 
 .mHeader{
   text-align: center;
-  margin: 7%;
+  h1{
+    color: $gray;
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
 }
 
 .mStartImg{
@@ -820,6 +823,7 @@ footer {
   margin: 8% 10%;
 h2{
   margin-bottom: 2%;
+  color: $gray;
 }
 }
 
@@ -1023,7 +1027,50 @@ input{
   // Sofie Slut ---------------------------------------------
 
 
+  /* 403 & 404 Start */
 
+  .nMain{
+    margin-top: 0;
+  }
+
+  .nFoot{
+    display: none;
+  }
+
+  .nHead{
+    text-align: center;
+    color: $gray;
+  }
+
+  .nContent{
+    display: flex;
+    justify-content: space-around;
+    height: 335px;
+    background: linear-gradient($primar_color, white);
+
+    .nTxt{
+      width: 55%;
+      margin-top: 23%;
+      color: #FFFFFF;
+      font-family: 'Tajawal', sans-serif;
+      text-align: right;
+      font-size: 12pt;
+
+      h2{
+        font-size: 13pt;
+      }
+      a{
+        color: $primar_color;
+        font-size: 16pt;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+
+    .nImg{
+      width: 35%;
+    }
+  }
 
 
 @media screen and (min-width: 768px) {
@@ -1035,6 +1082,7 @@ input{
 
   .eMobHeadline1{
     height: 50px;
+    margin-top: 80px;
   }
 
   .eContent{
@@ -1059,15 +1107,18 @@ input{
     margin-right: 2%;
     margin-left: auto;
 
-    .eDropContent{
-      min-width: 45%;
-      top: 517px;
-      right: 0;
 
-      .eDropBtnMon{
-        height: 35px;
+      .eDropContent{
+
+        min-width: 45%;
+        top: 100px;
+        right: 0;
+
+        .eDropBtnMon{
+          height: 35px;
+        }
       }
-    }
+
 
     .eDropContent2{
       min-width: 45%;
@@ -1093,6 +1144,11 @@ input{
 
   // Nillerbrunch start --------------------------------------------
 
+
+  .mHeader{
+    margin: 5%;
+
+  }
 
   .mStartImg{
     height: 400px;
@@ -1295,7 +1351,30 @@ input{
 
 
   // Oliver slut--------------------------------------------------------
+
+  /* 404 & 403 */
+  .nMain{
+    margin-top: 90px;
+  }
+
+  .nContent{
+    height: 500px;
+    padding-top: 5%;
+
+    .nTxt{
+      width: 45%;
+      margin-top: 14%;
+    }
+
+    .nImg{
+      width: 45%;
+    }
+  }
 }
+
+
+
+
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
@@ -1457,6 +1536,8 @@ input{
 
       .eWebHeadline{
         display: block;
+        color: white;
+        text-align: left;
         margin: 0 0 0 27%;
       }
 
@@ -1634,11 +1715,9 @@ input{
   .kcontainer {
     display: inline-block;
     padding: 20px;
-    margin-left: 200px;
     font-family: 'Tajawal', sans-serif;
     font-size: 100%;
     text-align: center;
-    float: left;
   }
 
   .knavn {
@@ -1680,14 +1759,13 @@ input{
 
   }
 
-.kconformula {
-  margin: -6% 0 0 0;
-}
-
-  .kfleximg2 {
-    margin: -10% -12% 10% 8%;
+  .kconformula {
+    margin: -6% 0 0 -357px;
   }
 
+  .kfleximg2 {
+    padding-right: 148px;
+  }
 
 
 
@@ -1725,6 +1803,25 @@ input{
 
 //oliver slut ---------------------------------------------------------------------
 
+  /* 404 & 403 */
+  .nMain{
+    margin-top: 90px;
+  }
+
+  .nContent{
+    height: 410px;
+    padding-top: 2%;
+
+    .nTxt{
+      width: 45%;
+      margin-top: 11%;
+    }
+
+    .nImg{
+      width: 45%;
+    }
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -1758,6 +1855,10 @@ input{
 
   /* --Kristian ------------ */
 
+  .eMobHeadline1{
+    margin-top: 0;
+  }
+
     .eContent{
       padding: 2% 0 0 0;
       height: 1400px;
@@ -1772,8 +1873,6 @@ input{
           .eWebHeadline{
             height: 10%;
           }
-
-
         }
       }
     }
@@ -1847,8 +1946,11 @@ input{
 
   /* Nillerbrunch start ------------------------- */
 
+
   .mHeader{
-    margin: 5%;
+    h1{
+      margin-top: 5%;
+    }
   }
 
   .mStartImg{
@@ -1857,6 +1959,10 @@ input{
       height: 650px;
     }
 
+  }
+
+  .mInfoText{
+    margin: 5% 20%;
   }
 
   .mInfoPic{
@@ -2045,6 +2151,25 @@ input{
     text-align: left;
     margin-top: 30px;
 
+  }
+
+  /* 404 & 403 */
+  .nMain{
+    margin-top: 0;
+  }
+
+  .nContent{
+    height: 440px;
+    padding-top: 2%;
+
+    .nTxt{
+      width: 45%;
+      margin-top: 100px;
+    }
+
+    .nImg{
+      width: 45%;
+    }
   }
 
 }

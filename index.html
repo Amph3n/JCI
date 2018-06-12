@@ -21,14 +21,24 @@
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
-    <meta name="author" content="Udgiver">
-    <meta name="copyright" content="Information om copyright">
+    <meta name="author" content="Oliver Sommer">
+    <meta name="copyright" content="This webpage has been developed by Multimedia Design
+    and communication students at EASJ Slagelse for JCI Slagelse">
+    <meta name="description" content="Forside for JCI Slagelse">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="JCI Slagelse">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.oliversommer.dk">
+    <meta property="og:image" content="https://www.oliversommer.dk/img.jpg">
+    <meta property="og:description" content="Har du interesse inden for lederskab og et godt netværk? Så er JCI Slagelse lige noget for dig. Styrk dit netværk og dine kompetencer med JCI Slagelse">
+    <meta property="og:locale" content="da_DK">
 
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
@@ -301,7 +311,7 @@
         $(window).resize(function (e) {
             var width = $(window).width();
 
-            if (width > 768) {
+            if (width >= 767) {
                 $(".h_content").css( "display", "grid");
             }
             else {
