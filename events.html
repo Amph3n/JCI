@@ -730,27 +730,18 @@
             }
         });
 
-        function eDropMonth() {
-            document.getElementById("#eDropM").classList.toggle(".eDrobShow");
-        }
-
-        <!-- Viser og skjuler dropdown menuer på Events side -->
-
         var eMon = 0;
         $(".eDropBtn").click(function(){
             if (eMon == 1) {
                 $(".eDropContent").css("display", "none");
                 eMon = 0;
             }   else {
-                <!-- de følgende to linjer kode finder afstanden fra toppen af documentet
-                     til knappen, ligger knappens højde til, og sætter dette som top i
-                     drop down menu, så menuen altid ligger lige under knappen.-->
                 var eDropMenuHeight = 33 + $(".eDropBtn").offset().top;
                 $(".eDropContent").css("top", eDropMenuHeight);
                 $(".eDropContent").css("display", "flex");
                 eMon = 1;
             }
-        })
+        });
 
         var eLoc = 0;
         $(".eDropBtn2").click(function(){
@@ -763,7 +754,7 @@
                 $(".eDropContent2").css("display", "flex");
                 eLoc = 1;
             }
-        })
+        });
 
         $(".eMon0Btn").click(function () {
             location.reload();
@@ -908,8 +899,6 @@
             eLoc = 0;
         });
 
-        <!-- jquery til simple pagination plugin -->
-
         var ePageParts = $(".ePaginate");
         var ePumPages = ePageParts.length;
         var ePerPage = 6;
@@ -929,8 +918,6 @@
             }
         });
 
-        <!-- jquery finder bredden på billederne af populære events,
-             og sætter den som width på den tilhørende boks med tekst -->
         var eWebPopImgWidth = $(".eWebImgWidth").width();
         $(window).load(function (e) {
             var eWidth = $(window).width();
