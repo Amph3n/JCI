@@ -1402,6 +1402,9 @@ footer {
     height: 160px;
     width: 320px; }
 
+  .mInfoPicText {
+    width: 320px; }
+
   /* Nillerbrunch slut ---------------------------- */
   .f_name, .f_email, .f_tlf, .f_links {
     margin-bottom: 12px; }
