@@ -807,17 +807,7 @@ footer {
 }
 
 
-.mCTA{
-  position: absolute;
-  top: 70%;
-  left: 20%;
-  background-color: $CTA;
-  border: 1px solid $CTA_border;
-  padding: 10px 40px;
-  text-decoration: none;
-  color: white;
 
-}
 
 .mInfoText{
   margin: 8% 10%;
@@ -1157,9 +1147,6 @@ input{
     }
   }
 
-  .mCTA{
-    font-size: 1.5em;
-  }
 
   .mNews{
     button{
@@ -1388,9 +1375,7 @@ input{
     }
   }
 
-  .mCTA{
-    font-size: 1.7em;
-  }
+  
 
   .mFlex {
     flex-direction: row;
